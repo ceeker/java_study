@@ -1,19 +1,18 @@
 package com.zxl.app.study.leveldb;
 
-import org.iq80.leveldb.DBFactory;
-import org.iq80.leveldb.Options;
-import org.iq80.leveldb.WriteBatch;
-import org.iq80.leveldb.WriteOptions;
+import org.iq80.leveldb.*;
 import org.iq80.leveldb.impl.Iq80DBFactory;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.charset.Charset;
+import java.util.Map;
 
 /**
  * Created by vectorzhang on 2017/9/3.
  */
 public class LevelDbDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         boolean cleanup = true;
         Charset charset = Charset.forName("utf-8");
         String path = "/data/leveldb";
