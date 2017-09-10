@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ceeker.app</groupId>
-    <artifactId>elastic-lite-job-demo</artifactId>
+    <artifactId>elastic-job-lite-study</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <properties>
         <elastic-job-lite-core-version>2.1.5</elastic-job-lite-core-version>
