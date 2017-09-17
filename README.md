@@ -1,2 +1,2 @@
 # java_study
-this is a java study project
+This is a study project of java!
