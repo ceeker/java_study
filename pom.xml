@@ -13,7 +13,7 @@
     <modules>
         <module>netty-study</module>
         <module>leveldb-java-study</module>
-        <module>elastic_lite_job_study</module>
+        <module>elastic_job_lite_study</module>
     </modules>
 
 </project>
