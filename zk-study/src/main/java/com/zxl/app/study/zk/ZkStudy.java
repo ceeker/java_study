@@ -41,8 +41,11 @@ public class ZkStudy {
     public boolean create(String path, String data) {
         String result = null;
         try {
-            result = zkClient.create(path, data.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-            String dataStr = new String(zkClient.getData(path, null, null));
+            Stat exists = zkClient.exists(path, false);
+            if (null == exists) {
+                result = zkClient.create(path, data.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+                String dataStr = new String(zkClient.getData(path, null, null));
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -52,8 +55,10 @@ public class ZkStudy {
 
     public boolean set(String path, String data) {
         try {
-            Stat stat = zkClient.setData(path, data.getBytes(), -1);
-            System.out.println(String.format("set data=%s,result=%s", data, stat));
+            if (zkClient.exists(path, false) != null) {
+                Stat stat = zkClient.setData(path, data.getBytes(), -1);
+                System.out.println(String.format("set data=%s,result=%s", data, stat));
+            }
         } catch (KeeperException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
@@ -64,8 +69,10 @@ public class ZkStudy {
 
     public boolean delete(String path) {
         try {
-            zkClient.delete(path, -1);
-            System.out.println(String.format("delete path=%s", path));
+            if (zkClient.exists(path, false) != null) {
+                zkClient.delete(path, -1);
+                System.out.println(String.format("delete path=%s", path));
+            }
         } catch (KeeperException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
