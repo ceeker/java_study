@@ -14,6 +14,7 @@
         <module>netty-study</module>
         <module>leveldb-java-study</module>
         <module>elastic_job_lite_study</module>
+        <module>../zk-study</module>
     </modules>
 
 </project>
