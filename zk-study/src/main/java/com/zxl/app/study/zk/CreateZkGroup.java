@@ -17,7 +17,6 @@ public class CreateZkGroup implements Watcher {
     private ZooKeeper zk;
     private CountDownLatch connectedSignal = new CountDownLatch(1);
 
-
     public static void main(String[] args) throws Exception {
         CreateZkGroup createGroup = new CreateZkGroup();
         String host = args[0];
