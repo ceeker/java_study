@@ -1,0 +1,66 @@
+package com.ceeker.app.study.proto;
+
+message UserLbsInfo {
+    optional uint64 uint64_uin = 1; //uin
+    optional bytes bytes_country = 2; //uin最后一次上报的国家名称
+    optional uint32 uint32_countryid = 3; //uin最后一次上报的国家id
+    optional bytes bytes_prov = 4; //uin最后一次上报的省份名称
+    optional uint32 uint32_provid = 5; //uin最后一次上报的省份id
+    optional bytes bytes_city = 6; //uin最后一次上报的城市名称
+    optional uint32 uint32_cityid = 7; //uin最后一次上报的城市id
+    optional uint32 uint32_report_time = 8; //最后一次上报的时间
+    optional double latitude = 9; //纬度
+    optional double longitude = 10; //经度
+    optional double altitude = 11; //海拔
+}
+
+message GetQQLbsReq {
+    repeated uint64 uins = 1;
+}
+
+message GetQQLbsRsp {
+    repeated UserLbsInfo infos = 1;
+}
+
+message UserLoginAuth {
+    optional bytes auth_key = 1; //鉴权key
+    optional uint32 auth_type = 2; //鉴权类型
+    optional uint32 auth_ip = 3; //调用方ip
+    optional uint64 auth_appid = 4; //appid
+    optional uint32 client_type = 5; //客户端类型
+    optional uint32 client_ip = 6; //客户端ip
+}
+
+message UserLocation {
+    optional uint64 uin = 1;
+    optional double longitude = 2;
+    optional double latitude = 3;
+    optional UserLoginAuth auth = 4;
+}
+
+message GetUserLbsReq {
+    repeated UserLocation user_locations = 1; //如果没传经纬度，则通过ip或者qq号定位
+}
+
+message GetUserLbsRsp {
+    repeated UserLbsInfo infos = 1;
+}
+
+message GetLocationByIpReq {
+    optional uint32 user_ip = 1;
+}
+
+message GetLocationByIpRsp {
+    optional bytes bytes_country = 1; //uin最后一次上报的国家名称
+    optional uint32 uint32_countryid = 2; //uin最后一次上报的国家id
+    optional bytes bytes_prov = 3; //uin最后一次上报的省份名称
+    optional uint32 uint32_provid = 4; //uin最后一次上报的省份id
+    optional bytes bytes_city = 5; //uin最后一次上报的城市名称
+    optional uint32 uint32_cityid = 6; //uin最后一次上报的城市id
+}
+
+service ilive_lbs_svr {
+    rpc GetQQLbs (GetQQLbsReq) returns (GetQQLbsRsp);
+    rpc GetUserLbs (GetUserLbsReq) returns (GetUserLbsRsp);
+    rpc GetIpLocation (GetLocationByIpReq) returns (GetLocationByIpRsp);
+}

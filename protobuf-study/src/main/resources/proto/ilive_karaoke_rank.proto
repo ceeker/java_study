@@ -1,0 +1,51 @@
+//k歌房-k歌之王榜单
+package com.ceeker.app.study.proto;
+
+enum BIG_CMD {
+    CMD_KARAOKE_RANK = 0x993;
+}
+enum SUB_CMD {
+    CMD_GET_KARAOKE_RRNK = 0x1; //获取k歌之王榜单
+}
+
+//获取k歌之王榜单req
+message GetKaraokeRankReq {
+    optional uint64 uid = 1; //用户uid
+    optional uint64 time = 2; //当前时间毫秒值
+    optional uint32 start = 3; //开始下标
+    optional uint32 num = 4; //数量
+    optional uint32 gender = 5; //性别：0全部，1男2女
+}
+
+//获取k歌之王榜单rsp
+message GetKaraokeRankRsp {
+    optional uint32 code = 1; //
+    optional string msg = 2;
+    optional uint32 is_end = 3;
+    repeated RankItem rank = 4;
+}
+
+//榜单元素
+message RankItem {
+    optional uint64 uid = 1; //用户uid
+    optional string nick = 2; //昵称
+    optional uint32 gender = 3; //性别
+    optional string avatar = 4; //头像
+    optional uint64 coin = 5; //金币数
+    optional uint32 rank = 6; //排名
+    repeated Medal medals = 7; //贵族勋章和粉丝勋章
+}
+
+message Medal {
+    optional uint32 medal_id = 1; //勋章id
+    optional string medal_icon = 2; //勋章图标
+}
+
+service karaoke_rank_svr {
+    //根据城市获取该城市短视频榜单
+    rpc getKaraokeRank (GetKaraokeRankReq) returns (GetKaraokeRankRsp);
+
+}
+
+
+
