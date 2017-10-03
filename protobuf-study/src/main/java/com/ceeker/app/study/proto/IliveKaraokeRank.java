@@ -191,18 +191,18 @@ public final class IliveKaraokeRank {
             implements com.google.protobuf.ProtocolMessageEnum {
         /**
          * <pre>
-         * 获取k歌之王榜单
+         *获取k歌之王榜单
          * </pre>
-         * <p>
+         *
          * <code>CMD_GET_KARAOKE_RRNK = 1;</code>
          */
         CMD_GET_KARAOKE_RRNK(1),;
 
         /**
          * <pre>
-         * 获取k歌之王榜单
+         *获取k歌之王榜单
          * </pre>
-         * <p>
+         *
          * <code>CMD_GET_KARAOKE_RRNK = 1;</code>
          */
         public static final int CMD_GET_KARAOKE_RRNK_VALUE = 1;
@@ -577,9 +577,9 @@ public final class IliveKaraokeRank {
 
         /**
          * <pre>
-         * 贵族勋章和粉丝勋章
+         *贵族勋章和粉丝勋章
          * </pre>
-         * <p>
+         *
          * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
          */
         java.util.List<com.ceeker.app.study.proto.IliveKaraokeRank.Medal>
@@ -869,13 +869,13 @@ public final class IliveKaraokeRank {
                     .parseWithIOException(PARSER, input);
         }
 
-        public static com.ceeker.app.study.proto.IliveKaraokeRank.GetKaraokeRankReq parseFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input, extensionRegistry);
-        }
+    public static com.ceeker.app.study.proto.IliveKaraokeRank.GetKaraokeRankReq parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input, extensionRegistry);
+    }
 
         public static Builder newBuilder() {
             return DEFAULT_INSTANCE.toBuilder();
@@ -1833,7 +1833,7 @@ public final class IliveKaraokeRank {
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                 throws java.io.IOException {
             return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         public static Builder newBuilder() {
@@ -2941,14 +2941,14 @@ public final class IliveKaraokeRank {
         public static com.ceeker.app.study.proto.IliveKaraokeRank.RankItem parseFrom(byte[] data)
                 throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveKaraokeRank.RankItem parseFrom(
-                byte[] data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data, extensionRegistry);
-        }
+    public static com.ceeker.app.study.proto.IliveKaraokeRank.RankItem parseFrom(
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
 
         public static com.ceeker.app.study.proto.IliveKaraokeRank.RankItem parseFrom(java.io.InputStream input)
                 throws java.io.IOException {
@@ -4520,7 +4520,7 @@ public final class IliveKaraokeRank {
                     switch (tag) {
                         case 0:
                             done = true;
-                            break;
+              break;
                         default: {
                             if (!parseUnknownField(
                                     input, unknownFields, extensionRegistry, tag)) {
@@ -4970,216 +4970,215 @@ public final class IliveKaraokeRank {
                     return mergeFrom((com.ceeker.app.study.proto.IliveKaraokeRank.Medal) other);
                 } else {
                     super.mergeFrom(other);
-                    return this;
-                }
-            }
-
-            public Builder mergeFrom(com.ceeker.app.study.proto.IliveKaraokeRank.Medal other) {
-                if (other == com.ceeker.app.study.proto.IliveKaraokeRank.Medal.getDefaultInstance()) return this;
-                if (other.hasMedalId()) {
-                    setMedalId(other.getMedalId());
-                }
-                if (other.hasMedalIcon()) {
-                    bitField0_ |= 0x00000002;
-                    medalIcon_ = other.medalIcon_;
-                    onChanged();
-                }
-                this.mergeUnknownFields(other.unknownFields);
-                onChanged();
-                return this;
-            }
-
-            public final boolean isInitialized() {
-                return true;
-            }
-
-            public Builder mergeFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws java.io.IOException {
-                com.ceeker.app.study.proto.IliveKaraokeRank.Medal parsedMessage = null;
-                try {
-                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                    parsedMessage = (com.ceeker.app.study.proto.IliveKaraokeRank.Medal) e.getUnfinishedMessage();
-                    throw e.unwrapIOException();
-                } finally {
-                    if (parsedMessage != null) {
-                        mergeFrom(parsedMessage);
-                    }
-                }
-                return this;
-            }
-
-            /**
-             * <pre>
-             * 勋章id
-             * </pre>
-             * <p>
-             * <code>optional uint32 medal_id = 1;</code>
-             */
-            public boolean hasMedalId() {
-                return ((bitField0_ & 0x00000001) == 0x00000001);
-            }
-
-            /**
-             * <pre>
-             * 勋章id
-             * </pre>
-             * <p>
-             * <code>optional uint32 medal_id = 1;</code>
-             */
-            public int getMedalId() {
-                return medalId_;
-            }
-
-            /**
-             * <pre>
-             * 勋章id
-             * </pre>
-             * <p>
-             * <code>optional uint32 medal_id = 1;</code>
-             */
-            public Builder setMedalId(int value) {
-                bitField0_ |= 0x00000001;
-                medalId_ = value;
-                onChanged();
-                return this;
-            }
-
-            /**
-             * <pre>
-             * 勋章id
-             * </pre>
-             * <p>
-             * <code>optional uint32 medal_id = 1;</code>
-             */
-            public Builder clearMedalId() {
-                bitField0_ = (bitField0_ & ~0x00000001);
-                medalId_ = 0;
-                onChanged();
-                return this;
-            }
-
-            /**
-             * <pre>
-             * 勋章图标
-             * </pre>
-             * <p>
-             * <code>optional string medal_icon = 2;</code>
-             */
-            public boolean hasMedalIcon() {
-                return ((bitField0_ & 0x00000002) == 0x00000002);
-            }
-
-            /**
-             * <pre>
-             * 勋章图标
-             * </pre>
-             * <p>
-             * <code>optional string medal_icon = 2;</code>
-             */
-            public java.lang.String getMedalIcon() {
-                java.lang.Object ref = medalIcon_;
-                if (!(ref instanceof java.lang.String)) {
-                    com.google.protobuf.ByteString bs =
-                            (com.google.protobuf.ByteString) ref;
-                    java.lang.String s = bs.toStringUtf8();
-                    if (bs.isValidUtf8()) {
-                        medalIcon_ = s;
-                    }
-                    return s;
-                } else {
-                    return (java.lang.String) ref;
-                }
-            }
-
-            /**
-             * <pre>
-             * 勋章图标
-             * </pre>
-             * <p>
-             * <code>optional string medal_icon = 2;</code>
-             */
-            public Builder setMedalIcon(
-                    java.lang.String value) {
-                if (value == null) {
-                    throw new NullPointerException();
-                }
-                bitField0_ |= 0x00000002;
-                medalIcon_ = value;
-                onChanged();
-                return this;
-            }
-
-            /**
-             * <pre>
-             * 勋章图标
-             * </pre>
-             * <p>
-             * <code>optional string medal_icon = 2;</code>
-             */
-            public com.google.protobuf.ByteString
-            getMedalIconBytes() {
-                java.lang.Object ref = medalIcon_;
-                if (ref instanceof String) {
-                    com.google.protobuf.ByteString b =
-                            com.google.protobuf.ByteString.copyFromUtf8(
-                                    (java.lang.String) ref);
-                    medalIcon_ = b;
-                    return b;
-                } else {
-                    return (com.google.protobuf.ByteString) ref;
-                }
-            }
-
-            /**
-             * <pre>
-             * 勋章图标
-             * </pre>
-             * <p>
-             * <code>optional string medal_icon = 2;</code>
-             */
-            public Builder setMedalIconBytes(
-                    com.google.protobuf.ByteString value) {
-                if (value == null) {
-                    throw new NullPointerException();
-                }
-                bitField0_ |= 0x00000002;
-                medalIcon_ = value;
-                onChanged();
-                return this;
-            }
-
-            /**
-             * <pre>
-             * 勋章图标
-             * </pre>
-             * <p>
-             * <code>optional string medal_icon = 2;</code>
-             */
-            public Builder clearMedalIcon() {
-                bitField0_ = (bitField0_ & ~0x00000002);
-                medalIcon_ = getDefaultInstance().getMedalIcon();
-                onChanged();
-                return this;
-            }
-
-            public final Builder setUnknownFields(
-                    final com.google.protobuf.UnknownFieldSet unknownFields) {
-                return super.setUnknownFields(unknownFields);
-            }
-
-            public final Builder mergeUnknownFields(
-                    final com.google.protobuf.UnknownFieldSet unknownFields) {
-                return super.mergeUnknownFields(unknownFields);
-            }
-
-
-            // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.Medal)
+          return this;
         }
+      }
 
+      public Builder mergeFrom(com.ceeker.app.study.proto.IliveKaraokeRank.Medal other) {
+        if (other == com.ceeker.app.study.proto.IliveKaraokeRank.Medal.getDefaultInstance()) return this;
+        if (other.hasMedalId()) {
+          setMedalId(other.getMedalId());
+        }
+        if (other.hasMedalIcon()) {
+          bitField0_ |= 0x00000002;
+          medalIcon_ = other.medalIcon_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.ceeker.app.study.proto.IliveKaraokeRank.Medal parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.ceeker.app.study.proto.IliveKaraokeRank.Medal) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      /**
+       * <pre>
+       *勋章id
+       * </pre>
+       *
+       * <code>optional uint32 medal_id = 1;</code>
+       */
+      public boolean hasMedalId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+
+      /**
+       * <pre>
+       *勋章id
+       * </pre>
+       *
+       * <code>optional uint32 medal_id = 1;</code>
+       */
+      public int getMedalId() {
+        return medalId_;
+      }
+
+      /**
+       * <pre>
+       *勋章id
+       * </pre>
+       *
+       * <code>optional uint32 medal_id = 1;</code>
+       */
+      public Builder setMedalId(int value) {
+        bitField0_ |= 0x00000001;
+        medalId_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <pre>
+       *勋章id
+       * </pre>
+       *
+       * <code>optional uint32 medal_id = 1;</code>
+       */
+      public Builder clearMedalId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        medalId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <pre>
+       *勋章图标
+       * </pre>
+       *
+       * <code>optional string medal_icon = 2;</code>
+       */
+      public boolean hasMedalIcon() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <pre>
+       *勋章图标
+       * </pre>
+       *
+       * <code>optional string medal_icon = 2;</code>
+       */
+      public java.lang.String getMedalIcon() {
+        java.lang.Object ref = medalIcon_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            medalIcon_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+
+      /**
+       * <pre>
+       *勋章图标
+       * </pre>
+       *
+       * <code>optional string medal_icon = 2;</code>
+       */
+      public Builder setMedalIcon(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        medalIcon_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <pre>
+       *勋章图标
+       * </pre>
+       *
+       * <code>optional string medal_icon = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMedalIconBytes() {
+        java.lang.Object ref = medalIcon_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          medalIcon_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      /**
+       * <pre>
+       *勋章图标
+       * </pre>
+       *
+       * <code>optional string medal_icon = 2;</code>
+       */
+      public Builder setMedalIconBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        medalIcon_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <pre>
+       *勋章图标
+       * </pre>
+       *
+       * <code>optional string medal_icon = 2;</code>
+       */
+      public Builder clearMedalIcon() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        medalIcon_ = getDefaultInstance().getMedalIcon();
+        onChanged();
+        return this;
+      }
+
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.Medal)
     }
 
-    // @@protoc_insertion_point(outer_class_scope)
+  }
+
+  // @@protoc_insertion_point(outer_class_scope)
 }
