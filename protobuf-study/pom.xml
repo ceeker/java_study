@@ -154,7 +154,7 @@
                 </executions>
             </plugin>
 
-            <!--这个插件可直接将proto文件生成java类参考：参考：https://github.com/os72/protoc-jar-maven-plugin-->
+            <!--直接将proto文件生成java类。参考：https://github.com/os72/protoc-jar-maven-plugin  -->
             <!-- <plugin>
                  <groupId>com.github.os72</groupId>
                  <artifactId>protoc-jar-maven-plugin</artifactId>
