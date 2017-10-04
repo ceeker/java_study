@@ -1,4 +1,4 @@
-package com.zxl.app.study.zk.basic;
+package com.ceeker.app.study.zk.basic;
 
 import org.apache.zookeeper.*;
 

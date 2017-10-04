@@ -1,4 +1,4 @@
-package com.zxl.app.study.zk.applications.config;
+package com.ceeker.app.study.zk.applications.config;
 
 import org.apache.zookeeper.KeeperException;
 

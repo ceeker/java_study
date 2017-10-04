@@ -1,4 +1,4 @@
-package com.zxl.app.study.zk.basic;
+package com.ceeker.app.study.zk.basic;
 
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
@@ -32,7 +32,7 @@ public class ZkStudy {
 
     public static void main(String[] args) throws InterruptedException, IOException, KeeperException {
         ZkStudy zkStudy = new ZkStudy();
-        zkStudy.create(PATH, "zxl");
+        zkStudy.create(PATH, "ceeker");
         zkStudy.delete(PATH);
         zkStudy.set(PATH, "1234");
     }
