@@ -7,6 +7,7 @@ import com.dangdang.ddframe.job.reg.base.CoordinatorRegistryCenter;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
 
+
 public class JobDemo {
 
     public static CoordinatorRegistryCenter createRegistryCenter() {
@@ -25,4 +26,6 @@ public class JobDemo {
         LiteJobConfiguration simpleJobRootConfig = LiteJobConfiguration.newBuilder(simpleJobConfig).build();
         return simpleJobRootConfig;
     }
+
+
 }
