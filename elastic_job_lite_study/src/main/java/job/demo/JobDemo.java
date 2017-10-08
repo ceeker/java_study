@@ -19,7 +19,7 @@ public class JobDemo {
     // 创建作业配置
     public static LiteJobConfiguration createJobConfiguration() {
         // 定义作业核心配置
-        JobCoreConfiguration simpleCoreConfig = JobCoreConfiguration.newBuilder("demoSimpleJob", "0/10 * * * * ?", 10).build();
+        JobCoreConfiguration simpleCoreConfig = JobCoreConfiguration.newBuilder("demoSimpleJob", "0/10 * * * * ?", 1).build();
         // 定义SIMPLE类型配置
         SimpleJobConfiguration simpleJobConfig = new SimpleJobConfiguration(simpleCoreConfig, MySimpleJob.class.getCanonicalName());
         // 定义Lite作业根配置
