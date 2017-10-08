@@ -10,7 +10,7 @@ import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
 public class JobDemo {
 
     public static CoordinatorRegistryCenter createRegistryCenter() {
-        CoordinatorRegistryCenter regCenter = new ZookeeperRegistryCenter(new ZookeeperConfiguration("zktest.qplus.oa.com:2181", "elastic_job"));
+        CoordinatorRegistryCenter regCenter = new ZookeeperRegistryCenter(new ZookeeperConfiguration("localhost:2181", "elastic_job"));
         regCenter.init();
         return regCenter;
     }
