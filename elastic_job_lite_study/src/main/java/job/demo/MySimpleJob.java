@@ -18,7 +18,6 @@ public class MySimpleJob implements SimpleJob {
             case 2:
                 sout(2);
                 break;
-            // case n: ...
         }
     }
 
