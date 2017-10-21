@@ -17,6 +17,7 @@
         <module>zk-study</module>
         <module>protobuf-study</module>
         <module>reactor-study</module>
+        <module>io_study</module>
     </modules>
 
 </project>
