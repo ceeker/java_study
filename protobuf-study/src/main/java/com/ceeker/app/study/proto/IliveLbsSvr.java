@@ -764,6 +764,274 @@ public final class IliveLbsSvr {
           // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.UserLbsInfo)
           UserLbsInfoOrBuilder {
     public static final int UINT64_UIN_FIELD_NUMBER = 1;
+    public static final int BYTES_COUNTRY_FIELD_NUMBER = 2;
+    public static final int UINT32_COUNTRYID_FIELD_NUMBER = 3;
+    public static final int BYTES_PROV_FIELD_NUMBER = 4;
+    public static final int UINT32_PROVID_FIELD_NUMBER = 5;
+    public static final int BYTES_CITY_FIELD_NUMBER = 6;
+    public static final int UINT32_CITYID_FIELD_NUMBER = 7;
+    public static final int UINT32_REPORT_TIME_FIELD_NUMBER = 8;
+    public static final int LATITUDE_FIELD_NUMBER = 9;
+    public static final int LONGITUDE_FIELD_NUMBER = 10;
+
+      /**
+       * <pre>
+       * uin
+       * </pre>
+       * <p>
+       * <code>optional uint64 uint64_uin = 1;</code>
+       */
+      public boolean hasUint64Uin() {
+          return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+
+      /**
+       * <pre>
+       * uin
+       * </pre>
+       * <p>
+       * <code>optional uint64 uint64_uin = 1;</code>
+       */
+      public long getUint64Uin() {
+          return uint64Uin_;
+      }
+
+      public static final int ALTITUDE_FIELD_NUMBER = 11;
+      @java.lang.Deprecated
+      public static final com.google.protobuf.Parser<UserLbsInfo>
+              PARSER = new com.google.protobuf.AbstractParser<UserLbsInfo>() {
+          public UserLbsInfo parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+          return new UserLbsInfo(input, extensionRegistry);
+          }
+      };
+
+      /**
+       * <pre>
+       * uin最后一次上报的国家名称
+       * </pre>
+       * <p>
+       * <code>optional bytes bytes_country = 2;</code>
+       */
+      public boolean hasBytesCountry() {
+          return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+
+      /**
+       * <pre>
+       * uin最后一次上报的国家名称
+       * </pre>
+       * <p>
+       * <code>optional bytes bytes_country = 2;</code>
+       */
+      public com.google.protobuf.ByteString getBytesCountry() {
+          return bytesCountry_;
+    }
+  private static final long serialVersionUID = 0L;
+    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.UserLbsInfo)
+    private static final com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo DEFAULT_INSTANCE;
+
+      /**
+       * <pre>
+       * uin最后一次上报的国家id
+       * </pre>
+       * <p>
+       * <code>optional uint32 uint32_countryid = 3;</code>
+       */
+      public boolean hasUint32Countryid() {
+          return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+
+      /**
+       * <pre>
+       *uin最后一次上报的国家id
+       * </pre>
+       *
+       * <code>optional uint32 uint32_countryid = 3;</code>
+       */
+      public int getUint32Countryid() {
+          return uint32Countryid_;
+      }
+
+      static {
+          DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo();
+      }
+
+      private int bitField0_;
+
+      /**
+       * <pre>
+       * uin最后一次上报的省份名称
+       * </pre>
+       * <p>
+       * <code>optional bytes bytes_prov = 4;</code>
+       */
+      public boolean hasBytesProv() {
+          return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+
+      /**
+       * <pre>
+       *uin最后一次上报的省份名称
+       * </pre>
+       *
+       * <code>optional bytes bytes_prov = 4;</code>
+       */
+      public com.google.protobuf.ByteString getBytesProv() {
+          return bytesProv_;
+      }
+
+      private long uint64Uin_;
+      private com.google.protobuf.ByteString bytesCountry_;
+
+      /**
+       * <pre>
+       * uin最后一次上报的省份id
+       * </pre>
+       * <p>
+       * <code>optional uint32 uint32_provid = 5;</code>
+       */
+      public boolean hasUint32Provid() {
+          return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+
+      /**
+       * <pre>
+       *uin最后一次上报的省份id
+       * </pre>
+       *
+       * <code>optional uint32 uint32_provid = 5;</code>
+       */
+      public int getUint32Provid() {
+          return uint32Provid_;
+      }
+
+      private int uint32Countryid_;
+      private com.google.protobuf.ByteString bytesProv_;
+
+      /**
+       * <pre>
+       * uin最后一次上报的城市名称
+       * </pre>
+       * <p>
+       * <code>optional bytes bytes_city = 6;</code>
+       */
+      public boolean hasBytesCity() {
+          return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+
+      /**
+       * <pre>
+       *uin最后一次上报的城市名称
+       * </pre>
+       *
+       * <code>optional bytes bytes_city = 6;</code>
+       */
+      public com.google.protobuf.ByteString getBytesCity() {
+          return bytesCity_;
+      }
+
+      private int uint32Provid_;
+      private com.google.protobuf.ByteString bytesCity_;
+
+      /**
+       * <pre>
+       * uin最后一次上报的城市id
+       * </pre>
+       * <p>
+       * <code>optional uint32 uint32_cityid = 7;</code>
+       */
+      public boolean hasUint32Cityid() {
+          return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+
+      /**
+       * <pre>
+       * uin最后一次上报的城市id
+       * </pre>
+       * <p>
+       * <code>optional uint32 uint32_cityid = 7;</code>
+       */
+      public int getUint32Cityid() {
+          return uint32Cityid_;
+      }
+
+      private int uint32Cityid_;
+      private int uint32ReportTime_;
+
+      /**
+       * <pre>
+       * 最后一次上报的时间
+       * </pre>
+       * <p>
+       * <code>optional uint32 uint32_report_time = 8;</code>
+       */
+      public boolean hasUint32ReportTime() {
+          return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+
+      /**
+       * <pre>
+       * 最后一次上报的时间
+       * </pre>
+       * <p>
+       * <code>optional uint32 uint32_report_time = 8;</code>
+       */
+      public int getUint32ReportTime() {
+          return uint32ReportTime_;
+      }
+
+      private double latitude_;
+      private double longitude_;
+
+      /**
+       * <pre>
+       *纬度
+       * </pre>
+       *
+       * <code>optional double latitude = 9;</code>
+       */
+      public boolean hasLatitude() {
+          return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+
+      /**
+       * <pre>
+       * 纬度
+       * </pre>
+       * <p>
+       * <code>optional double latitude = 9;</code>
+       */
+      public double getLatitude() {
+          return latitude_;
+      }
+
+      private double altitude_;
+      private byte memoizedIsInitialized = -1;
+
+      /**
+       * <pre>
+       * 经度
+       * </pre>
+       * <p>
+       * <code>optional double longitude = 10;</code>
+       */
+      public boolean hasLongitude() {
+          return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+
+      /**
+       * <pre>
+       * 经度
+       * </pre>
+       * <p>
+       * <code>optional double longitude = 10;</code>
+       */
+      public double getLongitude() {
+          return longitude_;
+      }
 
       // Use UserLbsInfo.newBuilder() to construct.
       private UserLbsInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -783,55 +1051,37 @@ public final class IliveLbsSvr {
           longitude_ = 0D;
           altitude_ = 0D;
       }
-    public static final int BYTES_COUNTRY_FIELD_NUMBER = 2;
-    public static final int UINT32_COUNTRYID_FIELD_NUMBER = 3;
-    public static final int BYTES_PROV_FIELD_NUMBER = 4;
-    public static final int UINT32_PROVID_FIELD_NUMBER = 5;
-    public static final int BYTES_CITY_FIELD_NUMBER = 6;
-    public static final int UINT32_CITYID_FIELD_NUMBER = 7;
-    public static final int UINT32_REPORT_TIME_FIELD_NUMBER = 8;
-    public static final int LATITUDE_FIELD_NUMBER = 9;
-    public static final int LONGITUDE_FIELD_NUMBER = 10;
-    public static final int ALTITUDE_FIELD_NUMBER = 11;
-      @java.lang.Deprecated
-      public static final com.google.protobuf.Parser<UserLbsInfo>
-              PARSER = new com.google.protobuf.AbstractParser<UserLbsInfo>() {
-      public UserLbsInfo parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-          return new UserLbsInfo(input, extensionRegistry);
+
+      /**
+       * <pre>
+       * 海拔
+       * </pre>
+       * <p>
+       * <code>optional double altitude = 11;</code>
+       */
+      public boolean hasAltitude() {
+          return ((bitField0_ & 0x00000400) == 0x00000400);
       }
-    };
-      private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.UserLbsInfo)
-    private static final com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo DEFAULT_INSTANCE;
 
-    static {
-      DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo();
-    }
+      /**
+       * <pre>
+       *海拔
+       * </pre>
+       *
+       * <code>optional double altitude = 11;</code>
+       */
+      public double getAltitude() {
+          return altitude_;
+      }
 
-    private int bitField0_;
-    private long uint64Uin_;
-    private com.google.protobuf.ByteString bytesCountry_;
-    private int uint32Countryid_;
-    private com.google.protobuf.ByteString bytesProv_;
-    private int uint32Provid_;
-    private com.google.protobuf.ByteString bytesCity_;
-    private int uint32Cityid_;
-    private int uint32ReportTime_;
-    private double latitude_;
-    private double longitude_;
-    private double altitude_;
-    private byte memoizedIsInitialized = -1;
     private UserLbsInfo(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      int mutable_bitField0_ = 0;
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+        this();
+        int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-              com.google.protobuf.UnknownFieldSet.newBuilder();
+          com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
         boolean done = false;
         while (!done) {
@@ -842,7 +1092,7 @@ public final class IliveLbsSvr {
               break;
             default: {
               if (!parseUnknownField(
-                      input, unknownFields, extensionRegistry, tag)) {
+                  input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
               break;
@@ -894,8 +1144,8 @@ public final class IliveLbsSvr {
             }
             case 81: {
               bitField0_ |= 0x00000200;
-              longitude_ = input.readDouble();
-              break;
+                longitude_ = input.readDouble();
+                break;
             }
             case 89: {
               bitField0_ |= 0x00000400;
@@ -910,95 +1160,95 @@ public final class IliveLbsSvr {
         throw new com.google.protobuf.InvalidProtocolBufferException(
                 e).setUnfinishedMessage(this);
       } finally {
-        this.unknownFields = unknownFields.build();
+          this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
     getDescriptor() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_descriptor;
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_descriptor;
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+      }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+      }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+      }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+        throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+        return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(java.io.InputStream input)
+              throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
+              java.io.InputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
-    }
+      }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
-    }
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseDelimitedFrom(java.io.InputStream input)
+              throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+      }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+              throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static Builder newBuilder() {
@@ -1009,280 +1259,38 @@ public final class IliveLbsSvr {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getDefaultInstance() {
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     public static com.google.protobuf.Parser<UserLbsInfo> parser() {
-      return PARSER;
+        return PARSER;
     }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder.class);
-    }
-
-    /**
-     * <pre>
-     *uin
-     * </pre>
-     *
-     * <code>optional uint64 uint64_uin = 1;</code>
-     */
-    public boolean hasUint64Uin() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-
-    /**
-     * <pre>
-     *uin
-     * </pre>
-     *
-     * <code>optional uint64 uint64_uin = 1;</code>
-     */
-    public long getUint64Uin() {
-      return uint64Uin_;
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的国家名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_country = 2;</code>
-     */
-    public boolean hasBytesCountry() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-
-      public final boolean isInitialized() {
-          byte isInitialized = memoizedIsInitialized;
-          if (isInitialized == 1) return true;
-          if (isInitialized == 0) return false;
-
-          memoizedIsInitialized = 1;
-          return true;
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+          return this.unknownFields;
       }
 
-    /**
-     * <pre>
-     *uin最后一次上报的国家名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_country = 2;</code>
-     */
-    public com.google.protobuf.ByteString getBytesCountry() {
-      return bytesCountry_;
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+          return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+                  com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder.class);
     }
 
-    /**
-     * <pre>
-     *uin最后一次上报的国家id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_countryid = 3;</code>
-     */
-    public boolean hasUint32Countryid() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
-    /**
-     * <pre>
-     *uin最后一次上报的国家id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_countryid = 3;</code>
-     */
-    public int getUint32Countryid() {
-      return uint32Countryid_;
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的省份名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_prov = 4;</code>
-     */
-    public boolean hasBytesProv() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的省份名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_prov = 4;</code>
-     */
-    public com.google.protobuf.ByteString getBytesProv() {
-      return bytesProv_;
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的省份id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_provid = 5;</code>
-     */
-    public boolean hasUint32Provid() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的省份id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_provid = 5;</code>
-     */
-    public int getUint32Provid() {
-      return uint32Provid_;
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的城市名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_city = 6;</code>
-     */
-    public boolean hasBytesCity() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的城市名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_city = 6;</code>
-     */
-    public com.google.protobuf.ByteString getBytesCity() {
-      return bytesCity_;
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的城市id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_cityid = 7;</code>
-     */
-    public boolean hasUint32Cityid() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-
-    /**
-     * <pre>
-     *uin最后一次上报的城市id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_cityid = 7;</code>
-     */
-    public int getUint32Cityid() {
-      return uint32Cityid_;
-    }
-
-    /**
-     * <pre>
-     *最后一次上报的时间
-     * </pre>
-     *
-     * <code>optional uint32 uint32_report_time = 8;</code>
-     */
-    public boolean hasUint32ReportTime() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
-    }
-
-    /**
-     * <pre>
-     *最后一次上报的时间
-     * </pre>
-     *
-     * <code>optional uint32 uint32_report_time = 8;</code>
-     */
-    public int getUint32ReportTime() {
-      return uint32ReportTime_;
-    }
-
-    /**
-     * <pre>
-     *纬度
-     * </pre>
-     *
-     * <code>optional double latitude = 9;</code>
-     */
-    public boolean hasLatitude() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
-    }
-
-    /**
-     * <pre>
-     *纬度
-     * </pre>
-     *
-     * <code>optional double latitude = 9;</code>
-     */
-    public double getLatitude() {
-      return latitude_;
-    }
-
-    /**
-     * <pre>
-     *经度
-     * </pre>
-     *
-     * <code>optional double longitude = 10;</code>
-     */
-    public boolean hasLongitude() {
-      return ((bitField0_ & 0x00000200) == 0x00000200);
-    }
-
-    /**
-     * <pre>
-     *经度
-     * </pre>
-     *
-     * <code>optional double longitude = 10;</code>
-     */
-    public double getLongitude() {
-      return longitude_;
-    }
-
-    /**
-     * <pre>
-     *海拔
-     * </pre>
-     *
-     * <code>optional double altitude = 11;</code>
-     */
-    public boolean hasAltitude() {
-      return ((bitField0_ & 0x00000400) == 0x00000400);
-    }
-
-    /**
-     * <pre>
-     *海拔
-     * </pre>
-     *
-     * <code>optional double altitude = 11;</code>
-     */
-    public double getAltitude() {
-      return altitude_;
+      memoizedIsInitialized = 1;
+      return true;
     }
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeUInt64(1, uint64Uin_);
       }
@@ -1311,62 +1319,62 @@ public final class IliveLbsSvr {
         output.writeDouble(9, latitude_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeDouble(10, longitude_);
+          output.writeDouble(10, longitude_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
         output.writeDouble(11, altitude_);
       }
-      unknownFields.writeTo(output);
+        unknownFields.writeTo(output);
     }
 
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
 
-      size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt64Size(1, uint64Uin_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          .computeUInt64Size(1, uint64Uin_);
+        }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeBytesSize(2, bytesCountry_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          .computeBytesSize(2, bytesCountry_);
+        }
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(3, uint32Countryid_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          .computeUInt32Size(3, uint32Countryid_);
+        }
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeBytesSize(4, bytesProv_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          .computeBytesSize(4, bytesProv_);
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(5, uint32Provid_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+          .computeUInt32Size(5, uint32Provid_);
+        }
+        if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeBytesSize(6, bytesCity_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+          .computeBytesSize(6, bytesCity_);
+        }
+        if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(7, uint32Cityid_);
-      }
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+          .computeUInt32Size(7, uint32Cityid_);
+        }
+        if (((bitField0_ & 0x00000080) == 0x00000080)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(8, uint32ReportTime_);
-      }
-      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+          .computeUInt32Size(8, uint32ReportTime_);
+        }
+        if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeDoubleSize(9, latitude_);
+          .computeDoubleSize(9, latitude_);
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeDoubleSize(10, longitude_);
+          .computeDoubleSize(10, longitude_);
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeDoubleSize(11, altitude_);
+          .computeDoubleSize(11, altitude_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1375,8 +1383,8 @@ public final class IliveLbsSvr {
 
     @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-          return true;
+        if (obj == this) {
+            return true;
       }
       if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo)) {
         return super.equals(obj);
@@ -1386,66 +1394,66 @@ public final class IliveLbsSvr {
       boolean result = true;
       result = result && (hasUint64Uin() == other.hasUint64Uin());
       if (hasUint64Uin()) {
-        result = result && (getUint64Uin()
-                == other.getUint64Uin());
+          result = result && (getUint64Uin()
+            == other.getUint64Uin());
       }
       result = result && (hasBytesCountry() == other.hasBytesCountry());
       if (hasBytesCountry()) {
-        result = result && getBytesCountry()
-                .equals(other.getBytesCountry());
+          result = result && getBytesCountry()
+            .equals(other.getBytesCountry());
       }
       result = result && (hasUint32Countryid() == other.hasUint32Countryid());
       if (hasUint32Countryid()) {
-        result = result && (getUint32Countryid()
-                == other.getUint32Countryid());
+          result = result && (getUint32Countryid()
+            == other.getUint32Countryid());
       }
       result = result && (hasBytesProv() == other.hasBytesProv());
-      if (hasBytesProv()) {
-        result = result && getBytesProv()
-                .equals(other.getBytesProv());
+        if (hasBytesProv()) {
+            result = result && getBytesProv()
+            .equals(other.getBytesProv());
       }
       result = result && (hasUint32Provid() == other.hasUint32Provid());
-      if (hasUint32Provid()) {
-        result = result && (getUint32Provid()
-                == other.getUint32Provid());
+        if (hasUint32Provid()) {
+            result = result && (getUint32Provid()
+            == other.getUint32Provid());
       }
       result = result && (hasBytesCity() == other.hasBytesCity());
       if (hasBytesCity()) {
-        result = result && getBytesCity()
-                .equals(other.getBytesCity());
+          result = result && getBytesCity()
+            .equals(other.getBytesCity());
       }
       result = result && (hasUint32Cityid() == other.hasUint32Cityid());
-      if (hasUint32Cityid()) {
-        result = result && (getUint32Cityid()
-                == other.getUint32Cityid());
-      }
-      result = result && (hasUint32ReportTime() == other.hasUint32ReportTime());
+        if (hasUint32Cityid()) {
+            result = result && (getUint32Cityid()
+                    == other.getUint32Cityid());
+        }
+        result = result && (hasUint32ReportTime() == other.hasUint32ReportTime());
       if (hasUint32ReportTime()) {
         result = result && (getUint32ReportTime()
                 == other.getUint32ReportTime());
       }
-      result = result && (hasLatitude() == other.hasLatitude());
-      if (hasLatitude()) {
+        result = result && (hasLatitude() == other.hasLatitude());
+        if (hasLatitude()) {
         result = result && (
-                java.lang.Double.doubleToLongBits(getLatitude())
-                        == java.lang.Double.doubleToLongBits(
-                        other.getLatitude()));
-      }
-      result = result && (hasLongitude() == other.hasLongitude());
-      if (hasLongitude()) {
+            java.lang.Double.doubleToLongBits(getLatitude())
+            == java.lang.Double.doubleToLongBits(
+                    other.getLatitude()));
+        }
+        result = result && (hasLongitude() == other.hasLongitude());
+        if (hasLongitude()) {
         result = result && (
-                java.lang.Double.doubleToLongBits(getLongitude())
-                        == java.lang.Double.doubleToLongBits(
-                        other.getLongitude()));
+            java.lang.Double.doubleToLongBits(getLongitude())
+            == java.lang.Double.doubleToLongBits(
+                other.getLongitude()));
       }
       result = result && (hasAltitude() == other.hasAltitude());
       if (hasAltitude()) {
         result = result && (
-                java.lang.Double.doubleToLongBits(getAltitude())
-                        == java.lang.Double.doubleToLongBits(
-                        other.getAltitude()));
+            java.lang.Double.doubleToLongBits(getAltitude())
+            == java.lang.Double.doubleToLongBits(
+                other.getAltitude()));
       }
-      result = result && unknownFields.equals(other.unknownFields);
+        result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
 
@@ -1459,7 +1467,7 @@ public final class IliveLbsSvr {
       if (hasUint64Uin()) {
         hash = (37 * hash) + UINT64_UIN_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                getUint64Uin());
+            getUint64Uin());
       }
       if (hasBytesCountry()) {
         hash = (37 * hash) + BYTES_COUNTRY_FIELD_NUMBER;
@@ -1481,13 +1489,13 @@ public final class IliveLbsSvr {
         hash = (37 * hash) + BYTES_CITY_FIELD_NUMBER;
         hash = (53 * hash) + getBytesCity().hashCode();
       }
-      if (hasUint32Cityid()) {
-        hash = (37 * hash) + UINT32_CITYID_FIELD_NUMBER;
+        if (hasUint32Cityid()) {
+            hash = (37 * hash) + UINT32_CITYID_FIELD_NUMBER;
         hash = (53 * hash) + getUint32Cityid();
       }
       if (hasUint32ReportTime()) {
         hash = (37 * hash) + UINT32_REPORT_TIME_FIELD_NUMBER;
-        hash = (53 * hash) + getUint32ReportTime();
+          hash = (53 * hash) + getUint32ReportTime();
       }
       if (hasLatitude()) {
         hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
@@ -1496,11 +1504,11 @@ public final class IliveLbsSvr {
       }
       if (hasLongitude()) {
         hash = (37 * hash) + LONGITUDE_FIELD_NUMBER;
-        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-                java.lang.Double.doubleToLongBits(getLongitude()));
+          hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            java.lang.Double.doubleToLongBits(getLongitude()));
       }
-      if (hasAltitude()) {
-        hash = (37 * hash) + ALTITUDE_FIELD_NUMBER;
+        if (hasAltitude()) {
+            hash = (37 * hash) + ALTITUDE_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
                 java.lang.Double.doubleToLongBits(getAltitude()));
       }
@@ -1509,42 +1517,40 @@ public final class IliveLbsSvr {
       return hash;
     }
 
-      public Builder newBuilderForType() {
-          return newBuilder();
-      }
+    public Builder newBuilderForType() { return newBuilder(); }
 
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
     @java.lang.Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<UserLbsInfo> getParserForType() {
-      return PARSER;
-    }
+      @java.lang.Override
+      public com.google.protobuf.Parser<UserLbsInfo> getParserForType() {
+          return PARSER;
+      }
 
-    public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
+      public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getDefaultInstanceForType() {
+          return DEFAULT_INSTANCE;
     }
 
     /**
      * Protobuf type {@code com.ceeker.app.study.proto.UserLbsInfo}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.UserLbsInfo)
-            com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.UserLbsInfo)
+        com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder {
       private int bitField0_;
-        private long uint64Uin_;
+      private long uint64Uin_ ;
       private com.google.protobuf.ByteString bytesCountry_ = com.google.protobuf.ByteString.EMPTY;
-        private int uint32Countryid_;
+      private int uint32Countryid_ ;
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
@@ -1563,9 +1569,9 @@ public final class IliveLbsSvr {
         uint32Provid_ = 0;
         bitField0_ = (bitField0_ & ~0x00000010);
         bytesCity_ = com.google.protobuf.ByteString.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        uint32Cityid_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00000020);
+          uint32Cityid_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000040);
         uint32ReportTime_ = 0;
         bitField0_ = (bitField0_ & ~0x00000080);
         latitude_ = 0D;
@@ -1576,8 +1582,7 @@ public final class IliveLbsSvr {
         bitField0_ = (bitField0_ & ~0x00000400);
         return this;
       }
-
-        private com.google.protobuf.ByteString bytesProv_ = com.google.protobuf.ByteString.EMPTY;
+      private com.google.protobuf.ByteString bytesProv_ = com.google.protobuf.ByteString.EMPTY;
 
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getDefaultInstanceForType() {
         return com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance();
@@ -1632,13 +1637,13 @@ public final class IliveLbsSvr {
         }
         result.latitude_ = latitude_;
         if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
-          to_bitField0_ |= 0x00000200;
+            to_bitField0_ |= 0x00000200;
         }
-        result.longitude_ = longitude_;
-        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
-          to_bitField0_ |= 0x00000400;
-        }
-        result.altitude_ = altitude_;
+          result.longitude_ = longitude_;
+          if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+              to_bitField0_ |= 0x00000400;
+          }
+          result.altitude_ = altitude_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1647,13 +1652,12 @@ public final class IliveLbsSvr {
       public Builder clone() {
         return (Builder) super.clone();
       }
-
-        private int uint32Provid_;
-        private com.google.protobuf.ByteString bytesCity_ = com.google.protobuf.ByteString.EMPTY;
-        private int uint32Cityid_;
-        private int uint32ReportTime_;
-        private double latitude_;
-        private double longitude_;
+      private int uint32Provid_ ;
+      private com.google.protobuf.ByteString bytesCity_ = com.google.protobuf.ByteString.EMPTY;
+      private int uint32Cityid_ ;
+      private int uint32ReportTime_ ;
+      private double latitude_ ;
+      private double longitude_ ;
 
       public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo other) {
         if (other == com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance()) return this;
@@ -1681,109 +1685,34 @@ public final class IliveLbsSvr {
         if (other.hasUint32ReportTime()) {
           setUint32ReportTime(other.getUint32ReportTime());
         }
-        if (other.hasLatitude()) {
-          setLatitude(other.getLatitude());
-        }
-        if (other.hasLongitude()) {
-          setLongitude(other.getLongitude());
-        }
-        if (other.hasAltitude()) {
-          setAltitude(other.getAltitude());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
+          if (other.hasLatitude()) {
+              setLatitude(other.getLatitude());
+          }
+          if (other.hasLongitude()) {
+              setLongitude(other.getLongitude());
+          }
+          if (other.hasAltitude()) {
+              setAltitude(other.getAltitude());
+          }
+          this.mergeUnknownFields(other.unknownFields);
+          onChanged();
+          return this;
       }
 
       public final boolean isInitialized() {
         return true;
       }
-
-        private double altitude_;
-
-        // Construct using com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.newBuilder()
-        private Builder() {
-            maybeForceBuilderInitialization();
-        }
-
-        private Builder(
-                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-            super(parent);
-            maybeForceBuilderInitialization();
-        }
-
-        public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_descriptor;
-        }
-
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder.class);
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_descriptor;
-        }
-
-        public Builder setField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                java.lang.Object value) {
-            return (Builder) super.setField(field, value);
-        }
-
-        public Builder clearField(
-                com.google.protobuf.Descriptors.FieldDescriptor field) {
-            return (Builder) super.clearField(field);
-        }
-
-        public Builder clearOneof(
-                com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-            return (Builder) super.clearOneof(oneof);
-        }
-
-        public Builder setRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, java.lang.Object value) {
-            return (Builder) super.setRepeatedField(field, index, value);
-        }
-
-        public Builder addRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                java.lang.Object value) {
-            return (Builder) super.addRepeatedField(field, value);
-        }
-
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo) {
-                return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo) other);
-            } else {
-                super.mergeFrom(other);
-                return this;
-            }
-        }
-
-      public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
-        com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
+      private double altitude_ ;
+      // Construct using com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
       }
 
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
       /**
        * <pre>
        *uin
@@ -1794,7 +1723,6 @@ public final class IliveLbsSvr {
       public boolean hasUint64Uin() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-
       /**
        * <pre>
        *uin
@@ -1805,7 +1733,6 @@ public final class IliveLbsSvr {
       public long getUint64Uin() {
         return uint64Uin_;
       }
-
       /**
        * <pre>
        *uin
@@ -1814,16 +1741,16 @@ public final class IliveLbsSvr {
        * <code>optional uint64 uint64_uin = 1;</code>
        */
       public Builder setUint64Uin(long value) {
-        bitField0_ |= 0x00000001;
-        uint64Uin_ = value;
-        onChanged();
-        return this;
+          bitField0_ |= 0x00000001;
+          uint64Uin_ = value;
+          onChanged();
+          return this;
       }
 
-      /**
-       * <pre>
-       *uin
-       * </pre>
+        /**
+         * <pre>
+         *uin
+         * </pre>
        *
        * <code>optional uint64 uint64_uin = 1;</code>
        */
@@ -1834,6 +1761,10 @@ public final class IliveLbsSvr {
         return this;
       }
 
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_descriptor;
+      }
       /**
        * <pre>
        *uin最后一次上报的国家名称
@@ -1842,41 +1773,31 @@ public final class IliveLbsSvr {
        * <code>optional bytes bytes_country = 2;</code>
        */
       public boolean hasBytesCountry() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+          return ((bitField0_ & 0x00000002) == 0x00000002);
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_country = 2;</code>
-       */
-      public com.google.protobuf.ByteString getBytesCountry() {
-        return bytesCountry_;
+        /**
+         * <pre>
+         * uin最后一次上报的国家名称
+         * </pre>
+         * <p>
+         * <code>optional bytes bytes_country = 2;</code>
+         */
+        public com.google.protobuf.ByteString getBytesCountry() {
+            return bytesCountry_;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_country = 2;</code>
-       */
-      public Builder setBytesCountry(com.google.protobuf.ByteString value) {
-        if (value == null) {
-            throw new NullPointerException();
-        }
-          bitField0_ |= 0x00000002;
-        bytesCountry_ = value;
-        onChanged();
-        return this;
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                    com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder.class);
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家名称
-       * </pre>
+        /**
+         * <pre>
+         *uin最后一次上报的国家名称
+         * </pre>
        *
        * <code>optional bytes bytes_country = 2;</code>
        */
@@ -1887,6 +1808,10 @@ public final class IliveLbsSvr {
         return this;
       }
 
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLbsInfo_descriptor;
+      }
       /**
        * <pre>
        *uin最后一次上报的国家id
@@ -1897,7 +1822,6 @@ public final class IliveLbsSvr {
       public boolean hasUint32Countryid() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-
       /**
        * <pre>
        *uin最后一次上报的国家id
@@ -1908,7 +1832,6 @@ public final class IliveLbsSvr {
       public int getUint32Countryid() {
         return uint32Countryid_;
       }
-
       /**
        * <pre>
        *uin最后一次上报的国家id
@@ -1917,13 +1840,13 @@ public final class IliveLbsSvr {
        * <code>optional uint32 uint32_countryid = 3;</code>
        */
       public Builder setUint32Countryid(int value) {
-        bitField0_ |= 0x00000004;
-        uint32Countryid_ = value;
-        onChanged();
-        return this;
+          bitField0_ |= 0x00000004;
+          uint32Countryid_ = value;
+          onChanged();
+          return this;
       }
 
-      /**
+        /**
        * <pre>
        *uin最后一次上报的国家id
        * </pre>
@@ -1937,17 +1860,22 @@ public final class IliveLbsSvr {
         return this;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的省份名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_prov = 4;</code>
+        public Builder setField(
+                com.google.protobuf.Descriptors.FieldDescriptor field,
+                java.lang.Object value) {
+            return (Builder) super.setField(field, value);
+        }
+
+        /**
+         * <pre>
+         *uin最后一次上报的省份名称
+         * </pre>
+         *
+         * <code>optional bytes bytes_prov = 4;</code>
        */
       public boolean hasBytesProv() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份名称
@@ -1959,23 +1887,10 @@ public final class IliveLbsSvr {
         return bytesProv_;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的省份名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_prov = 4;</code>
-       */
-      public Builder setBytesProv(com.google.protobuf.ByteString value) {
-        if (value == null) {
-            throw new NullPointerException();
-        }
-          bitField0_ |= 0x00000008;
-        bytesProv_ = value;
-        onChanged();
-        return this;
+        public Builder clearField(
+                com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return (Builder) super.clearField(field);
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份名称
@@ -1990,6 +1905,10 @@ public final class IliveLbsSvr {
         return this;
       }
 
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
       /**
        * <pre>
        *uin最后一次上报的省份id
@@ -2000,7 +1919,6 @@ public final class IliveLbsSvr {
       public boolean hasUint32Provid() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份id
@@ -2011,7 +1929,6 @@ public final class IliveLbsSvr {
       public int getUint32Provid() {
         return uint32Provid_;
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份id
@@ -2020,15 +1937,15 @@ public final class IliveLbsSvr {
        * <code>optional uint32 uint32_provid = 5;</code>
        */
       public Builder setUint32Provid(int value) {
-        bitField0_ |= 0x00000010;
-        uint32Provid_ = value;
-        onChanged();
-        return this;
+          bitField0_ |= 0x00000010;
+          uint32Provid_ = value;
+          onChanged();
+          return this;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的省份id
+        /**
+         * <pre>
+         *uin最后一次上报的省份id
        * </pre>
        *
        * <code>optional uint32 uint32_provid = 5;</code>
@@ -2040,17 +1957,22 @@ public final class IliveLbsSvr {
         return this;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的城市名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_city = 6;</code>
-       */
-      public boolean hasBytesCity() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
+        public Builder setRepeatedField(
+                com.google.protobuf.Descriptors.FieldDescriptor field,
+                int index, java.lang.Object value) {
+            return (Builder) super.setRepeatedField(field, index, value);
+        }
 
+        /**
+         * <pre>
+         * uin最后一次上报的城市名称
+         * </pre>
+         * <p>
+         * <code>optional bytes bytes_city = 6;</code>
+         */
+        public boolean hasBytesCity() {
+            return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
       /**
        * <pre>
        *uin最后一次上报的城市名称
@@ -2062,29 +1984,18 @@ public final class IliveLbsSvr {
         return bytesCity_;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的城市名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_city = 6;</code>
-       */
-      public Builder setBytesCity(com.google.protobuf.ByteString value) {
-        if (value == null) {
-            throw new NullPointerException();
+        public Builder addRepeatedField(
+                com.google.protobuf.Descriptors.FieldDescriptor field,
+                java.lang.Object value) {
+            return (Builder) super.addRepeatedField(field, value);
         }
-          bitField0_ |= 0x00000020;
-        bytesCity_ = value;
-        onChanged();
-        return this;
-      }
 
-      /**
-       * <pre>
-       *uin最后一次上报的城市名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_city = 6;</code>
+        /**
+         * <pre>
+         *uin最后一次上报的城市名称
+         * </pre>
+         *
+         * <code>optional bytes bytes_city = 6;</code>
        */
       public Builder clearBytesCity() {
         bitField0_ = (bitField0_ & ~0x00000020);
@@ -2093,6 +2004,14 @@ public final class IliveLbsSvr {
         return this;
       }
 
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo) {
+          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
       /**
        * <pre>
        *uin最后一次上报的城市id
@@ -2103,7 +2022,6 @@ public final class IliveLbsSvr {
       public boolean hasUint32Cityid() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
-
       /**
        * <pre>
        *uin最后一次上报的城市id
@@ -2114,7 +2032,6 @@ public final class IliveLbsSvr {
       public int getUint32Cityid() {
         return uint32Cityid_;
       }
-
       /**
        * <pre>
        *uin最后一次上报的城市id
@@ -2123,26 +2040,43 @@ public final class IliveLbsSvr {
        * <code>optional uint32 uint32_cityid = 7;</code>
        */
       public Builder setUint32Cityid(int value) {
-        bitField0_ |= 0x00000040;
-        uint32Cityid_ = value;
-        onChanged();
-        return this;
+          bitField0_ |= 0x00000040;
+          uint32Cityid_ = value;
+          onChanged();
+          return this;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的城市id
-       * </pre>
-       *
-       * <code>optional uint32 uint32_cityid = 7;</code>
-       */
-      public Builder clearUint32Cityid() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        uint32Cityid_ = 0;
-        onChanged();
-        return this;
-      }
+        /**
+         * <pre>
+         * uin最后一次上报的城市id
+         * </pre>
+         * <p>
+         * <code>optional uint32 uint32_cityid = 7;</code>
+         */
+        public Builder clearUint32Cityid() {
+            bitField0_ = (bitField0_ & ~0x00000040);
+            uint32Cityid_ = 0;
+            onChanged();
+            return this;
+        }
 
+        public Builder mergeFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo parsedMessage = null;
+            try {
+                parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo) e.getUnfinishedMessage();
+                throw e.unwrapIOException();
+            } finally {
+                if (parsedMessage != null) {
+                    mergeFrom(parsedMessage);
+                }
+            }
+            return this;
+        }
       /**
        * <pre>
        *最后一次上报的时间
@@ -2153,7 +2087,6 @@ public final class IliveLbsSvr {
       public boolean hasUint32ReportTime() {
         return ((bitField0_ & 0x00000080) == 0x00000080);
       }
-
       /**
        * <pre>
        *最后一次上报的时间
@@ -2164,7 +2097,6 @@ public final class IliveLbsSvr {
       public int getUint32ReportTime() {
         return uint32ReportTime_;
       }
-
       /**
        * <pre>
        *最后一次上报的时间
@@ -2173,26 +2105,42 @@ public final class IliveLbsSvr {
        * <code>optional uint32 uint32_report_time = 8;</code>
        */
       public Builder setUint32ReportTime(int value) {
-        bitField0_ |= 0x00000080;
-        uint32ReportTime_ = value;
-        onChanged();
-        return this;
+          bitField0_ |= 0x00000080;
+          uint32ReportTime_ = value;
+          onChanged();
+          return this;
       }
 
-      /**
-       * <pre>
-       *最后一次上报的时间
-       * </pre>
-       *
-       * <code>optional uint32 uint32_report_time = 8;</code>
-       */
-      public Builder clearUint32ReportTime() {
+        /**
+         * <pre>
+         * 最后一次上报的时间
+         * </pre>
+         * <p>
+         * <code>optional uint32 uint32_report_time = 8;</code>
+         */
+        public Builder clearUint32ReportTime() {
         bitField0_ = (bitField0_ & ~0x00000080);
         uint32ReportTime_ = 0;
         onChanged();
         return this;
       }
 
+      /**
+       * <pre>
+       *uin最后一次上报的国家名称
+       * </pre>
+       *
+       * <code>optional bytes bytes_country = 2;</code>
+       */
+      public Builder setBytesCountry(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        bytesCountry_ = value;
+        onChanged();
+        return this;
+      }
       /**
        * <pre>
        *纬度
@@ -2203,7 +2151,6 @@ public final class IliveLbsSvr {
       public boolean hasLatitude() {
         return ((bitField0_ & 0x00000100) == 0x00000100);
       }
-
       /**
        * <pre>
        *纬度
@@ -2212,29 +2159,29 @@ public final class IliveLbsSvr {
        * <code>optional double latitude = 9;</code>
        */
       public double getLatitude() {
-        return latitude_;
+          return latitude_;
       }
 
-      /**
-       * <pre>
-       *纬度
-       * </pre>
-       *
-       * <code>optional double latitude = 9;</code>
-       */
-      public Builder setLatitude(double value) {
-        bitField0_ |= 0x00000100;
-        latitude_ = value;
-        onChanged();
-        return this;
-      }
+        /**
+         * <pre>
+         * 纬度
+         * </pre>
+         * <p>
+         * <code>optional double latitude = 9;</code>
+         */
+        public Builder setLatitude(double value) {
+            bitField0_ |= 0x00000100;
+            latitude_ = value;
+            onChanged();
+            return this;
+        }
 
-      /**
-       * <pre>
-       *纬度
-       * </pre>
-       *
-       * <code>optional double latitude = 9;</code>
+        /**
+         * <pre>
+         *纬度
+         * </pre>
+         *
+         * <code>optional double latitude = 9;</code>
        */
       public Builder clearLatitude() {
         bitField0_ = (bitField0_ & ~0x00000100);
@@ -2245,6 +2192,22 @@ public final class IliveLbsSvr {
 
       /**
        * <pre>
+       *uin最后一次上报的省份名称
+       * </pre>
+       *
+       * <code>optional bytes bytes_prov = 4;</code>
+       */
+      public Builder setBytesProv(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        bytesProv_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
        *经度
        * </pre>
        *
@@ -2253,7 +2216,6 @@ public final class IliveLbsSvr {
       public boolean hasLongitude() {
         return ((bitField0_ & 0x00000200) == 0x00000200);
       }
-
       /**
        * <pre>
        *经度
@@ -2262,26 +2224,26 @@ public final class IliveLbsSvr {
        * <code>optional double longitude = 10;</code>
        */
       public double getLongitude() {
-        return longitude_;
+          return longitude_;
       }
 
-      /**
-       * <pre>
-       *经度
-       * </pre>
-       *
-       * <code>optional double longitude = 10;</code>
-       */
-      public Builder setLongitude(double value) {
-        bitField0_ |= 0x00000200;
-        longitude_ = value;
-        onChanged();
-        return this;
-      }
+        /**
+         * <pre>
+         * 经度
+         * </pre>
+         * <p>
+         * <code>optional double longitude = 10;</code>
+         */
+        public Builder setLongitude(double value) {
+            bitField0_ |= 0x00000200;
+            longitude_ = value;
+            onChanged();
+            return this;
+        }
 
-      /**
-       * <pre>
-       *经度
+        /**
+         * <pre>
+         *经度
        * </pre>
        *
        * <code>optional double longitude = 10;</code>
@@ -2293,6 +2255,22 @@ public final class IliveLbsSvr {
         return this;
       }
 
+      /**
+       * <pre>
+       *uin最后一次上报的城市名称
+       * </pre>
+       *
+       * <code>optional bytes bytes_city = 6;</code>
+       */
+      public Builder setBytesCity(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000020;
+        bytesCity_ = value;
+        onChanged();
+        return this;
+      }
       /**
        * <pre>
        *海拔
@@ -2311,7 +2289,7 @@ public final class IliveLbsSvr {
        * <code>optional double altitude = 11;</code>
        */
       public double getAltitude() {
-        return altitude_;
+          return altitude_;
       }
       /**
        * <pre>
@@ -2334,48 +2312,38 @@ public final class IliveLbsSvr {
        * <code>optional double altitude = 11;</code>
        */
       public Builder clearAltitude() {
-        bitField0_ = (bitField0_ & ~0x00000400);
-        altitude_ = 0D;
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
+          bitField0_ = (bitField0_ & ~0x00000400);
+          altitude_ = 0D;
+          onChanged();
+          return this;
       }
 
-      public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
+        public final Builder setUnknownFields(
+                final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+        }
+
+        public final Builder mergeUnknownFields(
+                final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
-      }
+        }
 
 
-      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.UserLbsInfo)
+        // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.UserLbsInfo)
     }
 
   }
 
-  /**
-   * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsReq}
+    /**
+     * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsReq}
    */
-  public static final class GetQQLbsReq extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetQQLbsReq)
-          GetQQLbsReqOrBuilder {
+  public  static final class GetQQLbsReq extends
+            com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetQQLbsReq)
+      GetQQLbsReqOrBuilder {
     public static final int UINS_FIELD_NUMBER = 1;
-
-      // Use GetQQLbsReq.newBuilder() to construct.
-      private GetQQLbsReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-          super(builder);
-      }
-
-      private GetQQLbsReq() {
-          uins_ = java.util.Collections.emptyList();
-      }
-
-      @java.lang.Deprecated
-      public static final com.google.protobuf.Parser<GetQQLbsReq>
-              PARSER = new com.google.protobuf.AbstractParser<GetQQLbsReq>() {
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetQQLbsReq>
+        PARSER = new com.google.protobuf.AbstractParser<GetQQLbsReq>() {
       public GetQQLbsReq parsePartialFrom(
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2383,24 +2351,33 @@ public final class IliveLbsSvr {
           return new GetQQLbsReq(input, extensionRegistry);
       }
     };
-      private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetQQLbsReq)
-    private static final com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq DEFAULT_INSTANCE;
+        private static final long serialVersionUID = 0L;
+        // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetQQLbsReq)
+        private static final com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq DEFAULT_INSTANCE;
 
-    static {
-      DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq();
+        static {
+            DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq();
+        }
+
+        private java.util.List<java.lang.Long> uins_;
+    private byte memoizedIsInitialized = -1;
+
+    // Use GetQQLbsReq.newBuilder() to construct.
+    private GetQQLbsReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetQQLbsReq() {
+        uins_ = java.util.Collections.emptyList();
     }
 
-    private java.util.List<java.lang.Long> uins_;
-    private byte memoizedIsInitialized = -1;
-    private GetQQLbsReq(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        private GetQQLbsReq(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-              com.google.protobuf.UnknownFieldSet.newBuilder();
+          com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
         boolean done = false;
         while (!done) {
@@ -2411,7 +2388,7 @@ public final class IliveLbsSvr {
               break;
             default: {
               if (!parseUnknownField(
-                      input, unknownFields, extensionRegistry, tag)) {
+                  input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
               break;
@@ -2427,14 +2404,14 @@ public final class IliveLbsSvr {
             case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001) && input.getBytesUntilLimit() > 0) {
+                if (!((mutable_bitField0_ & 0x00000001) == 0x00000001) && input.getBytesUntilLimit() > 0) {
                 uins_ = new java.util.ArrayList<java.lang.Long>();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 uins_.add(input.readUInt64());
               }
-              input.popLimit(limit);
+                input.popLimit(limit);
               break;
             }
           }
@@ -2442,183 +2419,167 @@ public final class IliveLbsSvr {
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-                e).setUnfinishedMessage(this);
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-          uins_ = java.util.Collections.unmodifiableList(uins_);
+            uins_ = java.util.Collections.unmodifiableList(uins_);
         }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
       }
     }
 
-      /**
-       * <code>repeated uint64 uins = 1;</code>
-       */
-      public int getUinsCount() {
-          return uins_.size();
-      }
-
-      /**
-       * <code>repeated uint64 uins = 1;</code>
-       */
-      public long getUins(int index) {
-          return uins_.get(index);
-      }
-
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_descriptor;
     }
 
-      public final boolean isInitialized() {
-          byte isInitialized = memoizedIsInitialized;
-          if (isInitialized == 1) return true;
-          if (isInitialized == 0) return false;
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-          memoizedIsInitialized = 1;
-          return true;
-      }
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
+                java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
+
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
+
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(java.io.InputStream input)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+        }
+
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
+                java.io.InputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-      @java.lang.Override
-      public int hashCode() {
-          if (memoizedHashCode != 0) {
-              return memoizedHashCode;
-          }
-          int hash = 41;
-          hash = (19 * hash) + getDescriptor().hashCode();
-          if (getUinsCount() > 0) {
-              hash = (37 * hash) + UINS_FIELD_NUMBER;
-              hash = (53 * hash) + getUinsList().hashCode();
-          }
-          hash = (29 * hash) + unknownFields.hashCode();
-          memoizedHashCode = hash;
-          return hash;
-      }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(java.io.InputStream input)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseDelimitedFrom(java.io.InputStream input)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            com.google.protobuf.CodedInputStream input)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parseFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static Builder newBuilder() {
+        public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
 
     public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq getDefaultInstance() {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     public static com.google.protobuf.Parser<GetQQLbsReq> parser() {
-      return PARSER;
+        return PARSER;
     }
 
     @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
-      return this.unknownFields;
+        return this.unknownFields;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.Builder.class);
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_fieldAccessorTable
+                    .ensureFieldAccessorsInitialized(
+                            com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.Builder.class);
     }
 
     /**
      * <code>repeated uint64 uins = 1;</code>
      */
     public java.util.List<java.lang.Long>
-    getUinsList() {
+        getUinsList() {
       return uins_;
     }
 
+    /**
+     * <code>repeated uint64 uins = 1;</code>
+     */
+    public int getUinsCount() {
+      return uins_.size();
+    }
+
+    /**
+     * <code>repeated uint64 uins = 1;</code>
+     */
+    public long getUins(int index) {
+      return uins_.get(index);
+    }
+
+        public final boolean isInitialized() {
+            byte isInitialized = memoizedIsInitialized;
+            if (isInitialized == 1) return true;
+            if (isInitialized == 0) return false;
+
+            memoizedIsInitialized = 1;
+            return true;
+        }
+
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       for (int i = 0; i < uins_.size(); i++) {
-        output.writeUInt64(1, uins_.get(i));
+          output.writeUInt64(1, uins_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -2637,39 +2598,54 @@ public final class IliveLbsSvr {
         size += dataSize;
         size += 1 * getUinsList().size();
       }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
+        size += unknownFields.getSerializedSize();
+        memoizedSize = size;
+        return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-          return true;
-      }
-      if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq)) {
-        return super.equals(obj);
-      }
-      com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq other = (com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq) obj;
+        @java.lang.Override
+        public boolean equals(final java.lang.Object obj) {
+            if (obj == this) {
+                return true;
+            }
+            if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq)) {
+                return super.equals(obj);
+            }
+            com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq other = (com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq) obj;
 
-      boolean result = true;
+            boolean result = true;
       result = result && getUinsList()
-              .equals(other.getUinsList());
-      result = result && unknownFields.equals(other.unknownFields);
+          .equals(other.getUinsList());
+            result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
 
-      public Builder newBuilderForType() {
-          return newBuilder(); }
-
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+    @java.lang.Override
+    public int hashCode() {
+        if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getUinsCount() > 0) {
+        hash = (37 * hash) + UINS_FIELD_NUMBER;
+        hash = (53 * hash) + getUinsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
     }
 
-    @java.lang.Override
-    protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+    public Builder newBuilderForType() { return newBuilder(); }
+
+    public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+                ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2683,23 +2659,23 @@ public final class IliveLbsSvr {
       return DEFAULT_INSTANCE;
     }
 
-    /**
-     * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsReq}
+        /**
+         * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsReq}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetQQLbsReq)
-            com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReqOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetQQLbsReq)
+        com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReqOrBuilder {
       private int bitField0_;
       private java.util.List<java.lang.Long> uins_ = java.util.Collections.emptyList();
 
-      // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.newBuilder()
+            // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
 
       private Builder(
-              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2715,8 +2691,8 @@ public final class IliveLbsSvr {
         return this;
       }
 
-        public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
         return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_descriptor;
       }
 
@@ -2727,101 +2703,101 @@ public final class IliveLbsSvr {
       public com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq build() {
         com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq result = buildPartial();
         if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
+            throw newUninitializedMessageException(result);
         }
-        return result;
+          return result;
       }
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq buildPartial() {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq result = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq(this);
-        int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          uins_ = java.util.Collections.unmodifiableList(uins_);
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.uins_ = uins_;
-        onBuilt();
-        return result;
+            public com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq buildPartial() {
+                com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq result = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq(this);
+                int from_bitField0_ = bitField0_;
+                if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                    uins_ = java.util.Collections.unmodifiableList(uins_);
+                    bitField0_ = (bitField0_ & ~0x00000001);
+                }
+                result.uins_ = uins_;
+                onBuilt();
+                return result;
+            }
+
+            public Builder clone() {
+                return (Builder) super.clone();
+            }
+
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(
+                com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.Builder.class);
       }
 
-      public Builder clone() {
-        return (Builder) super.clone();
+      public com.google.protobuf.Descriptors.Descriptor
+      getDescriptorForType() {
+          return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_descriptor;
       }
-
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.Builder.class);
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsReq_descriptor;
-        }
 
       public Builder setField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return (Builder) super.setField(field, value);
       }
 
       public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
       }
 
       public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
 
       public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
       }
 
-      public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq other) {
-        if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.getDefaultInstance()) return this;
-        if (!other.uins_.isEmpty()) {
-          if (uins_.isEmpty()) {
-            uins_ = other.uins_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureUinsIsMutable();
-            uins_.addAll(other.uins_);
-          }
-          onChanged();
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      public final boolean isInitialized() {
-        return true;
-      }
-
-        public Builder addRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                java.lang.Object value) {
-            return (Builder) super.addRepeatedField(field, value);
-        }
-
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq) {
-                return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq) other);
-            } else {
-                super.mergeFrom(other);
+            public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq other) {
+                if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq.getDefaultInstance()) return this;
+                if (!other.uins_.isEmpty()) {
+                    if (uins_.isEmpty()) {
+                        uins_ = other.uins_;
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    } else {
+                        ensureUinsIsMutable();
+                        uins_.addAll(other.uins_);
+                    }
+                    onChanged();
+                }
+                this.mergeUnknownFields(other.unknownFields);
+                onChanged();
                 return this;
             }
+
+            public final boolean isInitialized() {
+                return true;
+            }
+
+            public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq) {
+          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
         }
+      }
 
       public Builder mergeFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
         com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsReq parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -2835,18 +2811,18 @@ public final class IliveLbsSvr {
         }
         return this;
       }
-
       private void ensureUinsIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          uins_ = new java.util.ArrayList<java.lang.Long>(uins_);
+            uins_ = new java.util.ArrayList<java.lang.Long>(uins_);
           bitField0_ |= 0x00000001;
          }
       }
+
       /**
        * <code>repeated uint64 uins = 1;</code>
        */
       public java.util.List<java.lang.Long>
-      getUinsList() {
+          getUinsList() {
         return java.util.Collections.unmodifiableList(uins_);
       }
       /**
@@ -2855,17 +2831,19 @@ public final class IliveLbsSvr {
       public int getUinsCount() {
         return uins_.size();
       }
-      /**
-       * <code>repeated uint64 uins = 1;</code>
-       */
-      public long getUins(int index) {
+
+            /**
+             * <code>repeated uint64 uins = 1;</code>
+             */
+            public long getUins(int index) {
         return uins_.get(index);
       }
-      /**
-       * <code>repeated uint64 uins = 1;</code>
+
+            /**
+             * <code>repeated uint64 uins = 1;</code>
        */
       public Builder setUins(
-              int index, long value) {
+          int index, long value) {
         ensureUinsIsMutable();
         uins_.set(index, value);
         onChanged();
@@ -2876,9 +2854,9 @@ public final class IliveLbsSvr {
        */
       public Builder addUins(long value) {
         ensureUinsIsMutable();
-        uins_.add(value);
-        onChanged();
-        return this;
+          uins_.add(value);
+          onChanged();
+          return this;
       }
       /**
        * <code>repeated uint64 uins = 1;</code>
@@ -2887,7 +2865,7 @@ public final class IliveLbsSvr {
               java.lang.Iterable<? extends java.lang.Long> values) {
         ensureUinsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                values, uins_);
+            values, uins_);
         onChanged();
         return this;
       }
@@ -2895,236 +2873,187 @@ public final class IliveLbsSvr {
        * <code>repeated uint64 uins = 1;</code>
        */
       public Builder clearUins() {
-        uins_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      public final Builder setUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
+          uins_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+          return this;
       }
 
-      public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
+            public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+                return super.setUnknownFields(unknownFields);
+            }
+
+            public final Builder mergeUnknownFields(
+                    final com.google.protobuf.UnknownFieldSet unknownFields) {
+                return super.mergeUnknownFields(unknownFields);
+            }
 
 
-      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetQQLbsReq)
+            // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetQQLbsReq)
+        }
+
     }
 
-  }
-
-  /**
-   * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsRsp}
+    /**
+     * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsRsp}
    */
-  public static final class GetQQLbsRsp extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetQQLbsRsp)
-          GetQQLbsRspOrBuilder {
+  public  static final class GetQQLbsRsp extends
+            com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetQQLbsRsp)
+      GetQQLbsRspOrBuilder {
     public static final int INFOS_FIELD_NUMBER = 1;
-
-      // Use GetQQLbsRsp.newBuilder() to construct.
-      private GetQQLbsRsp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-          super(builder);
-      }
-
-      private GetQQLbsRsp() {
-          infos_ = java.util.Collections.emptyList();
-      }
-
-      @java.lang.Deprecated
-      public static final com.google.protobuf.Parser<GetQQLbsRsp>
-              PARSER = new com.google.protobuf.AbstractParser<GetQQLbsRsp>() {
-      public GetQQLbsRsp parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetQQLbsRsp>
+            PARSER = new com.google.protobuf.AbstractParser<GetQQLbsRsp>() {
+        public GetQQLbsRsp parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
           return new GetQQLbsRsp(input, extensionRegistry);
-      }
-      };
-      private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetQQLbsRsp)
-    private static final com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp DEFAULT_INSTANCE;
+        }
+    };
+        private static final long serialVersionUID = 0L;
+        // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetQQLbsRsp)
+        private static final com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp DEFAULT_INSTANCE;
 
-    static {
-      DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp();
-    }
+        static {
+            DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp();
+        }
 
-    private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> infos_;
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_descriptor;
+        }
+
+        private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> infos_;
     private byte memoizedIsInitialized = -1;
-
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-       */
-      public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> getInfosList() {
-          return infos_;
+    // Use GetQQLbsRsp.newBuilder() to construct.
+    private GetQQLbsRsp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
     }
 
-      private GetQQLbsRsp(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+        private GetQQLbsRsp() {
+            infos_ = java.util.Collections.emptyList();
+    }
+    private GetQQLbsRsp(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
               com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
+        try {
+            boolean done = false;
+            while (!done) {
+                int tag = input.readTag();
           switch (tag) {
             case 0:
               done = true;
               break;
             default: {
-                if (!parseUnknownField(
-                        input, unknownFields, extensionRegistry, tag)) {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
-              break;
+                break;
             }
-            case 10: {
+              case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
                 infos_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
-                infos_.add(
-                        input.readMessage(com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.PARSER, extensionRegistry));
-              break;
-            }
+                  infos_.add(
+                  input.readMessage(com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.PARSER, extensionRegistry));
+                  break;
+              }
           }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-                e).setUnfinishedMessage(this);
-      } finally {
+        } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(
+                    e).setUnfinishedMessage(this);
+        } finally {
         if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
           infos_ = java.util.Collections.unmodifiableList(infos_);
         }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-      }
-
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-       */
-      public int getInfosCount() {
-          return infos_.size();
-      }
-
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-       */
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getInfos(int index) {
-          return infos_.get(index);
-      }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_descriptor;
+            this.unknownFields = unknownFields.build();
+            makeExtensionsImmutable();
+        }
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-        return PARSER.parseFrom(data);
-    }
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-      public final boolean isInitialized() {
-          byte isInitialized = memoizedIsInitialized;
-          if (isInitialized == 1) return true;
-          if (isInitialized == 0) return false;
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
+                java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
 
-          memoizedIsInitialized = 1;
-          return true;
-      }
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
+        com.google.protobuf.ByteString data)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
-    }
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data);
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
-            com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-      @java.lang.Override
-      public int hashCode() {
-          if (memoizedHashCode != 0) {
-              return memoizedHashCode;
-          }
-          int hash = 41;
-          hash = (19 * hash) + getDescriptor().hashCode();
-          if (getInfosCount() > 0) {
-              hash = (37 * hash) + INFOS_FIELD_NUMBER;
-              hash = (53 * hash) + getInfosList().hashCode();
-          }
-          hash = (29 * hash) + unknownFields.hashCode();
-          memoizedHashCode = hash;
-          return hash;
-      }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(byte[] data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
+                byte[] data,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
+            throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
+    }
+
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
+                java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseDelimitedFrom(
+                java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
-            com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parseFrom(
@@ -3135,53 +3064,83 @@ public final class IliveLbsSvr {
               .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
+        public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp getDefaultInstance() {
+            return DEFAULT_INSTANCE;
+        }
 
-    public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
+        public static com.google.protobuf.Parser<GetQQLbsRsp> parser() {
+            return PARSER;
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    public static com.google.protobuf.Parser<GetQQLbsRsp> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
     internalGetFieldAccessorTable() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.Builder.class);
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(
+                        com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.Builder.class);
     }
+
+        /**
+         * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+         */
+        public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> getInfosList() {
+            return infos_;
+        }
 
     /**
      * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
      */
     public java.util.List<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>
-        getInfosOrBuilderList() {
-      return infos_;
+    getInfosOrBuilderList() {
+        return infos_;
     }
 
-    /**
-     * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-     */
-    public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder getInfosOrBuilder(
+        /**
+         * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+         */
+        public int getInfosCount() {
+            return infos_.size();
+        }
+
+        /**
+         * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+         */
+        public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getInfos(int index) {
+            return infos_.get(index);
+        }
+
+        /**
+         * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+         */
+        public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder getInfosOrBuilder(
         int index) {
       return infos_.get(index);
     }
 
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+        public static Builder newBuilder() {
+            return DEFAULT_INSTANCE.toBuilder();
+        }
+
+        public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp prototype) {
+            return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
       for (int i = 0; i < infos_.size(); i++) {
         output.writeMessage(1, infos_.get(i));
       }
@@ -3190,96 +3149,108 @@ public final class IliveLbsSvr {
 
     public int getSerializedSize() {
       int size = memoizedSize;
-      if (size != -1) return size;
+        if (size != -1) return size;
 
-      size = 0;
-      for (int i = 0; i < infos_.size(); i++) {
+        size = 0;
+        for (int i = 0; i < infos_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
                 .computeMessageSize(1, infos_.get(i));
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
+        }
+        size += unknownFields.getSerializedSize();
+        memoizedSize = size;
+        return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-        if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp)) {
-        return super.equals(obj);
-      }
-      com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp other = (com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp) obj;
+        @java.lang.Override
+        public boolean equals(final java.lang.Object obj) {
+            if (obj == this) {
+                return true;
+            }
+            if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp)) {
+                return super.equals(obj);
+            }
+            com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp other = (com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp) obj;
 
       boolean result = true;
-        result = result && getInfosList()
-                .equals(other.getInfosList());
-      result = result && unknownFields.equals(other.unknownFields);
-        return result;
+            result = result && getInfosList()
+                    .equals(other.getInfosList());
+            result = result && unknownFields.equals(other.unknownFields);
+      return result;
+        }
+
+        @java.lang.Override
+        public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getInfosCount() > 0) {
+        hash = (37 * hash) + INFOS_FIELD_NUMBER;
+        hash = (53 * hash) + getInfosList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
     }
 
-      public Builder newBuilderForType() { return newBuilder(); }
-
-    public Builder toBuilder() {
-        return this == DEFAULT_INSTANCE
-                ? new Builder() : new Builder().mergeFrom(this);
+    public Builder newBuilderForType() { return newBuilder();
     }
 
-    @java.lang.Override
-    protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        public Builder toBuilder() {
+            return this == DEFAULT_INSTANCE
+                    ? new Builder() : new Builder().mergeFrom(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetQQLbsRsp> getParserForType() {
+        @java.lang.Override
+        public com.google.protobuf.Parser<GetQQLbsRsp> getParserForType() {
       return PARSER;
     }
 
     public com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
+        return DEFAULT_INSTANCE;
     }
 
-    /**
-     * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsRsp}
-     */
-    public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetQQLbsRsp)
-            com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRspOrBuilder {
+        /**
+         * Protobuf type {@code com.ceeker.app.study.proto.GetQQLbsRsp}
+         */
+        public static final class Builder extends
+                com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetQQLbsRsp)
+        com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRspOrBuilder {
       private int bitField0_;
-      private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> infos_ =
-              java.util.Collections.emptyList();
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-              com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder> infosBuilder_;
+            private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> infos_ =
+                    java.util.Collections.emptyList();
 
-      // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
+            // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.newBuilder()
+            private Builder() {
+                maybeForceBuilderInitialization();
+            }
+
+            private com.google.protobuf.RepeatedFieldBuilderV3<
+                    com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder> infosBuilder_;
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getInfosFieldBuilder();
         }
       }
-      public Builder clear() {
-        super.clear();
-        if (infosBuilder_ == null) {
-          infos_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          infosBuilder_.clear();
-        }
-          return this;
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
       }
 
-        private Builder(
-                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-            super(parent);
-            maybeForceBuilderInitialization();
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_descriptor;
       }
 
       public com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp getDefaultInstanceForType() {
@@ -3291,81 +3262,83 @@ public final class IliveLbsSvr {
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
-        return result;
+          return result;
       }
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp buildPartial() {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp result = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp(this);
-        int from_bitField0_ = bitField0_;
+            public com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp buildPartial() {
+                com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp result = new com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp(this);
+                int from_bitField0_ = bitField0_;
+                if (infosBuilder_ == null) {
+                    if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                        infos_ = java.util.Collections.unmodifiableList(infos_);
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    }
+                    result.infos_ = infos_;
+                } else {
+                    result.infos_ = infosBuilder_.build();
+                }
+                onBuilt();
+                return result;
+            }
+
+            public Builder clone() {
+                return (Builder) super.clone();
+            }
+
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.Builder.class);
+            }
+
+            public Builder clear() {
+                super.clear();
         if (infosBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001)) {
-            infos_ = java.util.Collections.unmodifiableList(infos_);
+            infos_ = java.util.Collections.emptyList();
             bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.infos_ = infos_;
         } else {
-          result.infos_ = infosBuilder_.build();
+          infosBuilder_.clear();
         }
-        onBuilt();
-        return result;
-      }
+        return this;
+            }
 
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
+            public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_descriptor;
+            }
 
-        public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_descriptor;
-        }
-
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.Builder.class);
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetQQLbsRsp_descriptor;
-        }
-
-        public Builder setField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
+            public Builder setField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
         return (Builder) super.setField(field, value);
-        }
+      }
 
-        public Builder clearField(
-                com.google.protobuf.Descriptors.FieldDescriptor field) {
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return (Builder) super.clearField(field);
-        }
+      }
 
-        public Builder clearOneof(
-                com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            public Builder clearOneof(
+                    com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return (Builder) super.clearOneof(oneof);
       }
 
-        public Builder setRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, java.lang.Object value) {
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
         return (Builder) super.setRepeatedField(field, index, value);
-        }
+      }
 
-        public final boolean isInitialized() {
-            return true;
-        }
-
-        public Builder addRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp) {
-            return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp)other);
+          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp)other);
         } else {
           super.mergeFrom(other);
           return this;
@@ -3373,28 +3346,28 @@ public final class IliveLbsSvr {
       }
 
       public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp other) {
-        if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.getDefaultInstance()) return this;
-        if (infosBuilder_ == null) {
+          if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp.getDefaultInstance()) return this;
+          if (infosBuilder_ == null) {
           if (!other.infos_.isEmpty()) {
             if (infos_.isEmpty()) {
               infos_ = other.infos_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureInfosIsMutable();
-              infos_.addAll(other.infos_);
+                infos_.addAll(other.infos_);
             }
-            onChanged();
+              onChanged();
           }
-        } else {
-          if (!other.infos_.isEmpty()) {
-            if (infosBuilder_.isEmpty()) {
-              infosBuilder_.dispose();
+          } else {
+              if (!other.infos_.isEmpty()) {
+                  if (infosBuilder_.isEmpty()) {
+                      infosBuilder_.dispose();
               infosBuilder_ = null;
               infos_ = other.infos_;
               bitField0_ = (bitField0_ & ~0x00000001);
-                infosBuilder_ =
-                        com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                                getInfosFieldBuilder() : null;
+              infosBuilder_ =
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getInfosFieldBuilder() : null;
             } else {
               infosBuilder_.addAllMessages(other.infos_);
             }
@@ -3405,11 +3378,15 @@ public final class IliveLbsSvr {
         return this;
       }
 
-        public Builder mergeFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parsedMessage = null;
+          com.ceeker.app.study.proto.IliveLbsSvr.GetQQLbsRsp parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -3426,7 +3403,7 @@ public final class IliveLbsSvr {
       private void ensureInfosIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
           infos_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo>(infos_);
-            bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -3457,15 +3434,15 @@ public final class IliveLbsSvr {
         if (infosBuilder_ == null) {
           return infos_.get(index);
         } else {
-          return infosBuilder_.getMessage(index);
+            return infosBuilder_.getMessage(index);
         }
       }
 
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+            /**
+             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder setInfos(
-              int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
+          int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
         if (infosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3482,13 +3459,13 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder setInfos(
-              int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
+          int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           infos_.set(index, builderForValue.build());
           onChanged();
         } else {
-          infosBuilder_.setMessage(index, builderForValue.build());
+            infosBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
@@ -3504,24 +3481,25 @@ public final class IliveLbsSvr {
           infos_.add(value);
           onChanged();
         } else {
-          infosBuilder_.addMessage(value);
+            infosBuilder_.addMessage(value);
         }
-        return this;
+          return this;
       }
-      /**
+
+            /**
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder addInfos(
-              int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
+          int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
         if (infosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           ensureInfosIsMutable();
           infos_.add(index, value);
-          onChanged();
+            onChanged();
         } else {
-          infosBuilder_.addMessage(index, value);
+            infosBuilder_.addMessage(index, value);
         }
         return this;
       }
@@ -3529,21 +3507,21 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder addInfos(
-              com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
+          com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           infos_.add(builderForValue.build());
           onChanged();
         } else {
-          infosBuilder_.addMessage(builderForValue.build());
+            infosBuilder_.addMessage(builderForValue.build());
         }
-        return this;
+          return this;
       }
       /**
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder addInfos(
-              int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
+          int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           infos_.add(index, builderForValue.build());
@@ -3557,7 +3535,7 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder addAllInfos(
-              java.lang.Iterable<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> values) {
+          java.lang.Iterable<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> values) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3585,8 +3563,8 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder removeInfos(int index) {
-        if (infosBuilder_ == null) {
-          ensureInfosIsMutable();
+          if (infosBuilder_ == null) {
+              ensureInfosIsMutable();
           infos_.remove(index);
           onChanged();
         } else {
@@ -3606,20 +3584,21 @@ public final class IliveLbsSvr {
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder getInfosOrBuilder(
           int index) {
-          if (infosBuilder_ == null) {
-              return infos_.get(index);  } else {
-          return infosBuilder_.getMessageOrBuilder(index);
+        if (infosBuilder_ == null) {
+          return infos_.get(index);  } else {
+            return infosBuilder_.getMessageOrBuilder(index);
         }
       }
-      /**
+
+            /**
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public java.util.List<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>
            getInfosOrBuilderList() {
         if (infosBuilder_ != null) {
-          return infosBuilder_.getMessageOrBuilderList();
+            return infosBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(infos_);
+            return java.util.Collections.unmodifiableList(infos_);
         }
       }
       /**
@@ -3627,19 +3606,21 @@ public final class IliveLbsSvr {
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder addInfosBuilder() {
         return getInfosFieldBuilder().addBuilder(
-                com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance());
+            com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance());
       }
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-       */
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder addInfosBuilder(
+
+            /**
+             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+             */
+            public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder addInfosBuilder(
           int index) {
         return getInfosFieldBuilder().addBuilder(
                 index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-       */
+            }
+
+            /**
+             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+             */
       public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder>
            getInfosBuilderList() {
         return getInfosFieldBuilder().getBuilderList();
@@ -3647,96 +3628,236 @@ public final class IliveLbsSvr {
       private com.google.protobuf.RepeatedFieldBuilderV3<
               com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>
           getInfosFieldBuilder() {
-        if (infosBuilder_ == null) {
-          infosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                  com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>(
-                  infos_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
-                  getParentForChildren(),
-                  isClean());
-          infos_ = null;
-        }
-        return infosBuilder_;
+          if (infosBuilder_ == null) {
+              infosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>(
+                      infos_,
+                      ((bitField0_ & 0x00000001) == 0x00000001),
+                      getParentForChildren(),
+                      isClean());
+              infos_ = null;
+          }
+          return infosBuilder_;
       }
-
-        public final Builder setUnknownFields(
-                final com.google.protobuf.UnknownFieldSet unknownFields) {
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.mergeUnknownFields(unknownFields);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetQQLbsRsp)
+            // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetQQLbsRsp)
+        }
+
     }
 
-  }
-
-  /**
-   * Protobuf type {@code com.ceeker.app.study.proto.UserLoginAuth}
+    /**
+     * Protobuf type {@code com.ceeker.app.study.proto.UserLoginAuth}
    */
-  public static final class UserLoginAuth extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.UserLoginAuth)
-      UserLoginAuthOrBuilder {
-    public static final int AUTH_KEY_FIELD_NUMBER = 1;
+  public  static final class UserLoginAuth extends
+            com.google.protobuf.GeneratedMessageV3 implements
+            // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.UserLoginAuth)
+            UserLoginAuthOrBuilder {
+        public static final int AUTH_KEY_FIELD_NUMBER = 1;
+        public static final int AUTH_TYPE_FIELD_NUMBER = 2;
+        public static final int AUTH_IP_FIELD_NUMBER = 3;
+        public static final int AUTH_APPID_FIELD_NUMBER = 4;
+        public static final int CLIENT_TYPE_FIELD_NUMBER = 5;
 
-      // Use UserLoginAuth.newBuilder() to construct.
-      private UserLoginAuth(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-          super(builder);
+        public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLoginAuth_descriptor;
+        }
+
+        public static final int CLIENT_IP_FIELD_NUMBER = 6;
+        @java.lang.Deprecated
+        public static final com.google.protobuf.Parser<UserLoginAuth>
+                PARSER = new com.google.protobuf.AbstractParser<UserLoginAuth>() {
+            public UserLoginAuth parsePartialFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+          return new UserLoginAuth(input, extensionRegistry);
       }
+    };
+  private static final long serialVersionUID = 0L;
+        // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.UserLoginAuth)
+        private static final com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth DEFAULT_INSTANCE;
 
-      private UserLoginAuth() {
-          authKey_ = com.google.protobuf.ByteString.EMPTY;
-          authType_ = 0;
-          authIp_ = 0;
-          authAppid_ = 0L;
-          clientType_ = 0;
-          clientIp_ = 0;
-      }
-    public static final int AUTH_TYPE_FIELD_NUMBER = 2;
-    public static final int AUTH_IP_FIELD_NUMBER = 3;
-    public static final int AUTH_APPID_FIELD_NUMBER = 4;
-    public static final int CLIENT_TYPE_FIELD_NUMBER = 5;
-    public static final int CLIENT_IP_FIELD_NUMBER = 6;
-      @java.lang.Deprecated
-      public static final com.google.protobuf.Parser<UserLoginAuth>
-              PARSER = new com.google.protobuf.AbstractParser<UserLoginAuth>() {
-          public UserLoginAuth parsePartialFrom(
-                  com.google.protobuf.CodedInputStream input,
-                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                  throws com.google.protobuf.InvalidProtocolBufferException {
-              return new UserLoginAuth(input, extensionRegistry);
-          }
-      };
-      private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.UserLoginAuth)
-    private static final com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth DEFAULT_INSTANCE;
+        /**
+         * <pre>
+         * 鉴权key
+         * </pre>
+         * <p>
+         * <code>optional bytes auth_key = 1;</code>
+         */
+        public boolean hasAuthKey() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
 
-    static {
-      DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth();
+        /**
+         * <pre>
+         * 鉴权key
+         * </pre>
+         * <p>
+         * <code>optional bytes auth_key = 1;</code>
+         */
+        public com.google.protobuf.ByteString getAuthKey() {
+            return authKey_;
+        }
+
+        static {
+            DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth();
+        }
+
+        private int bitField0_;
+
+        /**
+         * <pre>
+         *鉴权类型
+         * </pre>
+         *
+         * <code>optional uint32 auth_type = 2;</code>
+         */
+        public boolean hasAuthType() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+
+        /**
+         * <pre>
+         * 鉴权类型
+         * </pre>
+         * <p>
+         * <code>optional uint32 auth_type = 2;</code>
+         */
+        public int getAuthType() {
+            return authType_;
+        }
+
+        private com.google.protobuf.ByteString authKey_;
+        private int authType_;
+
+        /**
+         * <pre>
+         *调用方ip
+         * </pre>
+         *
+         * <code>optional uint32 auth_ip = 3;</code>
+         */
+        public boolean hasAuthIp() {
+            return ((bitField0_ & 0x00000004) == 0x00000004);
+        }
+
+        /**
+         * <pre>
+         * 调用方ip
+         * </pre>
+         * <p>
+         * <code>optional uint32 auth_ip = 3;</code>
+         */
+        public int getAuthIp() {
+            return authIp_;
+        }
+
+        private int authIp_;
+        private long authAppid_;
+
+        /**
+         * <pre>
+         * appid
+         * </pre>
+         * <p>
+         * <code>optional uint64 auth_appid = 4;</code>
+         */
+        public boolean hasAuthAppid() {
+            return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
+
+        /**
+         * <pre>
+         * appid
+         * </pre>
+         * <p>
+         * <code>optional uint64 auth_appid = 4;</code>
+         */
+        public long getAuthAppid() {
+            return authAppid_;
+        }
+
+        private int clientType_;
+        private int clientIp_;
+
+        /**
+         * <pre>
+         * 客户端类型
+         * </pre>
+         * <p>
+         * <code>optional uint32 client_type = 5;</code>
+         */
+        public boolean hasClientType() {
+            return ((bitField0_ & 0x00000010) == 0x00000010);
+        }
+
+        /**
+         * <pre>
+         * 客户端类型
+         * </pre>
+         * <p>
+         * <code>optional uint32 client_type = 5;</code>
+         */
+        public int getClientType() {
+            return clientType_;
+        }
+
+        private byte memoizedIsInitialized = -1;
+
+        // Use UserLoginAuth.newBuilder() to construct.
+        private UserLoginAuth(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+            super(builder);
+        }
+
+        /**
+         * <pre>
+         *客户端ip
+         * </pre>
+         *
+         * <code>optional uint32 client_ip = 6;</code>
+         */
+        public boolean hasClientIp() {
+            return ((bitField0_ & 0x00000020) == 0x00000020);
+        }
+
+        /**
+         * <pre>
+         *客户端ip
+         * </pre>
+         *
+         * <code>optional uint32 client_ip = 6;</code>
+         */
+        public int getClientIp() {
+            return clientIp_;
+        }
+
+    private UserLoginAuth() {
+      authKey_ = com.google.protobuf.ByteString.EMPTY;
+      authType_ = 0;
+      authIp_ = 0;
+      authAppid_ = 0L;
+      clientType_ = 0;
+      clientIp_ = 0;
     }
-
-    private int bitField0_;
-    private com.google.protobuf.ByteString authKey_;
-    private int authType_;
-    private int authIp_;
-    private long authAppid_;
-    private int clientType_;
-    private int clientIp_;
-    private byte memoizedIsInitialized = -1;
-
-      private UserLoginAuth(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
+    private UserLoginAuth(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-              com.google.protobuf.UnknownFieldSet.newBuilder();
+          com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
         boolean done = false;
         while (!done) {
@@ -3746,8 +3867,8 @@ public final class IliveLbsSvr {
               done = true;
               break;
             default: {
-                if (!parseUnknownField(
-                        input, unknownFields, extensionRegistry, tag)) {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
               break;
@@ -3755,75 +3876,70 @@ public final class IliveLbsSvr {
             case 10: {
               bitField0_ |= 0x00000001;
               authKey_ = input.readBytes();
-              break;
+                break;
             }
-            case 16: {
+              case 16: {
               bitField0_ |= 0x00000002;
               authType_ = input.readUInt32();
               break;
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              authIp_ = input.readUInt32();
-              break;
+                authIp_ = input.readUInt32();
+                break;
             }
-            case 32: {
-              bitField0_ |= 0x00000008;
+              case 32: {
+                  bitField0_ |= 0x00000008;
               authAppid_ = input.readUInt64();
               break;
             }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              clientType_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
+              case 40: {
+                  bitField0_ |= 0x00000010;
+                  clientType_ = input.readUInt32();
+                  break;
+              }
+              case 48: {
+                  bitField0_ |= 0x00000020;
               clientIp_ = input.readUInt32();
               break;
             }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
+          throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
-                e).setUnfinishedMessage(this);
+            e).setUnfinishedMessage(this);
       } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
       }
     }
 
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLoginAuth_descriptor;
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
-            java.nio.ByteBuffer data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
-    }
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
-            java.nio.ByteBuffer data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
+        public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return PARSER.parseFrom(data, extensionRegistry);
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
-            com.google.protobuf.ByteString data)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
             com.google.protobuf.ByteString data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+        return PARSER.parseFrom(data, extensionRegistry);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(byte[] data)
@@ -3832,13 +3948,13 @@ public final class IliveLbsSvr {
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
-            byte[] data,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(java.io.InputStream input)
+        public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
@@ -3848,61 +3964,52 @@ public final class IliveLbsSvr {
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input, extensionRegistry);
+        return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseDelimitedFrom(java.io.InputStream input)
+                throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
-    }
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseDelimitedFrom(
-            java.io.InputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
-            com.google.protobuf.CodedInputStream input)
+        com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+          .parseWithIOException(PARSER, input);
     }
-
-      public final boolean isInitialized() {
-          byte isInitialized = memoizedIsInitialized;
-          if (isInitialized == 1) return true;
-          if (isInitialized == 0) return false;
-
-          memoizedIsInitialized = 1;
-          return true;
-      }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parseFrom(
             com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
+        public static Builder newBuilder() {
+            return DEFAULT_INSTANCE.toBuilder();
+        }
 
-    public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
+        public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth prototype) {
+            return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+        }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth getDefaultInstance() {
+        public static com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth getDefaultInstance() {
       return DEFAULT_INSTANCE;
-    }
+        }
 
-    public static com.google.protobuf.Parser<UserLoginAuth> parser() {
+        public static com.google.protobuf.Parser<UserLoginAuth> parser() {
       return PARSER;
     }
 
@@ -3913,197 +4020,74 @@ public final class IliveLbsSvr {
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLoginAuth_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder.class);
     }
 
-    /**
-     * <pre>
-     *鉴权key
-     * </pre>
-     *
-     * <code>optional bytes auth_key = 1;</code>
-     */
-    public boolean hasAuthKey() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
-    /**
-     * <pre>
-     *鉴权key
-     * </pre>
-     *
-     * <code>optional bytes auth_key = 1;</code>
-     */
-    public com.google.protobuf.ByteString getAuthKey() {
-      return authKey_;
-    }
-
-    /**
-     * <pre>
-     *鉴权类型
-     * </pre>
-     *
-     * <code>optional uint32 auth_type = 2;</code>
-     */
-    public boolean hasAuthType() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-
-    /**
-     * <pre>
-     *鉴权类型
-     * </pre>
-     *
-     * <code>optional uint32 auth_type = 2;</code>
-     */
-    public int getAuthType() {
-      return authType_;
-    }
-
-    /**
-     * <pre>
-     *调用方ip
-     * </pre>
-     *
-     * <code>optional uint32 auth_ip = 3;</code>
-     */
-    public boolean hasAuthIp() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-
-    /**
-     * <pre>
-     *调用方ip
-     * </pre>
-     *
-     * <code>optional uint32 auth_ip = 3;</code>
-     */
-    public int getAuthIp() {
-      return authIp_;
-    }
-
-    /**
-     * <pre>
-     *appid
-     * </pre>
-     *
-     * <code>optional uint64 auth_appid = 4;</code>
-     */
-    public boolean hasAuthAppid() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-
-    /**
-     * <pre>
-     *appid
-     * </pre>
-     *
-     * <code>optional uint64 auth_appid = 4;</code>
-     */
-    public long getAuthAppid() {
-      return authAppid_;
-    }
-
-    /**
-     * <pre>
-     *客户端类型
-     * </pre>
-     *
-     * <code>optional uint32 client_type = 5;</code>
-     */
-    public boolean hasClientType() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-
-    /**
-     * <pre>
-     *客户端类型
-     * </pre>
-     *
-     * <code>optional uint32 client_type = 5;</code>
-     */
-    public int getClientType() {
-      return clientType_;
-    }
-
-    /**
-     * <pre>
-     *客户端ip
-     * </pre>
-     *
-     * <code>optional uint32 client_ip = 6;</code>
-     */
-    public boolean hasClientIp() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-
-    /**
-     * <pre>
-     *客户端ip
-     * </pre>
-     *
-     * <code>optional uint32 client_ip = 6;</code>
-     */
-    public int getClientIp() {
-      return clientIp_;
+      memoizedIsInitialized = 1;
+      return true;
     }
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
-            throws java.io.IOException {
+                        throws java.io.IOException {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, authKey_);
+          output.writeBytes(1, authKey_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeUInt32(2, authType_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeUInt32(3, authIp_);
+          output.writeUInt32(3, authIp_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         output.writeUInt64(4, authAppid_);
       }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
         output.writeUInt32(5, clientType_);
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeUInt32(6, clientIp_);
+          output.writeUInt32(6, clientIp_);
       }
       unknownFields.writeTo(output);
     }
 
     public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
+        int size = memoizedSize;
+        if (size != -1) return size;
 
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeBytesSize(1, authKey_);
+          .computeBytesSize(1, authKey_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(2, authType_);
+          .computeUInt32Size(2, authType_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(3, authIp_);
+          .computeUInt32Size(3, authIp_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
                 .computeUInt64Size(4, authAppid_);
       }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
                 .computeUInt32Size(5, clientType_);
-      }
+        }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(6, clientIp_);
+          .computeUInt32Size(6, clientIp_);
       }
-      size += unknownFields.getSerializedSize();
+        size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
     }
@@ -4116,37 +4100,37 @@ public final class IliveLbsSvr {
       if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth)) {
         return super.equals(obj);
       }
-      com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth other = (com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth) obj;
+        com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth other = (com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth) obj;
 
       boolean result = true;
-      result = result && (hasAuthKey() == other.hasAuthKey());
+        result = result && (hasAuthKey() == other.hasAuthKey());
       if (hasAuthKey()) {
-          result = result && getAuthKey()
-                  .equals(other.getAuthKey());
+        result = result && getAuthKey()
+            .equals(other.getAuthKey());
       }
       result = result && (hasAuthType() == other.hasAuthType());
       if (hasAuthType()) {
-          result = result && (getAuthType()
+        result = result && (getAuthType()
             == other.getAuthType());
       }
       result = result && (hasAuthIp() == other.hasAuthIp());
       if (hasAuthIp()) {
-          result = result && (getAuthIp()
+        result = result && (getAuthIp()
             == other.getAuthIp());
       }
       result = result && (hasAuthAppid() == other.hasAuthAppid());
       if (hasAuthAppid()) {
-          result = result && (getAuthAppid()
+        result = result && (getAuthAppid()
             == other.getAuthAppid());
       }
       result = result && (hasClientType() == other.hasClientType());
       if (hasClientType()) {
-          result = result && (getClientType()
+        result = result && (getClientType()
             == other.getClientType());
       }
       result = result && (hasClientIp() == other.hasClientIp());
       if (hasClientIp()) {
-          result = result && (getClientIp()
+        result = result && (getClientIp()
             == other.getClientIp());
       }
       result = result && unknownFields.equals(other.unknownFields);
@@ -4159,17 +4143,17 @@ public final class IliveLbsSvr {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasAuthKey()) {
-        hash = (37 * hash) + AUTH_KEY_FIELD_NUMBER;
-        hash = (53 * hash) + getAuthKey().hashCode();
-      }
-      if (hasAuthType()) {
+        hash = (19 * hash) + getDescriptor().hashCode();
+        if (hasAuthKey()) {
+            hash = (37 * hash) + AUTH_KEY_FIELD_NUMBER;
+            hash = (53 * hash) + getAuthKey().hashCode();
+        }
+        if (hasAuthType()) {
         hash = (37 * hash) + AUTH_TYPE_FIELD_NUMBER;
         hash = (53 * hash) + getAuthType();
-      }
-      if (hasAuthIp()) {
-        hash = (37 * hash) + AUTH_IP_FIELD_NUMBER;
+        }
+        if (hasAuthIp()) {
+            hash = (37 * hash) + AUTH_IP_FIELD_NUMBER;
         hash = (53 * hash) + getAuthIp();
       }
       if (hasAuthAppid()) {
@@ -4183,23 +4167,24 @@ public final class IliveLbsSvr {
       }
       if (hasClientIp()) {
         hash = (37 * hash) + CLIENT_IP_FIELD_NUMBER;
-        hash = (53 * hash) + getClientIp();
+          hash = (53 * hash) + getClientIp();
       }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
         return hash;
     }
 
-      public Builder newBuilderForType() { return newBuilder(); }
+        public Builder newBuilderForType() {
+            return newBuilder(); }
 
     public Builder toBuilder() {
-        return this == DEFAULT_INSTANCE
-                ? new Builder() : new Builder().mergeFrom(this);
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+        @java.lang.Override
     protected Builder newBuilderForType(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -4217,35 +4202,20 @@ public final class IliveLbsSvr {
      * Protobuf type {@code com.ceeker.app.study.proto.UserLoginAuth}
      */
     public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.UserLoginAuth)
-            com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder {
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.UserLoginAuth)
+        com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder {
       private int bitField0_;
       private com.google.protobuf.ByteString authKey_ = com.google.protobuf.ByteString.EMPTY;
-        private int authType_ ;
+      private int authType_ ;
       private int authIp_ ;
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
         }
       }
-      public Builder clear() {
-        super.clear();
-        authKey_ = com.google.protobuf.ByteString.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        authType_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        authIp_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        authAppid_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        clientType_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        clientIp_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
-          return this;
-      }
       private long authAppid_ ;
+      private int clientType_ ;
 
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth getDefaultInstanceForType() {
         return com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance();
@@ -4263,40 +4233,35 @@ public final class IliveLbsSvr {
         com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth result = new com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.authKey_ = authKey_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.authType_ = authType_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.authIp_ = authIp_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.authAppid_ = authAppid_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.clientType_ = clientType_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.clientIp_ = clientIp_;
-        result.bitField0_ = to_bitField0_;
-        onBuilt();
-        return result;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+              to_bitField0_ |= 0x00000001;
+          }
+          result.authKey_ = authKey_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+              to_bitField0_ |= 0x00000002;
+          }
+          result.authType_ = authType_;
+          if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+              to_bitField0_ |= 0x00000004;
+          }
+          result.authIp_ = authIp_;
+          if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+              to_bitField0_ |= 0x00000008;
+          }
+          result.authAppid_ = authAppid_;
+          if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+              to_bitField0_ |= 0x00000010;
+          }
+          result.clientType_ = clientType_;
+          if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+              to_bitField0_ |= 0x00000020;
+          }
+          result.clientIp_ = clientIp_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
       }
 
-      public Builder clone() {
-          return (Builder) super.clone();
-      }
-
-        private int clientType_;
         private int clientIp_;
 
         // Construct using com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.newBuilder()
@@ -4320,7 +4285,155 @@ public final class IliveLbsSvr {
             return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLoginAuth_fieldAccessorTable
                     .ensureFieldAccessorsInitialized(
                             com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder.class);
+      }
+
+      public Builder clear() {
+        super.clear();
+          authKey_ = com.google.protobuf.ByteString.EMPTY;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        authType_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+          authIp_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000004);
+          authAppid_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000008);
+          clientType_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000010);
+          clientIp_ = 0;
+          bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLoginAuth_descriptor;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+
+        public Builder clearField(
+                com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return (Builder) super.clearField(field);
         }
+
+        public Builder clearOneof(
+                com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+
+        /**
+         * <pre>
+         * 鉴权key
+         * </pre>
+         * <p>
+         * <code>optional bytes auth_key = 1;</code>
+         */
+        public boolean hasAuthKey() {
+            return ((bitField0_ & 0x00000001) == 0x00000001);
+        }
+
+        /**
+         * <pre>
+         *鉴权key
+         * </pre>
+         *
+         * <code>optional bytes auth_key = 1;</code>
+       */
+      public com.google.protobuf.ByteString getAuthKey() {
+        return authKey_;
+      }
+
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      /**
+       * <pre>
+       *鉴权key
+       * </pre>
+       *
+       * <code>optional bytes auth_key = 1;</code>
+       */
+      public Builder clearAuthKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        authKey_ = getDefaultInstance().getAuthKey();
+        onChanged();
+        return this;
+      }
+
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth) {
+                return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth)other);
+            } else {
+                super.mergeFrom(other);
+                return this;
+            }
+        }
+
+        /**
+         * <pre>
+         * 鉴权类型
+         * </pre>
+         * <p>
+         * <code>optional uint32 auth_type = 2;</code>
+         */
+        public boolean hasAuthType() {
+            return ((bitField0_ & 0x00000002) == 0x00000002);
+        }
+
+        /**
+         * <pre>
+         * 鉴权类型
+         * </pre>
+         * <p>
+         * <code>optional uint32 auth_type = 2;</code>
+         */
+        public int getAuthType() {
+            return authType_;
+        }
+
+        /**
+         * <pre>
+         * 鉴权类型
+         * </pre>
+         * <p>
+         * <code>optional uint32 auth_type = 2;</code>
+         */
+        public Builder setAuthType(int value) {
+            bitField0_ |= 0x00000002;
+            authType_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
+         * <pre>
+         *鉴权类型
+         * </pre>
+         *
+         * <code>optional uint32 auth_type = 2;</code>
+       */
+      public Builder clearAuthType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        authType_ = 0;
+        onChanged();
+        return this;
+      }
 
         public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth other) {
             if (other == com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance()) return this;
@@ -4346,174 +4459,6 @@ public final class IliveLbsSvr {
             onChanged();
             return this;
         }
-
-        public final boolean isInitialized() {
-            return true;
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLoginAuth_descriptor;
-        }
-
-        public Builder setField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-        }
-
-        public Builder clearField(
-                com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-        }
-
-        public Builder clearOneof(
-                com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-
-        public Builder setRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-
-        public Builder addRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth) {
-            return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-        public Builder mergeFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-        }
-
-      /**
-       * <pre>
-       *鉴权key
-       * </pre>
-       *
-       * <code>optional bytes auth_key = 1;</code>
-       */
-      public boolean hasAuthKey() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-
-      /**
-       * <pre>
-       *鉴权key
-       * </pre>
-       *
-       * <code>optional bytes auth_key = 1;</code>
-       */
-      public com.google.protobuf.ByteString getAuthKey() {
-        return authKey_;
-      }
-
-      /**
-       * <pre>
-       *鉴权key
-       * </pre>
-       *
-       * <code>optional bytes auth_key = 1;</code>
-       */
-      public Builder setAuthKey(com.google.protobuf.ByteString value) {
-          if (value == null) {
-              throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        authKey_ = value;
-        onChanged();
-        return this;
-      }
-
-      /**
-       * <pre>
-       *鉴权key
-       * </pre>
-       *
-       * <code>optional bytes auth_key = 1;</code>
-       */
-      public Builder clearAuthKey() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        authKey_ = getDefaultInstance().getAuthKey();
-        onChanged();
-        return this;
-      }
-
-      /**
-       * <pre>
-       *鉴权类型
-       * </pre>
-       *
-       * <code>optional uint32 auth_type = 2;</code>
-       */
-      public boolean hasAuthType() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-
-      /**
-       * <pre>
-       *鉴权类型
-       * </pre>
-       *
-       * <code>optional uint32 auth_type = 2;</code>
-       */
-      public int getAuthType() {
-        return authType_;
-      }
-
-      /**
-       * <pre>
-       *鉴权类型
-       * </pre>
-       *
-       * <code>optional uint32 auth_type = 2;</code>
-       */
-      public Builder setAuthType(int value) {
-        bitField0_ |= 0x00000002;
-        authType_ = value;
-        onChanged();
-        return this;
-      }
-
-      /**
-       * <pre>
-       *鉴权类型
-       * </pre>
-       *
-       * <code>optional uint32 auth_type = 2;</code>
-       */
-      public Builder clearAuthType() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        authType_ = 0;
-        onChanged();
-        return this;
-      }
-
       /**
        * <pre>
        *调用方ip
@@ -4524,7 +4469,6 @@ public final class IliveLbsSvr {
       public boolean hasAuthIp() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-
       /**
        * <pre>
        *调用方ip
@@ -4535,7 +4479,6 @@ public final class IliveLbsSvr {
       public int getAuthIp() {
         return authIp_;
       }
-
       /**
        * <pre>
        *调用方ip
@@ -4549,7 +4492,6 @@ public final class IliveLbsSvr {
         onChanged();
         return this;
       }
-
       /**
        * <pre>
        *调用方ip
@@ -4558,48 +4500,51 @@ public final class IliveLbsSvr {
        * <code>optional uint32 auth_ip = 3;</code>
        */
       public Builder clearAuthIp() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        authIp_ = 0;
-        onChanged();
-        return this;
+          bitField0_ = (bitField0_ & ~0x00000004);
+          authIp_ = 0;
+          onChanged();
+          return this;
       }
 
-      /**
-       * <pre>
-       *appid
-       * </pre>
-       *
-       * <code>optional uint64 auth_appid = 4;</code>
-       */
-      public boolean hasAuthAppid() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
+        public final boolean isInitialized() {
+            return true;
+        }
 
-      /**
-       * <pre>
-       *appid
-       * </pre>
-       *
-       * <code>optional uint64 auth_appid = 4;</code>
-       */
-      public long getAuthAppid() {
-        return authAppid_;
-      }
+        /**
+         * <pre>
+         * appid
+         * </pre>
+         * <p>
+         * <code>optional uint64 auth_appid = 4;</code>
+         */
+        public boolean hasAuthAppid() {
+            return ((bitField0_ & 0x00000008) == 0x00000008);
+        }
 
-      /**
-       * <pre>
-       *appid
-       * </pre>
-       *
-       * <code>optional uint64 auth_appid = 4;</code>
-       */
-      public Builder setAuthAppid(long value) {
+        /**
+         * <pre>
+         * appid
+         * </pre>
+         * <p>
+         * <code>optional uint64 auth_appid = 4;</code>
+         */
+        public long getAuthAppid() {
+            return authAppid_;
+        }
+
+        /**
+         * <pre>
+         * appid
+         * </pre>
+         * <p>
+         * <code>optional uint64 auth_appid = 4;</code>
+         */
+        public Builder setAuthAppid(long value) {
         bitField0_ |= 0x00000008;
         authAppid_ = value;
         onChanged();
         return this;
       }
-
       /**
        * <pre>
        *appid
@@ -4614,17 +4559,34 @@ public final class IliveLbsSvr {
         return this;
       }
 
-      /**
-       * <pre>
-       *客户端类型
-       * </pre>
-       *
-       * <code>optional uint32 client_type = 5;</code>
+        public Builder mergeFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws java.io.IOException {
+            com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth parsedMessage = null;
+            try {
+                parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth) e.getUnfinishedMessage();
+                throw e.unwrapIOException();
+            } finally {
+                if (parsedMessage != null) {
+                    mergeFrom(parsedMessage);
+                }
+            }
+            return this;
+        }
+
+        /**
+         * <pre>
+         *客户端类型
+         * </pre>
+         *
+         * <code>optional uint32 client_type = 5;</code>
        */
       public boolean hasClientType() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-
       /**
        * <pre>
        *客户端类型
@@ -4635,7 +4597,6 @@ public final class IliveLbsSvr {
       public int getClientType() {
         return clientType_;
       }
-
       /**
        * <pre>
        *客户端类型
@@ -4649,7 +4610,6 @@ public final class IliveLbsSvr {
         onChanged();
         return this;
       }
-
       /**
        * <pre>
        *客户端类型
@@ -4664,7 +4624,24 @@ public final class IliveLbsSvr {
         return this;
       }
 
-      /**
+        /**
+         * <pre>
+         *鉴权key
+         * </pre>
+         *
+         * <code>optional bytes auth_key = 1;</code>
+         */
+        public Builder setAuthKey(com.google.protobuf.ByteString value) {
+            if (value == null) {
+                throw new NullPointerException();
+            }
+            bitField0_ |= 0x00000001;
+            authKey_ = value;
+            onChanged();
+            return this;
+        }
+
+        /**
        * <pre>
        *客户端ip
        * </pre>
@@ -4682,11 +4659,12 @@ public final class IliveLbsSvr {
        * <code>optional uint32 client_ip = 6;</code>
        */
       public int getClientIp() {
-        return clientIp_;
+          return clientIp_;
       }
-      /**
-       * <pre>
-       *客户端ip
+
+        /**
+         * <pre>
+         *客户端ip
        * </pre>
        *
        * <code>optional uint32 client_ip = 6;</code>
@@ -4697,32 +4675,33 @@ public final class IliveLbsSvr {
         onChanged();
         return this;
       }
-      /**
-       * <pre>
-       *客户端ip
-       * </pre>
-       *
-       * <code>optional uint32 client_ip = 6;</code>
-       */
-      public Builder clearClientIp() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        clientIp_ = 0;
-        onChanged();
-        return this;
-      }
+
+        /**
+         * <pre>
+         * 客户端ip
+         * </pre>
+         * <p>
+         * <code>optional uint32 client_ip = 6;</code>
+         */
+        public Builder clearClientIp() {
+            bitField0_ = (bitField0_ & ~0x00000020);
+            clientIp_ = 0;
+            onChanged();
+            return this;
+        }
 
         public final Builder setUnknownFields(
                 final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
+            return super.setUnknownFields(unknownFields);
+        }
 
-      public final Builder mergeUnknownFields(
-              final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
+        public final Builder mergeUnknownFields(
+                final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+        }
 
 
-      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.UserLoginAuth)
+        // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.UserLoginAuth)
     }
 
   }
@@ -4730,25 +4709,14 @@ public final class IliveLbsSvr {
   /**
    * Protobuf type {@code com.ceeker.app.study.proto.UserLocation}
    */
-  public static final class UserLocation extends
-          com.google.protobuf.GeneratedMessageV3 implements
-          // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.UserLocation)
-      UserLocationOrBuilder {
-    public static final int UIN_FIELD_NUMBER = 1;
-
-      // Use UserLocation.newBuilder() to construct.
-      private UserLocation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-          super(builder);
-      }
-
-      private UserLocation() {
-          uin_ = 0L;
-          longitude_ = 0D;
-          latitude_ = 0D;
-      }
+  public  static final class UserLocation extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.UserLocation)
+          UserLocationOrBuilder {
+      public static final int UIN_FIELD_NUMBER = 1;
     public static final int LONGITUDE_FIELD_NUMBER = 2;
-    public static final int LATITUDE_FIELD_NUMBER = 3;
-    public static final int AUTH_FIELD_NUMBER = 4;
+      public static final int LATITUDE_FIELD_NUMBER = 3;
+      public static final int AUTH_FIELD_NUMBER = 4;
       @java.lang.Deprecated
       public static final com.google.protobuf.Parser<UserLocation>
               PARSER = new com.google.protobuf.AbstractParser<UserLocation>() {
@@ -4756,16 +4724,211 @@ public final class IliveLbsSvr {
                   com.google.protobuf.CodedInputStream input,
                   com.google.protobuf.ExtensionRegistryLite extensionRegistry)
                   throws com.google.protobuf.InvalidProtocolBufferException {
-              return new UserLocation(input, extensionRegistry);
+          return new UserLocation(input, extensionRegistry);
           }
       };
-      private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.UserLocation)
-    private static final com.ceeker.app.study.proto.IliveLbsSvr.UserLocation DEFAULT_INSTANCE;
+
+      public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_descriptor;
+    }
+  private static final long serialVersionUID = 0L;
+      // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.UserLocation)
+      private static final com.ceeker.app.study.proto.IliveLbsSvr.UserLocation DEFAULT_INSTANCE;
 
     static {
       DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.UserLocation();
     }
+
+    private int bitField0_;
+    private long uin_;
+    private double longitude_;
+    private double latitude_;
+    private com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth auth_;
+    private byte memoizedIsInitialized = -1;
+    // Use UserLocation.newBuilder() to construct.
+    private UserLocation(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+
+    private UserLocation() {
+      uin_ = 0L;
+      longitude_ = 0D;
+      latitude_ = 0D;
+    }
+    private UserLocation(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                      input, unknownFields, extensionRegistry, tag)) {
+                  done = true;
+              }
+              break;
+            }
+              case 8: {
+                  bitField0_ |= 0x00000001;
+                  uin_ = input.readUInt64();
+                  break;
+              }
+              case 17: {
+                  bitField0_ |= 0x00000002;
+              longitude_ = input.readDouble();
+              break;
+            }
+            case 25: {
+              bitField0_ |= 0x00000004;
+                latitude_ = input.readDouble();
+                break;
+            }
+              case 34: {
+                  com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = auth_.toBuilder();
+              }
+                  auth_ = input.readMessage(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(auth_);
+                  auth_ = subBuilder.buildPartial();
+              }
+                  bitField0_ |= 0x00000008;
+                  break;
+              }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+                  e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+              java.nio.ByteBuffer data)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+            java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+              com.google.protobuf.ByteString data)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+      }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+    }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+              byte[] data,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input);
+    }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+              java.io.InputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input);
+      }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+                  .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      public static Builder newBuilder() {
+          return DEFAULT_INSTANCE.toBuilder();
+      }
+
+      public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.UserLocation prototype) {
+          return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getDefaultInstance() {
+          return DEFAULT_INSTANCE;
+      }
+
+      public static com.google.protobuf.Parser<UserLocation> parser() {
+          return PARSER;
+      }
+
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+          return this.unknownFields;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internalGetFieldAccessorTable() {
+          return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_fieldAccessorTable
+                  .ensureFieldAccessorsInitialized(
+                          com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder.class);
+      }
 
       /**
        * <code>optional uint64 uin = 1;</code>
@@ -4781,9 +4944,6 @@ public final class IliveLbsSvr {
           return uin_;
       }
 
-      private int bitField0_;
-      private long uin_;
-
       /**
        * <code>optional double longitude = 2;</code>
        */
@@ -4798,236 +4958,52 @@ public final class IliveLbsSvr {
           return longitude_;
       }
 
-      private double longitude_;
-      private double latitude_;
-
       /**
        * <code>optional double latitude = 3;</code>
        */
       public boolean hasLatitude() {
-          return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-
-      /**
-       * <code>optional double latitude = 3;</code>
-       */
-      public double getLatitude() {
-          return latitude_;
-      }
-    private com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth auth_;
-      private byte memoizedIsInitialized = -1;
-
-      /**
-       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
-       */
-      public boolean hasAuth() {
-          return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-
-      /**
-       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
-       */
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth getAuth() {
-          return auth_ == null ? com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance() : auth_;
-      }
-
-      /**
-       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
-       */
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder getAuthOrBuilder() {
-          return auth_ == null ? com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance() : auth_;
-      }
-
-      private UserLocation(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-          int mutable_bitField0_ = 0;
-          com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-                done = true;
-                break;
-              default: {
-                  if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              uin_ = input.readUInt64();
-              break;
-            }
-            case 17: {
-              bitField0_ |= 0x00000002;
-              longitude_ = input.readDouble();
-              break;
-            }
-            case 25: {
-              bitField0_ |= 0x00000004;
-              latitude_ = input.readDouble();
-              break;
-            }
-            case 34: {
-              com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000008) == 0x00000008)) {
-                subBuilder = auth_.toBuilder();
-              }
-              auth_ = input.readMessage(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(auth_);
-                auth_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000008;
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-      }
-      }
-
-      public final boolean isInitialized() {
-          byte isInitialized = memoizedIsInitialized;
-          if (isInitialized == 1) return true;
-          if (isInitialized == 0) return false;
-
-          memoizedIsInitialized = 1;
-          return true;
-      }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_descriptor;
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
 
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-              java.nio.ByteBuffer data,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-              com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-              com.google.protobuf.ByteString data,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-              byte[] data,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+    /**
+     * <code>optional double latitude = 3;</code>
+     */
+    public double getLatitude() {
+      return latitude_;
     }
 
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(java.io.InputStream input)
-              throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-              java.io.InputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+    /**
+     * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+     */
+    public boolean hasAuth() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseDelimitedFrom(java.io.InputStream input)
+    /**
+     * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+     */
+    public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth getAuth() {
+      return auth_ == null ? com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance() : auth_;
+    }
+
+    /**
+     * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+     */
+    public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder getAuthOrBuilder() {
+      return auth_ == null ? com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance() : auth_;
+    }
+
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
             throws java.io.IOException {
-        return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseDelimitedFrom(
-              java.io.InputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-        com.google.protobuf.CodedInputStream input)
-              throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-      }
-
-      public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parseFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws java.io.IOException {
-          return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.UserLocation prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    public static com.google.protobuf.Parser<UserLocation> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder.class);
-      }
-
-      public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeUInt64(1, uin_);
       }
@@ -5048,19 +5024,19 @@ public final class IliveLbsSvr {
       if (size != -1) return size;
 
       size = 0;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, uin_);
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+                  .computeUInt64Size(1, uin_);
       }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeDoubleSize(2, longitude_);
       }
         if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
+            size += com.google.protobuf.CodedOutputStream
           .computeDoubleSize(3, latitude_);
       }
-        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, getAuth());
       }
@@ -5069,7 +5045,7 @@ public final class IliveLbsSvr {
       return size;
     }
 
-      @java.lang.Override
+    @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
@@ -5082,29 +5058,29 @@ public final class IliveLbsSvr {
       boolean result = true;
       result = result && (hasUin() == other.hasUin());
       if (hasUin()) {
-        result = result && (getUin()
-            == other.getUin());
+          result = result && (getUin()
+                  == other.getUin());
       }
       result = result && (hasLongitude() == other.hasLongitude());
-          if (hasLongitude()) {
-              result = result && (
-                      java.lang.Double.doubleToLongBits(getLongitude())
-            == java.lang.Double.doubleToLongBits(
+      if (hasLongitude()) {
+        result = result && (
+                java.lang.Double.doubleToLongBits(getLongitude())
+                        == java.lang.Double.doubleToLongBits(
                 other.getLongitude()));
       }
       result = result && (hasLatitude() == other.hasLatitude());
-          if (hasLatitude()) {
-              result = result && (
-                      java.lang.Double.doubleToLongBits(getLatitude())
-            == java.lang.Double.doubleToLongBits(
-                other.getLatitude()));
+      if (hasLatitude()) {
+        result = result && (
+                java.lang.Double.doubleToLongBits(getLatitude())
+                        == java.lang.Double.doubleToLongBits(
+                        other.getLatitude()));
       }
-      result = result && (hasAuth() == other.hasAuth());
+        result = result && (hasAuth() == other.hasAuth());
       if (hasAuth()) {
         result = result && getAuth()
             .equals(other.getAuth());
       }
-      result = result && unknownFields.equals(other.unknownFields);
+        result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
 
@@ -5122,65 +5098,106 @@ public final class IliveLbsSvr {
       }
       if (hasLongitude()) {
         hash = (37 * hash) + LONGITUDE_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            java.lang.Double.doubleToLongBits(getLongitude()));
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+                java.lang.Double.doubleToLongBits(getLongitude()));
       }
-      if (hasLatitude()) {
-        hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
-          hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            java.lang.Double.doubleToLongBits(getLatitude()));
+        if (hasLatitude()) {
+            hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
+            hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+                    java.lang.Double.doubleToLongBits(getLatitude()));
       }
       if (hasAuth()) {
         hash = (37 * hash) + AUTH_FIELD_NUMBER;
         hash = (53 * hash) + getAuth().hashCode();
       }
-        hash = (29 * hash) + unknownFields.hashCode();
-        memoizedHashCode = hash;
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
       return hash;
     }
 
-    public Builder newBuilderForType() {
-        return newBuilder();
-    }
+      public Builder newBuilderForType() {
+          return newBuilder();
+      }
 
       public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
+          return this == DEFAULT_INSTANCE
+                  ? new Builder() : new Builder().mergeFrom(this);
       }
 
       @java.lang.Override
       protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<UserLocation> getParserForType() {
-      return PARSER;
-    }
-
-    public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-    /**
-     * Protobuf type {@code com.ceeker.app.study.proto.UserLocation}
-     */
-    public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.UserLocation)
-            com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder {
-        private int bitField0_;
-      private long uin_ ;
-      private double longitude_ ;
-      private double latitude_ ;
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getAuthFieldBuilder();
-        }
+              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          Builder builder = new Builder(parent);
+          return builder;
       }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<UserLocation> getParserForType() {
+          return PARSER;
+      }
+
+      public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getDefaultInstanceForType() {
+          return DEFAULT_INSTANCE;
+      }
+
+      /**
+       * Protobuf type {@code com.ceeker.app.study.proto.UserLocation}
+       */
+      public static final class Builder extends
+              com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+              // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.UserLocation)
+              com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder {
+          private int bitField0_;
+          private long uin_;
+          private double longitude_;
+          private double latitude_;
+
+          private void maybeForceBuilderInitialization() {
+              if (com.google.protobuf.GeneratedMessageV3
+                      .alwaysUseFieldBuilders) {
+                  getAuthFieldBuilder();
+              }
+          }
+
+          private com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth auth_ = null;
+          private com.google.protobuf.SingleFieldBuilderV3<
+                  com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder> authBuilder_;
+
+          public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getDefaultInstanceForType() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance();
+          }
+
+      public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation build() {
+        com.ceeker.app.study.proto.IliveLbsSvr.UserLocation result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+          // Construct using com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.newBuilder()
+          private Builder() {
+              maybeForceBuilderInitialization();
+          }
+
+          private Builder(
+                  com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+              super(parent);
+              maybeForceBuilderInitialization();
+          }
+
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder.class);
+      }
+
       public Builder clear() {
         super.clear();
         uin_ = 0L;
@@ -5192,42 +5209,34 @@ public final class IliveLbsSvr {
         if (authBuilder_ == null) {
           auth_ = null;
         } else {
-          authBuilder_.clear();
+            authBuilder_.clear();
         }
           bitField0_ = (bitField0_ & ~0x00000008);
           return this;
       }
-      private com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth auth_ = null;
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getDefaultInstanceForType() {
-        return com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance();
-      }
+          public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_descriptor;
+          }
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation build() {
-        com.ceeker.app.study.proto.IliveLbsSvr.UserLocation result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation buildPartial() {
-        com.ceeker.app.study.proto.IliveLbsSvr.UserLocation result = new com.ceeker.app.study.proto.IliveLbsSvr.UserLocation(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.uin_ = uin_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.longitude_ = longitude_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.latitude_ = latitude_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation buildPartial() {
+              com.ceeker.app.study.proto.IliveLbsSvr.UserLocation result = new com.ceeker.app.study.proto.IliveLbsSvr.UserLocation(this);
+              int from_bitField0_ = bitField0_;
+              int to_bitField0_ = 0;
+              if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+                  to_bitField0_ |= 0x00000001;
+              }
+              result.uin_ = uin_;
+              if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+                  to_bitField0_ |= 0x00000002;
+              }
+              result.longitude_ = longitude_;
+              if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+                  to_bitField0_ |= 0x00000004;
+              }
+              result.latitude_ = latitude_;
+              if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
         if (authBuilder_ == null) {
@@ -5237,86 +5246,45 @@ public final class IliveLbsSvr {
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
-          return result;
+        return result;
       }
 
-        public Builder clone() {
-            return (Builder) super.clone();
-        }
-
-        private com.google.protobuf.SingleFieldBuilderV3<
-                com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder> authBuilder_;
-
-        // Construct using com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.newBuilder()
-        private Builder() {
-            maybeForceBuilderInitialization();
-        }
-
-        private Builder(
-                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-            super(parent);
-            maybeForceBuilderInitialization();
-        }
-
-        public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_descriptor;
-        }
-
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.class, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder.class);
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_UserLocation_descriptor;
+      public Builder clone() {
+        return (Builder) super.clone();
       }
 
-      public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.UserLocation other) {
-        if (other == com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance()) return this;
-        if (other.hasUin()) {
-          setUin(other.getUin());
-        }
-        if (other.hasLongitude()) {
-          setLongitude(other.getLongitude());
-        }
-        if (other.hasLatitude()) {
-          setLatitude(other.getLatitude());
-        }
-        if (other.hasAuth()) {
-          mergeAuth(other.getAuth());
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-          return this;
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+          return (Builder) super.setField(field, value);
       }
 
-        public final boolean isInitialized() {
-            return true;
-        }
+          public Builder clearField(
+                  com.google.protobuf.Descriptors.FieldDescriptor field) {
+              return (Builder) super.clearField(field);
+          }
 
-        public Builder setField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                java.lang.Object value) {
-            return (Builder) super.setField(field, value);
-        }
+          public Builder clearOneof(
+                  com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+              return (Builder) super.clearOneof(oneof);
+          }
 
-        public Builder clearField(
-                com.google.protobuf.Descriptors.FieldDescriptor field) {
-            return (Builder) super.clearField(field);
-        }
+          public Builder setRepeatedField(
+                  com.google.protobuf.Descriptors.FieldDescriptor field,
+                  int index, java.lang.Object value) {
+              return (Builder) super.setRepeatedField(field, index, value);
+          }
 
-        public Builder clearOneof(
-                com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-            return (Builder) super.clearOneof(oneof);
-        }
-      /**
-       * <code>optional uint64 uin = 1;</code>
-       */
-      public boolean hasUin() {
+          public Builder addRepeatedField(
+                  com.google.protobuf.Descriptors.FieldDescriptor field,
+                  java.lang.Object value) {
+              return (Builder) super.addRepeatedField(field, value);
+          }
+
+          /**
+           * <code>optional uint64 uin = 1;</code>
+           */
+          public boolean hasUin() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
@@ -5334,21 +5302,34 @@ public final class IliveLbsSvr {
         onChanged();
         return this;
       }
-      /**
-       * <code>optional uint64 uin = 1;</code>
-       */
-      public Builder clearUin() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-          uin_ = 0L;
-          onChanged();
-          return this;
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLocation) {
+            return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.UserLocation) other);
+        } else {
+            super.mergeFrom(other);
+            return this;
+        }
       }
 
-        public Builder setRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, java.lang.Object value) {
-            return (Builder) super.setRepeatedField(field, index, value);
-        }
+          public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.UserLocation other) {
+              if (other == com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance()) return this;
+              if (other.hasUin()) {
+                  setUin(other.getUin());
+              }
+              if (other.hasLongitude()) {
+                  setLongitude(other.getLongitude());
+              }
+              if (other.hasLatitude()) {
+                  setLatitude(other.getLatitude());
+              }
+              if (other.hasAuth()) {
+                  mergeAuth(other.getAuth());
+              }
+              this.mergeUnknownFields(other.unknownFields);
+              onChanged();
+              return this;
+      }
       /**
        * <code>optional double longitude = 2;</code>
        */
@@ -5368,23 +5349,30 @@ public final class IliveLbsSvr {
         bitField0_ |= 0x00000002;
         longitude_ = value;
         onChanged();
-        return this;
-      }
-      /**
-       * <code>optional double longitude = 2;</code>
-       */
-      public Builder clearLongitude() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-          longitude_ = 0D;
-          onChanged();
           return this;
       }
 
-        public Builder addRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                java.lang.Object value) {
-            return (Builder) super.addRepeatedField(field, value);
+          public final boolean isInitialized() {
+              return true;
+          }
+
+          public Builder mergeFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws java.io.IOException {
+              com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parsedMessage = null;
+              try {
+                  parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.UserLocation) e.getUnfinishedMessage();
+                  throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
         }
+        return this;
+      }
       /**
        * <code>optional double latitude = 3;</code>
        */
@@ -5401,49 +5389,44 @@ public final class IliveLbsSvr {
        * <code>optional double latitude = 3;</code>
        */
       public Builder setLatitude(double value) {
-        bitField0_ |= 0x00000004;
-        latitude_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional double latitude = 3;</code>
-       */
-      public Builder clearLatitude() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-          latitude_ = 0D;
+          bitField0_ |= 0x00000004;
+          latitude_ = value;
           onChanged();
           return this;
       }
 
-        public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.UserLocation) {
-                return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.UserLocation) other);
-            } else {
-                super.mergeFrom(other);
-                return this;
-            }
-        }
+          /**
+           * <code>optional uint64 uin = 1;</code>
+           */
+          public Builder clearUin() {
+              bitField0_ = (bitField0_ & ~0x00000001);
+              uin_ = 0L;
+              onChanged();
+              return this;
+          }
 
-        public Builder mergeFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-            com.ceeker.app.study.proto.IliveLbsSvr.UserLocation parsedMessage = null;
-            try {
-                parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.UserLocation) e.getUnfinishedMessage();
-                throw e.unwrapIOException();
-            } finally {
-                if (parsedMessage != null) {
-                    mergeFrom(parsedMessage);
-                }
-            }
-            return this;
-        }
-      /**
-       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+          /**
+           * <code>optional double longitude = 2;</code>
+           */
+          public Builder clearLongitude() {
+              bitField0_ = (bitField0_ & ~0x00000002);
+              longitude_ = 0D;
+              onChanged();
+              return this;
+          }
+
+          /**
+           * <code>optional double latitude = 3;</code>
+           */
+          public Builder clearLatitude() {
+              bitField0_ = (bitField0_ & ~0x00000004);
+              latitude_ = 0D;
+              onChanged();
+              return this;
+          }
+
+          /**
+           * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
        */
       public boolean hasAuth() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
@@ -5452,22 +5435,22 @@ public final class IliveLbsSvr {
        * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth getAuth() {
-        if (authBuilder_ == null) {
-          return auth_ == null ? com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance() : auth_;
-        } else {
-          return authBuilder_.getMessage();
-        }
+          if (authBuilder_ == null) {
+              return auth_ == null ? com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance() : auth_;
+          } else {
+              return authBuilder_.getMessage();
+          }
       }
 
-        /**
-         * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
-       */
-      public Builder setAuth(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth value) {
-          if (authBuilder_ == null) {
-              if (value == null) {
+          /**
+           * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+           */
+          public Builder setAuth(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth value) {
+        if (authBuilder_ == null) {
+          if (value == null) {
             throw new NullPointerException();
-              }
-              auth_ = value;
+          }
+          auth_ = value;
           onChanged();
         } else {
           authBuilder_.setMessage(value);
@@ -5475,14 +5458,13 @@ public final class IliveLbsSvr {
         bitField0_ |= 0x00000008;
         return this;
       }
-
-        /**
-         * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
-         */
-        public Builder setAuth(
-                com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder builderForValue) {
-            if (authBuilder_ == null) {
-                auth_ = builderForValue.build();
+      /**
+       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+       */
+      public Builder setAuth(
+          com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder builderForValue) {
+        if (authBuilder_ == null) {
+          auth_ = builderForValue.build();
           onChanged();
         } else {
           authBuilder_.setMessage(builderForValue.build());
@@ -5494,40 +5476,42 @@ public final class IliveLbsSvr {
        * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
        */
       public Builder mergeAuth(com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth value) {
-          if (authBuilder_ == null) {
-              if (((bitField0_ & 0x00000008) == 0x00000008) &&
-                      auth_ != null &&
-                      auth_ != com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance()) {
-                  auth_ =
-                          com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.newBuilder(auth_).mergeFrom(value).buildPartial();
+        if (authBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+                  auth_ != null &&
+                  auth_ != com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance()) {
+            auth_ =
+              com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.newBuilder(auth_).mergeFrom(value).buildPartial();
           } else {
             auth_ = value;
           }
           onChanged();
         } else {
-          authBuilder_.mergeFrom(value);
+            authBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00000008;
-        return this;
+          bitField0_ |= 0x00000008;
+          return this;
       }
-      /**
-       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
-       */
-      public Builder clearAuth() {
-        if (authBuilder_ == null) {
-          auth_ = null;
-          onChanged();
-        } else {
-          authBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000008);
-        return this;
-      }
-      /**
-       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+
+          /**
+           * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+           */
+          public Builder clearAuth() {
+              if (authBuilder_ == null) {
+                  auth_ = null;
+                  onChanged();
+              } else {
+                  authBuilder_.clear();
+              }
+              bitField0_ = (bitField0_ & ~0x00000008);
+              return this;
+          }
+
+          /**
+           * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder getAuthBuilder() {
-        bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000008;
         onChanged();
         return getAuthFieldBuilder().getBuilder();
       }
@@ -5536,240 +5520,243 @@ public final class IliveLbsSvr {
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder getAuthOrBuilder() {
         if (authBuilder_ != null) {
-            return authBuilder_.getMessageOrBuilder();
+          return authBuilder_.getMessageOrBuilder();
         } else {
-            return auth_ == null ?
+          return auth_ == null ?
               com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.getDefaultInstance() : auth_;
         }
       }
-      /**
-       * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-              com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder>
+
+          /**
+           * <code>optional .com.ceeker.app.study.proto.UserLoginAuth auth = 4;</code>
+           */
+          private com.google.protobuf.SingleFieldBuilderV3<
+                  com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder>
           getAuthFieldBuilder() {
-          if (authBuilder_ == null) {
-              authBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                      com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder>(
-                  getAuth(),
-                  getParentForChildren(),
+              if (authBuilder_ == null) {
+                  authBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                          com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuth.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLoginAuthOrBuilder>(
+                          getAuth(),
+                          getParentForChildren(),
                   isClean());
-              auth_ = null;
-          }
-          return authBuilder_;
+          auth_ = null;
+        }
+        return authBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
+        return super.setUnknownFields(unknownFields);
       }
 
-        public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
+      public final Builder mergeUnknownFields(
+              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.mergeUnknownFields(unknownFields);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.UserLocation)
-    }
+          // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.UserLocation)
+      }
 
   }
 
-    /**
-     * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsReq}
-     */
-    public static final class GetUserLbsReq extends
-            com.google.protobuf.GeneratedMessageV3 implements
-            // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetUserLbsReq)
-            GetUserLbsReqOrBuilder {
-        public static final int USER_LOCATIONS_FIELD_NUMBER = 1;
+  /**
+   * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsReq}
+   */
+  public static final class GetUserLbsReq extends
+          com.google.protobuf.GeneratedMessageV3 implements
+          // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetUserLbsReq)
+          GetUserLbsReqOrBuilder {
+      public static final int USER_LOCATIONS_FIELD_NUMBER = 1;
+      @java.lang.Deprecated
+      public static final com.google.protobuf.Parser<GetUserLbsReq>
+              PARSER = new com.google.protobuf.AbstractParser<GetUserLbsReq>() {
+          public GetUserLbsReq parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
+              return new GetUserLbsReq(input, extensionRegistry);
+          }
+      };
+      private static final long serialVersionUID = 0L;
+      // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetUserLbsReq)
+      private static final com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq DEFAULT_INSTANCE;
 
-        // Use GetUserLbsReq.newBuilder() to construct.
-        private GetUserLbsReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-            super(builder);
-        }
-
-        private GetUserLbsReq() {
-            userLocations_ = java.util.Collections.emptyList();
-        }
-
-        @java.lang.Deprecated
-        public static final com.google.protobuf.Parser<GetUserLbsReq>
-                PARSER = new com.google.protobuf.AbstractParser<GetUserLbsReq>() {
-            public GetUserLbsReq parsePartialFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
-                return new GetUserLbsReq(input, extensionRegistry);
+      static {
+          DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq();
       }
-    };
-  private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetUserLbsReq)
-    private static final com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq DEFAULT_INSTANCE;
 
-    static {
-      DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq();
-    }
+      public static final com.google.protobuf.Descriptors.Descriptor
+      getDescriptor() {
+          return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_descriptor;
+      }
 
     private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation> userLocations_;
-        private byte memoizedIsInitialized = -1;
+      private byte memoizedIsInitialized = -1;
 
-        private GetUserLbsReq(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      // Use GetUserLbsReq.newBuilder() to construct.
+    private GetUserLbsReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    /**
+     * <pre>
+     *如果没传经纬度，则通过ip或者qq号定位
+     * </pre>
+     *
+     * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
+     */
+    public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation> getUserLocationsList() {
+      return userLocations_;
+    }
+    private GetUserLbsReq() {
+      userLocations_ = java.util.Collections.emptyList();
+    }
+    /**
+     * <pre>
+     *如果没传经纬度，则通过ip或者qq号定位
+     * </pre>
+     *
+     * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
+     */
+    public int getUserLocationsCount() {
+        return userLocations_.size();
+    }
+    /**
+     * <pre>
+     *如果没传经纬度，则通过ip或者qq号定位
+     * </pre>
+     *
+     * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
+     */
+    public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getUserLocations(int index) {
+      return userLocations_.get(index);
+    }
+    private GetUserLbsReq(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-            this();
-            int mutable_bitField0_ = 0;
-            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
+          boolean done = false;
+          while (!done) {
+              int tag = input.readTag();
           switch (tag) {
-              case 0:
-                  done = true;
-                  break;
-              default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
+            case 0:
+              done = true;
               break;
-            }
-            case 10: {
+              default: {
+                  if (!parseUnknownField(
+                          input, unknownFields, extensionRegistry, tag)) {
+                      done = true;
+                  }
+                  break;
+              }
+              case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
                 userLocations_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation>();
                   mutable_bitField0_ |= 0x00000001;
               }
-                userLocations_.add(
+              userLocations_.add(
                   input.readMessage(com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.PARSER, extensionRegistry));
-              break;
-            }
+                  break;
+              }
           }
-        }
+          }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
+          throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
+                e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
           userLocations_ = java.util.Collections.unmodifiableList(userLocations_);
-        }
-        this.unknownFields = unknownFields.build();
+          }
+          this.unknownFields = unknownFields.build();
           makeExtensionsImmutable();
       }
     }
 
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_descriptor;
-    }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+          return PARSER.parseFrom(data);
+      }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
-                java.nio.ByteBuffer data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-        }
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+              java.nio.ByteBuffer data,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+      }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
         com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+              throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
-                com.google.protobuf.ByteString data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data, extensionRegistry);
-        }
-
-        public final boolean isInitialized() {
-            byte isInitialized = memoizedIsInitialized;
-            if (isInitialized == 1) return true;
-            if (isInitialized == 0) return false;
-
-            memoizedIsInitialized = 1;
-            return true;
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
-                byte[] data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(java.io.InputStream input)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input);
-        }
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+      }
 
-        @java.lang.Override
-        public int hashCode() {
-            if (memoizedHashCode != 0) {
-                return memoizedHashCode;
-            }
-            int hash = 41;
-            hash = (19 * hash) + getDescriptor().hashCode();
-            if (getUserLocationsCount() > 0) {
-                hash = (37 * hash) + USER_LOCATIONS_FIELD_NUMBER;
-                hash = (53 * hash) + getUserLocationsList().hashCode();
-            }
-            hash = (29 * hash) + unknownFields.hashCode();
-            memoizedHashCode = hash;
-            return hash;
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
-                java.io.InputStream input,
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+        byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+              throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseDelimitedFrom(
-                java.io.InputStream input,
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseDelimitedFrom(
+        java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
+            throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
         com.google.protobuf.CodedInputStream input)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-        }
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input);
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
-                com.google.protobuf.CodedInputStream input,
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parseFrom(
+        com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+              .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     public static Builder newBuilder() {
@@ -5781,35 +5768,24 @@ public final class IliveLbsSvr {
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq getDefaultInstance() {
-      return DEFAULT_INSTANCE;
+        return DEFAULT_INSTANCE;
     }
 
-    public static com.google.protobuf.Parser<GetUserLbsReq> parser() {
-      return PARSER;
-    }
+      public static com.google.protobuf.Parser<GetUserLbsReq> parser() {
+          return PARSER;
+      }
 
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-        return this.unknownFields;
-    }
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+          return this.unknownFields;
+      }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.Builder.class);
-    }
-
-    /**
-     * <pre>
-     *如果没传经纬度，则通过ip或者qq号定位
-     * </pre>
-     *
-     * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
-     */
-    public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation> getUserLocationsList() {
-      return userLocations_;
+          .ensureFieldAccessorsInitialized(
+              com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.Builder.class);
     }
 
     /**
@@ -5820,30 +5796,8 @@ public final class IliveLbsSvr {
      * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
      */
     public java.util.List<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder>
-    getUserLocationsOrBuilderList() {
+        getUserLocationsOrBuilderList() {
       return userLocations_;
-    }
-
-    /**
-     * <pre>
-     *如果没传经纬度，则通过ip或者qq号定位
-     * </pre>
-     *
-     * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
-     */
-    public int getUserLocationsCount() {
-      return userLocations_.size();
-    }
-
-    /**
-     * <pre>
-     *如果没传经纬度，则通过ip或者qq号定位
-     * </pre>
-     *
-     * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
-     */
-    public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation getUserLocations(int index) {
-      return userLocations_.get(index);
     }
 
     /**
@@ -5855,32 +5809,41 @@ public final class IliveLbsSvr {
      */
     public com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder getUserLocationsOrBuilder(
         int index) {
-        return userLocations_.get(index);
+      return userLocations_.get(index);
     }
 
-        public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      for (int i = 0; i < userLocations_.size(); i++) {
-        output.writeMessage(1, userLocations_.get(i));
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+    }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+              throws java.io.IOException {
+          for (int i = 0; i < userLocations_.size(); i++) {
+              output.writeMessage(1, userLocations_.get(i));
+          }
+          unknownFields.writeTo(output);
       }
-      unknownFields.writeTo(output);
-    }
 
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
+      public int getSerializedSize() {
+          int size = memoizedSize;
+          if (size != -1) return size;
 
-        size = 0;
-        for (int i = 0; i < userLocations_.size(); i++) {
+          size = 0;
+          for (int i = 0; i < userLocations_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, userLocations_.get(i));
-      }
+          }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
     }
 
-        @java.lang.Override
+    @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
@@ -5890,24 +5853,40 @@ public final class IliveLbsSvr {
       }
       com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq other = (com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq) obj;
 
-            boolean result = true;
+      boolean result = true;
       result = result && getUserLocationsList()
-          .equals(other.getUserLocationsList());
-            result = result && unknownFields.equals(other.unknownFields);
-      return result;
+              .equals(other.getUserLocationsList());
+        result = result && unknownFields.equals(other.unknownFields);
+        return result;
     }
 
-    public Builder newBuilderForType() {
-        return newBuilder();
-    }
+      @java.lang.Override
+      public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+          hash = (19 * hash) + getDescriptor().hashCode();
+          if (getUserLocationsCount() > 0) {
+              hash = (37 * hash) + USER_LOCATIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getUserLocationsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+          return hash;
+      }
 
-        public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-        }
+      public Builder newBuilderForType() {
+          return newBuilder();
+      }
 
-        @java.lang.Override
-    protected Builder newBuilderForType(
+      public Builder toBuilder() {
+          return this == DEFAULT_INSTANCE
+                  ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
@@ -5915,54 +5894,51 @@ public final class IliveLbsSvr {
 
     @java.lang.Override
     public com.google.protobuf.Parser<GetUserLbsReq> getParserForType() {
-      return PARSER;
+        return PARSER;
     }
 
     public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
+        return DEFAULT_INSTANCE;
     }
 
-    /**
-     * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsReq}
-     */
-    public static final class Builder extends
-            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-            // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetUserLbsReq)
+      /**
+       * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsReq}
+       */
+      public static final class Builder extends
+              com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetUserLbsReq)
         com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReqOrBuilder {
       private int bitField0_;
-        private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation> userLocations_ =
-                java.util.Collections.emptyList();
-        private com.google.protobuf.RepeatedFieldBuilderV3<
-                com.ceeker.app.study.proto.IliveLbsSvr.UserLocation, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder> userLocationsBuilder_;
+      private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation> userLocations_ =
+        java.util.Collections.emptyList();
 
-      // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getUserLocationsFieldBuilder();
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        if (userLocationsBuilder_ == null) {
-          userLocations_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-            userLocationsBuilder_.clear();
-        }
-          return this;
-      }
+          // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.newBuilder()
+          private Builder() {
+              maybeForceBuilderInitialization();
+          }
 
-        private Builder(
-                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
+          private com.google.protobuf.RepeatedFieldBuilderV3<
+                  com.ceeker.app.study.proto.IliveLbsSvr.UserLocation, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder> userLocationsBuilder_;
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq getDefaultInstanceForType() {
+          private void maybeForceBuilderInitialization() {
+              if (com.google.protobuf.GeneratedMessageV3
+                      .alwaysUseFieldBuilders) {
+                  getUserLocationsFieldBuilder();
+              }
+          }
+
+          private Builder(
+                  com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+              super(parent);
+              maybeForceBuilderInitialization();
+          }
+
+          public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_descriptor;
+          }
+
+          public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq getDefaultInstanceForType() {
         return com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.getDefaultInstance();
       }
 
@@ -5974,85 +5950,87 @@ public final class IliveLbsSvr {
         return result;
       }
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq buildPartial() {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq result = new com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq(this);
+          protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_fieldAccessorTable
+                      .ensureFieldAccessorsInitialized(
+                              com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.Builder.class);
+          }
+
+          public Builder clear() {
+              super.clear();
+              if (userLocationsBuilder_ == null) {
+                  userLocations_ = java.util.Collections.emptyList();
+                  bitField0_ = (bitField0_ & ~0x00000001);
+              } else {
+                  userLocationsBuilder_.clear();
+              }
+              return this;
+          }
+
+          public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_descriptor;
+          }
+
+          public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq buildPartial() {
+              com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq result = new com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq(this);
         int from_bitField0_ = bitField0_;
         if (userLocationsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
             userLocations_ = java.util.Collections.unmodifiableList(userLocations_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.userLocations_ = userLocations_;
         } else {
           result.userLocations_ = userLocationsBuilder_.build();
         }
         onBuilt();
-          return result;
+        return result;
       }
 
-        public Builder clone() {
-            return (Builder) super.clone();
-        }
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
 
-        public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_descriptor;
-        }
-
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.Builder.class);
-        }
-
-        public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
-            return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsReq_descriptor;
-        }
-
-        public Builder setField(
+      public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
-            return (Builder) super.setField(field, value);
+        return (Builder) super.setField(field, value);
       }
 
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
-          return (Builder) super.clearField(field);
+        return (Builder) super.clearField(field);
       }
 
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-          return (Builder) super.clearOneof(oneof);
+        return (Builder) super.clearOneof(oneof);
       }
 
-        public Builder setRepeatedField(
-                com.google.protobuf.Descriptors.FieldDescriptor field,
-                int index, java.lang.Object value) {
-            return (Builder) super.setRepeatedField(field, index, value);
-        }
-
-        public final boolean isInitialized() {
-            return true;
-        }
-
-        public Builder addRepeatedField(
+      public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+
+          public Builder addRepeatedField(
+                  com.google.protobuf.Descriptors.FieldDescriptor field,
+                  java.lang.Object value) {
+              return (Builder) super.addRepeatedField(field, value);
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq) {
-          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq)other);
+        if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq) {
+          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq) other);
         } else {
-          super.mergeFrom(other);
-          return this;
+            super.mergeFrom(other);
+            return this;
         }
       }
 
-      public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq other) {
+          public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq other) {
         if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq.getDefaultInstance()) return this;
         if (userLocationsBuilder_ == null) {
           if (!other.userLocations_.isEmpty()) {
@@ -6071,9 +6049,9 @@ public final class IliveLbsSvr {
               userLocationsBuilder_.dispose();
               userLocationsBuilder_ = null;
               userLocations_ = other.userLocations_;
-                bitField0_ = (bitField0_ & ~0x00000001);
-                userLocationsBuilder_ =
-                        com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+              bitField0_ = (bitField0_ & ~0x00000001);
+              userLocationsBuilder_ =
+                      com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getUserLocationsFieldBuilder() : null;
             } else {
               userLocationsBuilder_.addAllMessages(other.userLocations_);
@@ -6081,19 +6059,23 @@ public final class IliveLbsSvr {
           }
         }
         this.mergeUnknownFields(other.unknownFields);
-          onChanged();
-          return this;
+        onChanged();
+        return this;
       }
 
-        public Builder mergeFrom(
-                com.google.protobuf.CodedInputStream input,
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+              com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq) e.getUnfinishedMessage();
+            parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsReq) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -6106,7 +6088,7 @@ public final class IliveLbsSvr {
       private void ensureUserLocationsIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
           userLocations_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation>(userLocations_);
-            bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000001;
          }
       }
 
@@ -6121,12 +6103,13 @@ public final class IliveLbsSvr {
         if (userLocationsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(userLocations_);
         } else {
-            return userLocationsBuilder_.getMessageList();
+          return userLocationsBuilder_.getMessageList();
         }
       }
-      /**
-       * <pre>
-       *如果没传经纬度，则通过ip或者qq号定位
+
+          /**
+           * <pre>
+           *如果没传经纬度，则通过ip或者qq号定位
        * </pre>
        *
        * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
@@ -6135,7 +6118,7 @@ public final class IliveLbsSvr {
         if (userLocationsBuilder_ == null) {
           return userLocations_.size();
         } else {
-            return userLocationsBuilder_.getCount();
+          return userLocationsBuilder_.getCount();
         }
       }
       /**
@@ -6149,7 +6132,7 @@ public final class IliveLbsSvr {
         if (userLocationsBuilder_ == null) {
           return userLocations_.get(index);
         } else {
-            return userLocationsBuilder_.getMessage(index);
+          return userLocationsBuilder_.getMessage(index);
         }
       }
       /**
@@ -6163,13 +6146,13 @@ public final class IliveLbsSvr {
           int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation value) {
         if (userLocationsBuilder_ == null) {
           if (value == null) {
-            throw new NullPointerException();
+              throw new NullPointerException();
           }
-          ensureUserLocationsIsMutable();
+            ensureUserLocationsIsMutable();
           userLocations_.set(index, value);
           onChanged();
         } else {
-            userLocationsBuilder_.setMessage(index, value);
+          userLocationsBuilder_.setMessage(index, value);
         }
         return this;
       }
@@ -6184,7 +6167,7 @@ public final class IliveLbsSvr {
           int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder builderForValue) {
         if (userLocationsBuilder_ == null) {
           ensureUserLocationsIsMutable();
-          userLocations_.set(index, builderForValue.build());
+            userLocations_.set(index, builderForValue.build());
           onChanged();
         } else {
           userLocationsBuilder_.setMessage(index, builderForValue.build());
@@ -6207,7 +6190,7 @@ public final class IliveLbsSvr {
           userLocations_.add(value);
           onChanged();
         } else {
-            userLocationsBuilder_.addMessage(value);
+          userLocationsBuilder_.addMessage(value);
         }
         return this;
       }
@@ -6228,7 +6211,7 @@ public final class IliveLbsSvr {
           userLocations_.add(index, value);
           onChanged();
         } else {
-            userLocationsBuilder_.addMessage(index, value);
+          userLocationsBuilder_.addMessage(index, value);
         }
         return this;
       }
@@ -6242,8 +6225,8 @@ public final class IliveLbsSvr {
       public Builder addUserLocations(
           com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder builderForValue) {
         if (userLocationsBuilder_ == null) {
-          ensureUserLocationsIsMutable();
-          userLocations_.add(builderForValue.build());
+            ensureUserLocationsIsMutable();
+            userLocations_.add(builderForValue.build());
           onChanged();
         } else {
           userLocationsBuilder_.addMessage(builderForValue.build());
@@ -6278,10 +6261,10 @@ public final class IliveLbsSvr {
       public Builder addAllUserLocations(
           java.lang.Iterable<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLocation> values) {
         if (userLocationsBuilder_ == null) {
-            ensureUserLocationsIsMutable();
+          ensureUserLocationsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, userLocations_);
-          onChanged();
+                  values, userLocations_);
+            onChanged();
         } else {
             userLocationsBuilder_.addAllMessages(values);
         }
@@ -6295,12 +6278,12 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
        */
       public Builder clearUserLocations() {
-        if (userLocationsBuilder_ == null) {
+          if (userLocationsBuilder_ == null) {
           userLocations_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-            userLocationsBuilder_.clear();
+              bitField0_ = (bitField0_ & ~0x00000001);
+              onChanged();
+          } else {
+          userLocationsBuilder_.clear();
         }
         return this;
       }
@@ -6332,22 +6315,24 @@ public final class IliveLbsSvr {
               int index) {
           return getUserLocationsFieldBuilder().getBuilder(index);
       }
-      /**
-       * <pre>
-       *如果没传经纬度，则通过ip或者qq号定位
+
+          /**
+           * <pre>
+           *如果没传经纬度，则通过ip或者qq号定位
        * </pre>
        *
        * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder getUserLocationsOrBuilder(
-              int index) {
+          int index) {
         if (userLocationsBuilder_ == null) {
-          return userLocations_.get(index);
+            return userLocations_.get(index);
         } else {
             return userLocationsBuilder_.getMessageOrBuilder(index);
         }
       }
-      /**
+
+          /**
        * <pre>
        *如果没传经纬度，则通过ip或者qq号定位
        * </pre>
@@ -6362,28 +6347,30 @@ public final class IliveLbsSvr {
             return java.util.Collections.unmodifiableList(userLocations_);
         }
       }
-      /**
-       * <pre>
-       *如果没传经纬度，则通过ip或者qq号定位
-       * </pre>
-       *
-       * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
-       */
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder addUserLocationsBuilder() {
-          return getUserLocationsFieldBuilder().addBuilder(
-                  com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance());
-      }
-      /**
-       * <pre>
+
+          /**
+           * <pre>
+           *如果没传经纬度，则通过ip或者qq号定位
+           * </pre>
+           *
+           * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
+           */
+          public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder addUserLocationsBuilder() {
+              return getUserLocationsFieldBuilder().addBuilder(
+                      com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance());
+          }
+
+          /**
+           * <pre>
        *如果没传经纬度，则通过ip或者qq号定位
        * </pre>
        *
        * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder addUserLocationsBuilder(
-              int index) {
-          return getUserLocationsFieldBuilder().addBuilder(
-                  index, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance());
+          int index) {
+        return getUserLocationsFieldBuilder().addBuilder(
+            index, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.getDefaultInstance());
       }
       /**
        * <pre>
@@ -6393,287 +6380,236 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLocation user_locations = 1;</code>
        */
       public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder>
-           getUserLocationsBuilderList() {
-        return getUserLocationsFieldBuilder().getBuilderList();
+      getUserLocationsBuilderList() {
+          return getUserLocationsFieldBuilder().getBuilderList();
       }
 
-        private com.google.protobuf.RepeatedFieldBuilderV3<
-                com.ceeker.app.study.proto.IliveLbsSvr.UserLocation, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder>
+          private com.google.protobuf.RepeatedFieldBuilderV3<
+                  com.ceeker.app.study.proto.IliveLbsSvr.UserLocation, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder>
           getUserLocationsFieldBuilder() {
-            if (userLocationsBuilder_ == null) {
-                userLocationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                        com.ceeker.app.study.proto.IliveLbsSvr.UserLocation, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder>(
-                  userLocations_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
-                  getParentForChildren(),
+              if (userLocationsBuilder_ == null) {
+                  userLocationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+                          com.ceeker.app.study.proto.IliveLbsSvr.UserLocation, com.ceeker.app.study.proto.IliveLbsSvr.UserLocation.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLocationOrBuilder>(
+                          userLocations_,
+                          ((bitField0_ & 0x00000001) == 0x00000001),
+                          getParentForChildren(),
                   isClean());
           userLocations_ = null;
-            }
-            return userLocationsBuilder_;
         }
+        return userLocationsBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
+        return super.setUnknownFields(unknownFields);
       }
 
       public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
+              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.mergeUnknownFields(unknownFields);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetUserLbsReq)
+          // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetUserLbsReq)
     }
 
-    }
+  }
 
-    /**
-     * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsRsp}
-     */
-    public static final class GetUserLbsRsp extends
-            com.google.protobuf.GeneratedMessageV3 implements
-            // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetUserLbsRsp)
-            GetUserLbsRspOrBuilder {
-        public static final int INFOS_FIELD_NUMBER = 1;
-
-        // Use GetUserLbsRsp.newBuilder() to construct.
-        private GetUserLbsRsp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-            super(builder);
-        }
-
-        private GetUserLbsRsp() {
-            infos_ = java.util.Collections.emptyList();
-        }
-
-        @java.lang.Deprecated
-        public static final com.google.protobuf.Parser<GetUserLbsRsp>
-                PARSER = new com.google.protobuf.AbstractParser<GetUserLbsRsp>() {
-            public GetUserLbsRsp parsePartialFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
-                return new GetUserLbsRsp(input, extensionRegistry);
+  /**
+   * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsRsp}
+   */
+  public static final class GetUserLbsRsp extends
+          com.google.protobuf.GeneratedMessageV3 implements
+          // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetUserLbsRsp)
+          GetUserLbsRspOrBuilder {
+      public static final int INFOS_FIELD_NUMBER = 1;
+      @java.lang.Deprecated
+      public static final com.google.protobuf.Parser<GetUserLbsRsp>
+              PARSER = new com.google.protobuf.AbstractParser<GetUserLbsRsp>() {
+      public GetUserLbsRsp parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GetUserLbsRsp(input, extensionRegistry);
       }
     };
   private static final long serialVersionUID = 0L;
-    // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetUserLbsRsp)
+      // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetUserLbsRsp)
     private static final com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp DEFAULT_INSTANCE;
 
     static {
       DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp();
     }
 
+      public static final com.google.protobuf.Descriptors.Descriptor
+      getDescriptor() {
+          return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_descriptor;
+      }
+
     private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> infos_;
-        private byte memoizedIsInitialized = -1;
-
-        /**
-         * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-     */
-    public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> getInfosList() {
-        return infos_;
+    private byte memoizedIsInitialized = -1;
+    // Use GetUserLbsRsp.newBuilder() to construct.
+    private GetUserLbsRsp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
     }
-
-        private GetUserLbsRsp(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+    private GetUserLbsRsp() {
+      infos_ = java.util.Collections.emptyList();
+    }
+    private GetUserLbsRsp(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-            this();
-            int mutable_bitField0_ = 0;
-            com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
+      this();
+      int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+            boolean done = false;
+            while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-              case 0:
-                  done = true;
-                  break;
-              default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
+                switch (tag) {
+                    case 0:
+                        done = true;
+                        break;
+                    default: {
+                        if (!parseUnknownField(
+                                input, unknownFields, extensionRegistry, tag)) {
+                            done = true;
+                        }
+                        break;
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                infos_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo>();
-                  mutable_bitField0_ |= 0x00000001;
+                  infos_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo>();
+                mutable_bitField0_ |= 0x00000001;
               }
-                infos_.add(
-                  input.readMessage(com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.PARSER, extensionRegistry));
-              break;
+              infos_.add(
+                      input.readMessage(com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.PARSER, extensionRegistry));
+                break;
             }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                }
+            }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(
+                    e).setUnfinishedMessage(this);
+        } finally {
+            if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
           infos_ = java.util.Collections.unmodifiableList(infos_);
+            }
+            this.unknownFields = unknownFields.build();
+            makeExtensionsImmutable();
         }
-          this.unknownFields = unknownFields.build();
-          makeExtensionsImmutable();
-      }
-        }
-
-        /**
-         * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-         */
-        public int getInfosCount() {
-            return infos_.size();
-        }
-
-        /**
-         * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-         */
-        public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getInfos(int index) {
-            return infos_.get(index);
-        }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_descriptor;
     }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
         java.nio.ByteBuffer data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
-
-        public final boolean isInitialized() {
-            byte isInitialized = memoizedIsInitialized;
-            if (isInitialized == 1) return true;
-            if (isInitialized == 0) return false;
-
-            memoizedIsInitialized = 1;
-            return true;
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
-                java.nio.ByteBuffer data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-        }
+          return PARSER.parseFrom(data);
+      }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
-                com.google.protobuf.ByteString data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data, extensionRegistry);
-        }
-
-        @java.lang.Override
-        public int hashCode() {
-            if (memoizedHashCode != 0) {
-                return memoizedHashCode;
-            }
-            int hash = 41;
-            hash = (19 * hash) + getDescriptor().hashCode();
-            if (getInfosCount() > 0) {
-                hash = (37 * hash) + INFOS_FIELD_NUMBER;
-                hash = (53 * hash) + getInfosList().hashCode();
-            }
-            hash = (29 * hash) + unknownFields.hashCode();
-            memoizedHashCode = hash;
-            return hash;
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
-                byte[] data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(java.io.InputStream input)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
-                java.io.InputStream input,
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+              java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-        }
+              throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+      }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-        }
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+              com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseDelimitedFrom(
-                java.io.InputStream input,
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+              com.google.protobuf.ByteString data,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+      }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+        java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
-        com.google.protobuf.CodedInputStream input)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
-                com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+              .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseDelimitedFrom(
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp getDefaultInstance() {
-      return DEFAULT_INSTANCE;
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+              com.google.protobuf.CodedInputStream input)
+              throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+                  .parseWithIOException(PARSER, input);
     }
 
-    public static com.google.protobuf.Parser<GetUserLbsRsp> parser() {
-      return PARSER;
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp getDefaultInstance() {
+          return DEFAULT_INSTANCE;
+      }
+
+      public static com.google.protobuf.Parser<GetUserLbsRsp> parser() {
+          return PARSER;
+      }
+
+      @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
-        return this.unknownFields;
+      return this.unknownFields;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    internalGetFieldAccessorTable() {
         return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
                         com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.Builder.class);
     }
+
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+       */
+      public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> getInfosList() {
+          return infos_;
+      }
 
     /**
      * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
@@ -6683,34 +6619,65 @@ public final class IliveLbsSvr {
       return infos_;
     }
 
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+       */
+      public int getInfosCount() {
+          return infos_.size();
+      }
+
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+       */
+      public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo getInfos(int index) {
+          return infos_.get(index);
+      }
+
     /**
      * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
      */
     public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder getInfosOrBuilder(
-            int index) {
-        return infos_.get(index);
+        int index) {
+      return infos_.get(index);
     }
 
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      for (int i = 0; i < infos_.size(); i++) {
-        output.writeMessage(1, infos_.get(i));
+      public final boolean isInitialized() {
+          byte isInitialized = memoizedIsInitialized;
+          if (isInitialized == 1) return true;
+          if (isInitialized == 0) return false;
+
+          memoizedIsInitialized = 1;
+          return true;
       }
-      unknownFields.writeTo(output);
-    }
 
-    public int getSerializedSize() {
-      int size = memoizedSize;
+      public static Builder newBuilder() {
+          return DEFAULT_INSTANCE.toBuilder();
+      }
+
+      public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp prototype) {
+          return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+              throws java.io.IOException {
+          for (int i = 0; i < infos_.size(); i++) {
+              output.writeMessage(1, infos_.get(i));
+          }
+          unknownFields.writeTo(output);
+      }
+
+      public int getSerializedSize() {
+          int size = memoizedSize;
       if (size != -1) return size;
 
-        size = 0;
-        for (int i = 0; i < infos_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
+      size = 0;
+      for (int i = 0; i < infos_.size(); i++) {
+          size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, infos_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
-        return size;
+      return size;
     }
 
     @java.lang.Override
@@ -6723,79 +6690,92 @@ public final class IliveLbsSvr {
       }
       com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp other = (com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp) obj;
 
-      boolean result = true;
-      result = result && getInfosList()
-              .equals(other.getInfosList());
+        boolean result = true;
+        result = result && getInfosList()
+                .equals(other.getInfosList());
         result = result && unknownFields.equals(other.unknownFields);
-      return result;
+        return result;
     }
 
-        public Builder newBuilderForType() {
-            return newBuilder();
-        }
-
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+          return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+        if (getInfosCount() > 0) {
+        hash = (37 * hash) + INFOS_FIELD_NUMBER;
+        hash = (53 * hash) + getInfosList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
     }
 
-        @java.lang.Override
+      public Builder newBuilderForType() {
+          return newBuilder();
+      }
+
+      public Builder toBuilder() {
+          return this == DEFAULT_INSTANCE
+                  ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
 
-    @java.lang.Override
+      @java.lang.Override
     public com.google.protobuf.Parser<GetUserLbsRsp> getParserForType() {
       return PARSER;
     }
 
     public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
+        return DEFAULT_INSTANCE;
     }
 
-        /**
-         * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsRsp}
-         */
-        public static final class Builder extends
-                com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-                // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetUserLbsRsp)
+      /**
+       * Protobuf type {@code com.ceeker.app.study.proto.GetUserLbsRsp}
+       */
+      public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetUserLbsRsp)
         com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRspOrBuilder {
-            private int bitField0_;
+      private int bitField0_;
       private java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> infos_ =
-              java.util.Collections.emptyList();
-            private com.google.protobuf.RepeatedFieldBuilderV3<
-                    com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder> infosBuilder_;
+        java.util.Collections.emptyList();
 
-      // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getInfosFieldBuilder();
-        }
-      }
-      public Builder clear() {
-        super.clear();
-        if (infosBuilder_ == null) {
-          infos_ = java.util.Collections.emptyList();
-            bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-            infosBuilder_.clear();
-        }
-          return this;
-      }
+          // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.newBuilder()
+          private Builder() {
+              maybeForceBuilderInitialization();
+          }
 
-            private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
+          private com.google.protobuf.RepeatedFieldBuilderV3<
+                  com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder> infosBuilder_;
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp getDefaultInstanceForType() {
+          private void maybeForceBuilderInitialization() {
+              if (com.google.protobuf.GeneratedMessageV3
+                      .alwaysUseFieldBuilders) {
+                  getInfosFieldBuilder();
+              }
+          }
+
+          private Builder(
+                  com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+              super(parent);
+              maybeForceBuilderInitialization();
+          }
+
+          public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_descriptor;
+          }
+
+          public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp getDefaultInstanceForType() {
         return com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.getDefaultInstance();
       }
 
@@ -6807,79 +6787,81 @@ public final class IliveLbsSvr {
         return result;
       }
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp buildPartial() {
+          protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_fieldAccessorTable
+                      .ensureFieldAccessorsInitialized(
+                              com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.Builder.class);
+          }
+
+          public Builder clear() {
+              super.clear();
+              if (infosBuilder_ == null) {
+                  infos_ = java.util.Collections.emptyList();
+                  bitField0_ = (bitField0_ & ~0x00000001);
+              } else {
+                  infosBuilder_.clear();
+              }
+              return this;
+          }
+
+          public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_descriptor;
+          }
+
+          public com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp buildPartial() {
         com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp result = new com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp(this);
         int from_bitField0_ = bitField0_;
         if (infosBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
-            infos_ = java.util.Collections.unmodifiableList(infos_);
+              infos_ = java.util.Collections.unmodifiableList(infos_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
           result.infos_ = infos_;
         } else {
           result.infos_ = infosBuilder_.build();
         }
-          onBuilt();
-          return result;
+        onBuilt();
+        return result;
       }
 
-            public Builder clone() {
-                return (Builder) super.clone();
-            }
-
-            public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_descriptor;
-            }
-
-            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_fieldAccessorTable
-                        .ensureFieldAccessorsInitialized(
-                                com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp.Builder.class);
-            }
-
-            public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetUserLbsRsp_descriptor;
-            }
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
 
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
-          return (Builder) super.setField(field, value);
+        return (Builder) super.setField(field, value);
       }
 
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
-          return (Builder) super.clearField(field);
+        return (Builder) super.clearField(field);
       }
 
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-          return (Builder) super.clearOneof(oneof);
+        return (Builder) super.clearOneof(oneof);
       }
 
-            public Builder setRepeatedField(
+      public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           int index, java.lang.Object value) {
-                return (Builder) super.setRepeatedField(field, index, value);
-            }
+          return (Builder) super.setRepeatedField(field, index, value);
+      }
 
-            public final boolean isInitialized() {
-                return true;
-            }
-
-            public Builder addRepeatedField(
+      public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           java.lang.Object value) {
         return (Builder) super.addRepeatedField(field, value);
       }
 
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp) {
-          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp)other);
-        } else {
+          public Builder mergeFrom(com.google.protobuf.Message other) {
+              if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp) {
+                  return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp) other);
+              } else {
           super.mergeFrom(other);
           return this;
         }
@@ -6902,10 +6884,10 @@ public final class IliveLbsSvr {
           if (!other.infos_.isEmpty()) {
             if (infosBuilder_.isEmpty()) {
               infosBuilder_.dispose();
-              infosBuilder_ = null;
+                infosBuilder_ = null;
                 infos_ = other.infos_;
                 bitField0_ = (bitField0_ & ~0x00000001);
-                infosBuilder_ =
+              infosBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getInfosFieldBuilder() : null;
             } else {
@@ -6913,13 +6895,17 @@ public final class IliveLbsSvr {
             }
           }
         }
-          this.mergeUnknownFields(other.unknownFields);
-          onChanged();
-          return this;
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
       }
 
-            public Builder mergeFrom(
-                    com.google.protobuf.CodedInputStream input,
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp parsedMessage = null;
@@ -6929,8 +6915,8 @@ public final class IliveLbsSvr {
           parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.GetUserLbsRsp) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+            if (parsedMessage != null) {
+                mergeFrom(parsedMessage);
           }
         }
         return this;
@@ -6938,7 +6924,7 @@ public final class IliveLbsSvr {
 
       private void ensureInfosIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-            infos_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo>(infos_);
+          infos_ = new java.util.ArrayList<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo>(infos_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -6947,7 +6933,7 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> getInfosList() {
-        if (infosBuilder_ == null) {
+          if (infosBuilder_ == null) {
           return java.util.Collections.unmodifiableList(infos_);
         } else {
           return infosBuilder_.getMessageList();
@@ -6974,11 +6960,11 @@ public final class IliveLbsSvr {
         }
       }
 
-            /**
-             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder setInfos(
-          int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
+              int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
         if (infosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6991,12 +6977,11 @@ public final class IliveLbsSvr {
         }
         return this;
       }
-
-            /**
-             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder setInfos(
-          int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
+              int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
         if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           infos_.set(index, builderForValue.build());
@@ -7022,17 +7007,16 @@ public final class IliveLbsSvr {
         }
         return this;
       }
-
-            /**
-             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder addInfos(
-          int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
+              int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo value) {
         if (infosBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureInfosIsMutable();
+            ensureInfosIsMutable();
           infos_.add(index, value);
           onChanged();
         } else {
@@ -7040,9 +7024,8 @@ public final class IliveLbsSvr {
         }
         return this;
       }
-
-            /**
-             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder addInfos(
           com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
@@ -7055,9 +7038,8 @@ public final class IliveLbsSvr {
         }
         return this;
       }
-
-            /**
-             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public Builder addInfos(
           int index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder builderForValue) {
@@ -7070,13 +7052,12 @@ public final class IliveLbsSvr {
         }
         return this;
       }
-
-            /**
-             * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-             */
+      /**
+       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+       */
       public Builder addAllInfos(
           java.lang.Iterable<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo> values) {
-          if (infosBuilder_ == null) {
+        if (infosBuilder_ == null) {
           ensureInfosIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
               values, infos_);
@@ -7116,8 +7097,8 @@ public final class IliveLbsSvr {
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder getInfosBuilder(
-          int index) {
-        return getInfosFieldBuilder().getBuilder(index);
+              int index) {
+          return getInfosFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
@@ -7126,238 +7107,264 @@ public final class IliveLbsSvr {
           int index) {
         if (infosBuilder_ == null) {
           return infos_.get(index);  } else {
-          return infosBuilder_.getMessageOrBuilder(index);
+            return infosBuilder_.getMessageOrBuilder(index);
         }
       }
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-       */
-      public java.util.List<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>
-           getInfosOrBuilderList() {
-        if (infosBuilder_ != null) {
-          return infosBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(infos_);
-        }
-      }
-      /**
-       * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
-       */
-      public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder addInfosBuilder() {
+
+          /**
+           * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+           */
+          public java.util.List<? extends com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>
+          getInfosOrBuilderList() {
+              if (infosBuilder_ != null) {
+                  return infosBuilder_.getMessageOrBuilderList();
+              } else {
+                  return java.util.Collections.unmodifiableList(infos_);
+              }
+          }
+
+          /**
+           * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
+           */
+          public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder addInfosBuilder() {
         return getInfosFieldBuilder().addBuilder(
-            com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance());
+                com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder addInfosBuilder(
-              int index) {
-          return getInfosFieldBuilder().addBuilder(
+          int index) {
+        return getInfosFieldBuilder().addBuilder(
             index, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .com.ceeker.app.study.proto.UserLbsInfo infos = 1;</code>
        */
       public java.util.List<com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder>
-           getInfosBuilderList() {
+      getInfosBuilderList() {
           return getInfosFieldBuilder().getBuilderList();
       }
-
-            private com.google.protobuf.RepeatedFieldBuilderV3<
-                    com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>
-            getInfosFieldBuilder() {
-                if (infosBuilder_ == null) {
-                    infosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                            com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>(
-                  infos_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>
+      getInfosFieldBuilder() {
+          if (infosBuilder_ == null) {
+              infosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+                      com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfo.Builder, com.ceeker.app.study.proto.IliveLbsSvr.UserLbsInfoOrBuilder>(
+                      infos_,
+                      ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
-                            isClean());
-                    infos_ = null;
-                }
-                return infosBuilder_;
+                  isClean());
+          infos_ = null;
+        }
+        return infosBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
+        return super.setUnknownFields(unknownFields);
       }
 
       public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
+              final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.mergeUnknownFields(unknownFields);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetUserLbsRsp)
-        }
+          // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetUserLbsRsp)
+      }
 
-    }
+  }
 
     /**
      * Protobuf type {@code com.ceeker.app.study.proto.GetLocationByIpReq}
      */
     public static final class GetLocationByIpReq extends
             com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetLocationByIpReq)
+            // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetLocationByIpReq)
             GetLocationByIpReqOrBuilder {
         public static final int USER_IP_FIELD_NUMBER = 1;
-
-        // Use GetLocationByIpReq.newBuilder() to construct.
-        private GetLocationByIpReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-            super(builder);
-        }
-
-        private GetLocationByIpReq() {
-            userIp_ = 0;
-        }
-
         @java.lang.Deprecated
         public static final com.google.protobuf.Parser<GetLocationByIpReq>
                 PARSER = new com.google.protobuf.AbstractParser<GetLocationByIpReq>() {
             public GetLocationByIpReq parsePartialFrom(
                     com.google.protobuf.CodedInputStream input,
                     com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
+          throws com.google.protobuf.InvalidProtocolBufferException {
           return new GetLocationByIpReq(input, extensionRegistry);
-      }
+            }
     };
   private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetLocationByIpReq)
     private static final com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq DEFAULT_INSTANCE;
 
-    static {
-      DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq();
-    }
-
-        private int bitField0_;
-        private int userIp_;
-        private byte memoizedIsInitialized = -1;
-
-        private GetLocationByIpReq(
-                com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            this();
-            int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-            switch (tag) {
-                case 0:
-                    done = true;
-                    break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              userIp_ = input.readUInt32();
-              break;
-            }
-          }
+        static {
+            DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq();
         }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpReq_descriptor;
     }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
+    private int bitField0_;
+    private int userIp_;
+    private byte memoizedIsInitialized = -1;
+    // Use GetLocationByIpReq.newBuilder() to construct.
+    private GetLocationByIpReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    /**
+     * <code>optional uint32 user_ip = 1;</code>
+     */
+    public boolean hasUserIp() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional uint32 user_ip = 1;</code>
+     */
+    public int getUserIp() {
+        return userIp_;
+    }
+
+        private GetLocationByIpReq() {
+            userIp_ = 0;
+        }
+
+        private GetLocationByIpReq(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+              com.google.protobuf.UnknownFieldSet.newBuilder();
+            try {
+                boolean done = false;
+                while (!done) {
+                    int tag = input.readTag();
+                    switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                      input, unknownFields, extensionRegistry, tag)) {
+                  done = true;
+              }
+                break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              userIp_ = input.readUInt32();
+                break;
+            }
+                    }
+                }
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+                makeExtensionsImmutable();
+            }
+        }
+
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                throws java.io.IOException {
+            if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                output.writeUInt32(1, userIp_);
+            }
+            unknownFields.writeTo(output);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+        return PARSER.parseFrom(data);
+    }
 
         public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
-                java.nio.ByteBuffer data,
+        java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+                throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data, extensionRegistry);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
-        com.google.protobuf.ByteString data)
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
+            com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+      return PARSER.parseFrom(data);
+    }
 
         public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
                 com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
+            return PARSER.parseFrom(data, extensionRegistry);
         }
 
         public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
             return PARSER.parseFrom(data);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
-                byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
-        }
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input);
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-        }
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input, extensionRegistry);
+    }
 
         public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
-        }
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseDelimitedFrom(
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
+        throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-        }
+    }
 
         public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
                 com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+                throws java.io.IOException {
+            return com.google.protobuf.GeneratedMessageV3
+                    .parseWithIOException(PARSER, input);
         }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
-                com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+        public static Builder newBuilder() {
+            return DEFAULT_INSTANCE.toBuilder();
+        }
+
+    public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq getDefaultInstance() {
@@ -7371,67 +7378,44 @@ public final class IliveLbsSvr {
     @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
-        return this.unknownFields;
+      return this.unknownFields;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpReq_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
-                        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.Builder.class);
-    }
-
-    /**
-     * <code>optional uint32 user_ip = 1;</code>
-     */
-    public boolean hasUserIp() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-
-    /**
-     * <code>optional uint32 user_ip = 1;</code>
-     */
-    public int getUserIp() {
-      return userIp_;
+      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpReq_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                      com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.Builder.class);
     }
 
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
-        if (isInitialized == 1) return true;
-        if (isInitialized == 0) return false;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
-        memoizedIsInitialized = 1;
-        return true;
+      memoizedIsInitialized = 1;
+      return true;
     }
 
-        public static Builder newBuilder() {
-            return DEFAULT_INSTANCE.toBuilder();
-        }
-
-        public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq prototype) {
-            return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-        }
-
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeUInt32(1, userIp_);
-      }
-      unknownFields.writeTo(output);
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+        return builder;
     }
 
     public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
+        int size = memoizedSize;
+        if (size != -1) return size;
 
         size = 0;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, userIp_);
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          size += com.google.protobuf.CodedOutputStream
+                  .computeUInt32Size(1, userIp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
-        return size;
+      return size;
     }
 
     @java.lang.Override
@@ -7439,12 +7423,12 @@ public final class IliveLbsSvr {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq)) {
-        return super.equals(obj);
-      }
-      com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq other = (com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq) obj;
+        if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq)) {
+            return super.equals(obj);
+        }
+        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq other = (com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq) obj;
 
-      boolean result = true;
+        boolean result = true;
         result = result && (hasUserIp() == other.hasUserIp());
       if (hasUserIp()) {
         result = result && (getUserIp()
@@ -7465,41 +7449,33 @@ public final class IliveLbsSvr {
         hash = (37 * hash) + USER_IP_FIELD_NUMBER;
         hash = (53 * hash) + getUserIp();
       }
-        hash = (29 * hash) + unknownFields.hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-        public Builder newBuilderForType() {
-            return newBuilder(); }
+    public Builder newBuilderForType() { return newBuilder(); }
 
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
+        @java.lang.Override
+        public com.google.protobuf.Parser<GetLocationByIpReq> getParserForType() {
+            return PARSER;
+        }
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetLocationByIpReq> getParserForType() {
-      return PARSER;
-    }
-
-    public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
+        public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq getDefaultInstanceForType() {
+            return DEFAULT_INSTANCE;
+        }
 
         /**
          * Protobuf type {@code com.ceeker.app.study.proto.GetLocationByIpReq}
          */
         public static final class Builder extends
                 com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-                // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetLocationByIpReq)
+        // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetLocationByIpReq)
         com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReqOrBuilder {
       private int bitField0_;
       private int userIp_ ;
@@ -7511,54 +7487,19 @@ public final class IliveLbsSvr {
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
+          super(parent);
+          maybeForceBuilderInitialization();
       }
 
-            public Builder clear() {
-                super.clear();
-                userIp_ = 0;
-                bitField0_ = (bitField0_ & ~0x00000001);
-        return this;
-      }
+            private void maybeForceBuilderInitialization() {
+                if (com.google.protobuf.GeneratedMessageV3
+                        .alwaysUseFieldBuilders) {
+                }
+            }
 
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpReq_descriptor;
-      }
-
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq getDefaultInstanceForType() {
-        return com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.getDefaultInstance();
-      }
-
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq build() {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq buildPartial() {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq result = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
-        result.userIp_ = userIp_;
-        result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
-      }
-
-            public Builder clone() {
-                return (Builder) super.clone();
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpReq_descriptor;
             }
 
             protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -7568,47 +7509,68 @@ public final class IliveLbsSvr {
                                 com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.class, com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.Builder.class);
             }
 
+            public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq getDefaultInstanceForType() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.getDefaultInstance();
+            }
+
+            public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq build() {
+                com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq result = buildPartial();
+                if (!result.isInitialized()) {
+                    throw newUninitializedMessageException(result);
+                }
+                return result;
+            }
+
+            public Builder clear() {
+                super.clear();
+                userIp_ = 0;
+                bitField0_ = (bitField0_ & ~0x00000001);
+                return this;
+            }
+
             public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
                 return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpReq_descriptor;
             }
 
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-          return (Builder) super.setField(field, value);
+      public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq buildPartial() {
+        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq result = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq(this);
+          int from_bitField0_ = bitField0_;
+          int to_bitField0_ = 0;
+          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+              to_bitField0_ |= 0x00000001;
+          }
+          result.userIp_ = userIp_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
       }
 
-      public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
-          return (Builder) super.clearField(field);
-      }
+            public Builder clone() {
+                return (Builder) super.clone();
+            }
 
-      public Builder clearOneof(
+            public Builder setField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    java.lang.Object value) {
+                return (Builder) super.setField(field, value);
+            }
+
+            public Builder clearField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field) {
+                return (Builder) super.clearField(field);
+            }
+
+            public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-          return (Builder) super.clearOneof(oneof);
+        return (Builder) super.clearOneof(oneof);
       }
 
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
           int index, java.lang.Object value) {
-          return (Builder) super.setRepeatedField(field, index, value);
+        return (Builder) super.setRepeatedField(field, index, value);
       }
-
-            public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq other) {
-                if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.getDefaultInstance())
-                    return this;
-                if (other.hasUserIp()) {
-                    setUserIp(other.getUserIp());
-                }
-                this.mergeUnknownFields(other.unknownFields);
-                onChanged();
-                return this;
-            }
-
-            public final boolean isInitialized() {
-                return true;
-            }
 
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
@@ -7616,28 +7578,42 @@ public final class IliveLbsSvr {
         return (Builder) super.addRepeatedField(field, value);
       }
 
-            public Builder mergeFrom(com.google.protobuf.Message other) {
-                if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq) {
-          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq) other);
-                } else {
-                    super.mergeFrom(other);
-                    return this;
-                }
-            }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq) {
+          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
 
-            public Builder mergeFrom(
-                    com.google.protobuf.CodedInputStream input,
+      public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq other) {
+        if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq.getDefaultInstance()) return this;
+        if (other.hasUserIp()) {
+          setUserIp(other.getUserIp());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+          return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+              throws java.io.IOException {
         com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
           parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpReq) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
+            throw e.unwrapIOException();
         } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+            if (parsedMessage != null) {
+                mergeFrom(parsedMessage);
           }
         }
         return this;
@@ -7646,36 +7622,38 @@ public final class IliveLbsSvr {
        * <code>optional uint32 user_ip = 1;</code>
        */
       public boolean hasUserIp() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+          return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      /**
-       * <code>optional uint32 user_ip = 1;</code>
-       */
-      public int getUserIp() {
-        return userIp_;
-      }
-      /**
-       * <code>optional uint32 user_ip = 1;</code>
-       */
-      public Builder setUserIp(int value) {
-        bitField0_ |= 0x00000001;
-        userIp_ = value;
+
+            /**
+             * <code>optional uint32 user_ip = 1;</code>
+             */
+            public int getUserIp() {
+                return userIp_;
+            }
+
+            /**
+             * <code>optional uint32 user_ip = 1;</code>
+             */
+            public Builder setUserIp(int value) {
+                bitField0_ |= 0x00000001;
+                userIp_ = value;
+                onChanged();
+                return this;
+            }
+
+            /**
+             * <code>optional uint32 user_ip = 1;</code>
+             */
+            public Builder clearUserIp() {
+                bitField0_ = (bitField0_ & ~0x00000001);
+        userIp_ = 0;
         onChanged();
         return this;
       }
-      /**
-       * <code>optional uint32 user_ip = 1;</code>
-       */
-      public Builder clearUserIp() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-          userIp_ = 0;
-          onChanged();
-        return this;
-      }
-
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
+        return super.setUnknownFields(unknownFields);
       }
 
       public final Builder mergeUnknownFields(
@@ -7685,52 +7663,36 @@ public final class IliveLbsSvr {
 
 
       // @@protoc_insertion_point(builder_scope:com.ceeker.app.study.proto.GetLocationByIpReq)
-        }
-
     }
 
-    /**
-     * Protobuf type {@code com.ceeker.app.study.proto.GetLocationByIpRsp}
-     */
-    public static final class GetLocationByIpRsp extends
-            com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetLocationByIpRsp)
-            GetLocationByIpRspOrBuilder {
-        public static final int BYTES_COUNTRY_FIELD_NUMBER = 1;
+  }
 
-        // Use GetLocationByIpRsp.newBuilder() to construct.
-        private GetLocationByIpRsp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-            super(builder);
-        }
-
-        private GetLocationByIpRsp() {
-            bytesCountry_ = com.google.protobuf.ByteString.EMPTY;
-            uint32Countryid_ = 0;
-            bytesProv_ = com.google.protobuf.ByteString.EMPTY;
-            uint32Provid_ = 0;
-            bytesCity_ = com.google.protobuf.ByteString.EMPTY;
-            uint32Cityid_ = 0;
-        }
-    public static final int UINT32_COUNTRYID_FIELD_NUMBER = 2;
-    public static final int BYTES_PROV_FIELD_NUMBER = 3;
-    public static final int UINT32_PROVID_FIELD_NUMBER = 4;
-        public static final int BYTES_CITY_FIELD_NUMBER = 5;
-        public static final int UINT32_CITYID_FIELD_NUMBER = 6;
-        @java.lang.Deprecated public static final com.google.protobuf.Parser<GetLocationByIpRsp>
-                PARSER = new com.google.protobuf.AbstractParser<GetLocationByIpRsp>() {
-            public GetLocationByIpRsp parsePartialFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
+  /**
+   * Protobuf type {@code com.ceeker.app.study.proto.GetLocationByIpRsp}
+   */
+  public static final class GetLocationByIpRsp extends
+      com.google.protobuf.GeneratedMessageV3 implements
+          // @@protoc_insertion_point(message_implements:com.ceeker.app.study.proto.GetLocationByIpRsp)
+          GetLocationByIpRspOrBuilder {
+      public static final int BYTES_COUNTRY_FIELD_NUMBER = 1;
+      public static final int BYTES_CITY_FIELD_NUMBER = 5;
+      public static final int UINT32_CITYID_FIELD_NUMBER = 6;
+      @java.lang.Deprecated
+      public static final com.google.protobuf.Parser<GetLocationByIpRsp>
+              PARSER = new com.google.protobuf.AbstractParser<GetLocationByIpRsp>() {
+          public GetLocationByIpRsp parsePartialFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws com.google.protobuf.InvalidProtocolBufferException {
           return new GetLocationByIpRsp(input, extensionRegistry);
-      }
-    };
-  private static final long serialVersionUID = 0L;
+          }
+      };
+      private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(class_scope:com.ceeker.app.study.proto.GetLocationByIpRsp)
     private static final com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp DEFAULT_INSTANCE;
 
     static {
-      DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp();
+        DEFAULT_INSTANCE = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp();
     }
 
     private int bitField0_;
@@ -7738,28 +7700,43 @@ public final class IliveLbsSvr {
     private int uint32Countryid_;
     private com.google.protobuf.ByteString bytesProv_;
     private int uint32Provid_;
-    private com.google.protobuf.ByteString bytesCity_;
-        private int uint32Cityid_;
-        private byte memoizedIsInitialized = -1;
 
-        private GetLocationByIpRsp(
-                com.google.protobuf.CodedInputStream input,
+    public static final int UINT32_COUNTRYID_FIELD_NUMBER = 2;
+    private com.google.protobuf.ByteString bytesCity_;
+    private int uint32Cityid_;
+    private byte memoizedIsInitialized = -1;
+
+    public static final int BYTES_PROV_FIELD_NUMBER = 3;
+    // Use GetLocationByIpRsp.newBuilder() to construct.
+    private GetLocationByIpRsp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetLocationByIpRsp() {
+      bytesCountry_ = com.google.protobuf.ByteString.EMPTY;
+      uint32Countryid_ = 0;
+      bytesProv_ = com.google.protobuf.ByteString.EMPTY;
+      uint32Provid_ = 0;
+      bytesCity_ = com.google.protobuf.ByteString.EMPTY;
+      uint32Cityid_ = 0;
+    }
+    private GetLocationByIpRsp(
+        com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-            this();
-            int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+      this();
+      int mutable_bitField0_ = 0;
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-            switch (tag) {
-                case 0:
-                    done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
+          switch (tag) {
+            case 0:
+              done = true;
+                break;
+              default: {
+                  if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
@@ -7767,185 +7744,165 @@ public final class IliveLbsSvr {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              bytesCountry_ = input.readBytes();
-              break;
+                bytesCountry_ = input.readBytes();
+                break;
             }
-            case 16: {
+              case 16: {
               bitField0_ |= 0x00000002;
               uint32Countryid_ = input.readUInt32();
-              break;
-            }
-            case 26: {
-              bitField0_ |= 0x00000004;
-              bytesProv_ = input.readBytes();
-              break;
+                  break;
+              }
+              case 26: {
+                  bitField0_ |= 0x00000004;
+                  bytesProv_ = input.readBytes();
+                  break;
             }
             case 32: {
               bitField0_ |= 0x00000008;
               uint32Provid_ = input.readUInt32();
-              break;
+                break;
             }
-            case 42: {
-              bitField0_ |= 0x00000010;
-              bytesCity_ = input.readBytes();
-              break;
+              case 42: {
+                  bitField0_ |= 0x00000010;
+                  bytesCity_ = input.readBytes();
+                  break;
             }
             case 48: {
               bitField0_ |= 0x00000020;
               uint32Cityid_ = input.readUInt32();
-              break;
+                break;
             }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
           throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+                  e).setUnfinishedMessage(this);
       } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
       }
     }
 
+    public static final int UINT32_PROVID_FIELD_NUMBER = 4;
+
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_descriptor;
+    getDescriptor() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_descriptor;
     }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
         java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+            throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
-                java.nio.ByteBuffer data,
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+        java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data, extensionRegistry);
-        }
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+          return PARSER.parseFrom(data);
+      }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
-                com.google.protobuf.ByteString data,
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+        com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data, extensionRegistry);
-        }
+              throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+      }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
-                byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-        }
-
-    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseWithIOException(PARSER, input);
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(byte[] data)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
     }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(java.io.InputStream input)
+              throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+                  .parseWithIOException(PARSER, input);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+                .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseDelimitedFrom(java.io.InputStream input)
+              throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+                  .parseDelimitedWithIOException(PARSER, input);
+      }
+
+      public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseDelimitedFrom(
+              java.io.InputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+                  .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+        com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-        }
+        return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
 
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-              .parseDelimitedWithIOException(PARSER, input);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseDelimitedFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
-                com.google.protobuf.CodedInputStream input)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input);
-        }
-
-        public final boolean isInitialized() {
-            byte isInitialized = memoizedIsInitialized;
-            if (isInitialized == 1) return true;
-            if (isInitialized == 0) return false;
-
-            memoizedIsInitialized = 1;
-            return true;
-        }
-
-        public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+    public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+              throws java.io.IOException {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+              output.writeBytes(1, bytesCountry_);
+          }
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+              output.writeUInt32(2, uint32Countryid_);
+          }
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
+              output.writeBytes(3, bytesProv_);
+          }
+          if (((bitField0_ & 0x00000008) == 0x00000008)) {
+              output.writeUInt32(4, uint32Provid_);
+          }
+          if (((bitField0_ & 0x00000010) == 0x00000010)) {
+              output.writeBytes(5, bytesCity_);
+          }
+          if (((bitField0_ & 0x00000020) == 0x00000020)) {
+              output.writeUInt32(6, uint32Cityid_);
+          }
+          unknownFields.writeTo(output);
+      }
 
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
 
     public static Builder newBuilder(com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp prototype) {
-        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-
-        @java.lang.Override
-        public int hashCode() {
-            if (memoizedHashCode != 0) {
-                return memoizedHashCode;
-            }
-            int hash = 41;
-            hash = (19 * hash) + getDescriptor().hashCode();
-            if (hasBytesCountry()) {
-                hash = (37 * hash) + BYTES_COUNTRY_FIELD_NUMBER;
-                hash = (53 * hash) + getBytesCountry().hashCode();
-            }
-            if (hasUint32Countryid()) {
-                hash = (37 * hash) + UINT32_COUNTRYID_FIELD_NUMBER;
-                hash = (53 * hash) + getUint32Countryid();
-            }
-            if (hasBytesProv()) {
-                hash = (37 * hash) + BYTES_PROV_FIELD_NUMBER;
-                hash = (53 * hash) + getBytesProv().hashCode();
-            }
-            if (hasUint32Provid()) {
-                hash = (37 * hash) + UINT32_PROVID_FIELD_NUMBER;
-                hash = (53 * hash) + getUint32Provid();
-            }
-            if (hasBytesCity()) {
-                hash = (37 * hash) + BYTES_CITY_FIELD_NUMBER;
-                hash = (53 * hash) + getBytesCity().hashCode();
-            }
-            if (hasUint32Cityid()) {
-                hash = (37 * hash) + UINT32_CITYID_FIELD_NUMBER;
-                hash = (53 * hash) + getUint32Cityid();
-            }
-            hash = (29 * hash) + unknownFields.hashCode();
-            memoizedHashCode = hash;
-            return hash;
-        }
 
     public static com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp getDefaultInstance() {
       return DEFAULT_INSTANCE;
@@ -7963,8 +7920,8 @@ public final class IliveLbsSvr {
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_fieldAccessorTable
-                .ensureFieldAccessorsInitialized(
+      return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
               com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.Builder.class);
     }
 
@@ -8020,48 +7977,48 @@ public final class IliveLbsSvr {
      * <code>optional bytes bytes_prov = 3;</code>
      */
     public boolean hasBytesProv() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000004) == 0x00000004);
     }
 
-    /**
-     * <pre>
-     *uin最后一次上报的省份名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_prov = 3;</code>
-     */
-    public com.google.protobuf.ByteString getBytesProv() {
-      return bytesProv_;
-    }
+      /**
+       * <pre>
+       * uin最后一次上报的省份名称
+       * </pre>
+       * <p>
+       * <code>optional bytes bytes_prov = 3;</code>
+       */
+      public com.google.protobuf.ByteString getBytesProv() {
+          return bytesProv_;
+      }
 
-    /**
-     * <pre>
-     *uin最后一次上报的省份id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_provid = 4;</code>
-     */
-    public boolean hasUint32Provid() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
+      /**
+       * <pre>
+       * uin最后一次上报的省份id
+       * </pre>
+       * <p>
+       * <code>optional uint32 uint32_provid = 4;</code>
+       */
+      public boolean hasUint32Provid() {
+          return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
 
-    /**
-     * <pre>
-     *uin最后一次上报的省份id
-     * </pre>
+      /**
+       * <pre>
+       *uin最后一次上报的省份id
+       * </pre>
      *
      * <code>optional uint32 uint32_provid = 4;</code>
      */
     public int getUint32Provid() {
-      return uint32Provid_;
+        return uint32Provid_;
     }
 
-    /**
+      /**
      * <pre>
-     *uin最后一次上报的城市名称
-     * </pre>
-     *
-     * <code>optional bytes bytes_city = 5;</code>
+       *uin最后一次上报的城市名称
+       * </pre>
+       *
+       * <code>optional bytes bytes_city = 5;</code>
      */
     public boolean hasBytesCity() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
@@ -8089,124 +8046,24 @@ public final class IliveLbsSvr {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
 
-    /**
-     * <pre>
-     *uin最后一次上报的城市id
-     * </pre>
-     *
-     * <code>optional uint32 uint32_cityid = 6;</code>
+      /**
+       * <pre>
+       *uin最后一次上报的城市id
+       * </pre>
+       *
+       * <code>optional uint32 uint32_cityid = 6;</code>
      */
     public int getUint32Cityid() {
-        return uint32Cityid_;
+      return uint32Cityid_;
     }
 
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, bytesCountry_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeUInt32(2, uint32Countryid_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(3, bytesProv_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeUInt32(4, uint32Provid_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(5, bytesCity_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeUInt32(6, uint32Cityid_);
-      }
-      unknownFields.writeTo(output);
-    }
+    public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
 
-    public int getSerializedSize() {
-      int size = memoizedSize;
-        if (size != -1) return size;
-
-        size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-                .computeBytesSize(1, bytesCountry_);
-      }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, uint32Countryid_);
-        }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-                .computeBytesSize(3, bytesProv_);
-      }
-        if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-                .computeUInt32Size(4, uint32Provid_);
-        }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-                .computeBytesSize(5, bytesCity_);
-      }
-        if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, uint32Cityid_);
-      }
-      size += unknownFields.getSerializedSize();
-        memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp)) {
-        return super.equals(obj);
-      }
-      com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp other = (com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp) obj;
-
-      boolean result = true;
-        result = result && (hasBytesCountry() == other.hasBytesCountry());
-      if (hasBytesCountry()) {
-        result = result && getBytesCountry()
-            .equals(other.getBytesCountry());
-      }
-        result = result && (hasUint32Countryid() == other.hasUint32Countryid());
-      if (hasUint32Countryid()) {
-        result = result && (getUint32Countryid()
-            == other.getUint32Countryid());
-      }
-        result = result && (hasBytesProv() == other.hasBytesProv());
-      if (hasBytesProv()) {
-        result = result && getBytesProv()
-            .equals(other.getBytesProv());
-      }
-        result = result && (hasUint32Provid() == other.hasUint32Provid());
-      if (hasUint32Provid()) {
-        result = result && (getUint32Provid()
-            == other.getUint32Provid());
-      }
-        result = result && (hasBytesCity() == other.hasBytesCity());
-      if (hasBytesCity()) {
-        result = result && getBytesCity()
-            .equals(other.getBytesCity());
-      }
-        result = result && (hasUint32Cityid() == other.hasUint32Cityid());
-      if (hasUint32Cityid()) {
-        result = result && (getUint32Cityid()
-                == other.getUint32Cityid());
-      }
-        result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-        public Builder newBuilderForType() { return newBuilder(); }
-
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-              ? new Builder() : new Builder().mergeFrom(this);
+      memoizedIsInitialized = 1;
+      return true;
     }
 
     @java.lang.Override
@@ -8216,31 +8073,207 @@ public final class IliveLbsSvr {
       return builder;
     }
 
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetLocationByIpRsp> getParserForType() {
-      return PARSER;
-    }
+    public int getSerializedSize() {
+      int size = memoizedSize;
+        if (size != -1) return size;
 
-    public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-        /**
-         * Protobuf type {@code com.ceeker.app.study.proto.GetLocationByIpRsp}
-         */
-        public static final class Builder extends
-                com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-                // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetLocationByIpRsp)
-        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRspOrBuilder {
-            private int bitField0_;
-      private com.google.protobuf.ByteString bytesCountry_ = com.google.protobuf.ByteString.EMPTY;
-      private int uint32Countryid_ ;
-      private com.google.protobuf.ByteString bytesProv_ = com.google.protobuf.ByteString.EMPTY;
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
+        size = 0;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, bytesCountry_);
         }
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, uint32Countryid_);
       }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, bytesProv_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          size += com.google.protobuf.CodedOutputStream
+                  .computeUInt32Size(4, uint32Provid_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+                .computeBytesSize(5, bytesCity_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+                .computeUInt32Size(6, uint32Cityid_);
+      }
+        size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
+          if (obj == this) {
+              return true;
+      }
+      if (!(obj instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp)) {
+          return super.equals(obj);
+      }
+          com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp other = (com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp) obj;
+
+          boolean result = true;
+          result = result && (hasBytesCountry() == other.hasBytesCountry());
+          if (hasBytesCountry()) {
+              result = result && getBytesCountry()
+                      .equals(other.getBytesCountry());
+          }
+          result = result && (hasUint32Countryid() == other.hasUint32Countryid());
+          if (hasUint32Countryid()) {
+              result = result && (getUint32Countryid()
+                      == other.getUint32Countryid());
+          }
+          result = result && (hasBytesProv() == other.hasBytesProv());
+          if (hasBytesProv()) {
+              result = result && getBytesProv()
+                      .equals(other.getBytesProv());
+          }
+          result = result && (hasUint32Provid() == other.hasUint32Provid());
+          if (hasUint32Provid()) {
+              result = result && (getUint32Provid()
+                      == other.getUint32Provid());
+          }
+          result = result && (hasBytesCity() == other.hasBytesCity());
+          if (hasBytesCity()) {
+              result = result && getBytesCity()
+                      .equals(other.getBytesCity());
+      }
+      result = result && (hasUint32Cityid() == other.hasUint32Cityid());
+          if (hasUint32Cityid()) {
+              result = result && (getUint32Cityid()
+            == other.getUint32Cityid());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        if (hasBytesCountry()) {
+            hash = (37 * hash) + BYTES_COUNTRY_FIELD_NUMBER;
+            hash = (53 * hash) + getBytesCountry().hashCode();
+        }
+        if (hasUint32Countryid()) {
+            hash = (37 * hash) + UINT32_COUNTRYID_FIELD_NUMBER;
+        hash = (53 * hash) + getUint32Countryid();
+        }
+        if (hasBytesProv()) {
+        hash = (37 * hash) + BYTES_PROV_FIELD_NUMBER;
+        hash = (53 * hash) + getBytesProv().hashCode();
+      }
+      if (hasUint32Provid()) {
+        hash = (37 * hash) + UINT32_PROVID_FIELD_NUMBER;
+        hash = (53 * hash) + getUint32Provid();
+      }
+      if (hasBytesCity()) {
+        hash = (37 * hash) + BYTES_CITY_FIELD_NUMBER;
+        hash = (53 * hash) + getBytesCity().hashCode();
+      }
+        if (hasUint32Cityid()) {
+            hash = (37 * hash) + UINT32_CITYID_FIELD_NUMBER;
+            hash = (53 * hash) + getUint32Cityid();
+        }
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
+    }
+
+      public Builder newBuilderForType() {
+          return newBuilder();
+      }
+
+      public Builder toBuilder() {
+          return this == DEFAULT_INSTANCE
+                  ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<GetLocationByIpRsp> getParserForType() {
+          return PARSER;
+      }
+
+      public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp getDefaultInstanceForType() {
+          return DEFAULT_INSTANCE;
+      }
+
+      /**
+       * Protobuf type {@code com.ceeker.app.study.proto.GetLocationByIpRsp}
+       */
+      public static final class Builder extends
+              com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+              // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.GetLocationByIpRsp)
+              com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRspOrBuilder {
+          private int bitField0_;
+          private com.google.protobuf.ByteString bytesCountry_ = com.google.protobuf.ByteString.EMPTY;
+          private int uint32Countryid_;
+          private com.google.protobuf.ByteString bytesProv_ = com.google.protobuf.ByteString.EMPTY;
+
+          private void maybeForceBuilderInitialization() {
+              if (com.google.protobuf.GeneratedMessageV3
+                      .alwaysUseFieldBuilders) {
+              }
+          }
+
+          private int uint32Provid_;
+          private com.google.protobuf.ByteString bytesCity_ = com.google.protobuf.ByteString.EMPTY;
+
+          public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp getDefaultInstanceForType() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.getDefaultInstance();
+          }
+
+          public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp build() {
+              com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp result = buildPartial();
+              if (!result.isInitialized()) {
+                  throw newUninitializedMessageException(result);
+              }
+              return result;
+          }
+      private int uint32Cityid_ ;
+
+      // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+          public Builder setField(
+                  com.google.protobuf.Descriptors.FieldDescriptor field,
+                  java.lang.Object value) {
+              return (Builder) super.setField(field, value);
+          }
+
+          private Builder(
+                  com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+              super(parent);
+              maybeForceBuilderInitialization();
+          }
+
+          public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_descriptor;
+          }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.Builder.class);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+
       public Builder clear() {
         super.clear();
         bytesCountry_ = com.google.protobuf.ByteString.EMPTY;
@@ -8252,27 +8285,19 @@ public final class IliveLbsSvr {
         uint32Provid_ = 0;
         bitField0_ = (bitField0_ & ~0x00000008);
         bytesCity_ = com.google.protobuf.ByteString.EMPTY;
-          bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000010);
         uint32Cityid_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
-      private int uint32Provid_ ;
 
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp getDefaultInstanceForType() {
-        return com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.getDefaultInstance();
-      }
-
-      public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp build() {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
+          public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+              return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_descriptor;
       }
 
       public com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp buildPartial() {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp result = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp(this);
+          com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp result = new com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -8300,130 +8325,23 @@ public final class IliveLbsSvr {
         }
         result.uint32Cityid_ = uint32Cityid_;
         result.bitField0_ = to_bitField0_;
-          onBuilt();
-          return result;
+        onBuilt();
+        return result;
       }
 
-            public Builder clone() {
-                return (Builder) super.clone();
-            }
-
-            private com.google.protobuf.ByteString bytesCity_ = com.google.protobuf.ByteString.EMPTY;
-            private int uint32Cityid_;
-
-            // Construct using com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.newBuilder()
-            private Builder() {
-                maybeForceBuilderInitialization();
-            }
-
-            private Builder(
-                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-                super(parent);
-                maybeForceBuilderInitialization();
-            }
-
-            public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_descriptor;
-            }
-
-            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_fieldAccessorTable
-                        .ensureFieldAccessorsInitialized(
-                                com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.class, com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.Builder.class);
-            }
-
-            public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp other) {
-                if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.getDefaultInstance())
-                    return this;
-                if (other.hasBytesCountry()) {
-                    setBytesCountry(other.getBytesCountry());
-                }
-                if (other.hasUint32Countryid()) {
-                    setUint32Countryid(other.getUint32Countryid());
-                }
-                if (other.hasBytesProv()) {
-                    setBytesProv(other.getBytesProv());
-                }
-                if (other.hasUint32Provid()) {
-                    setUint32Provid(other.getUint32Provid());
-                }
-                if (other.hasBytesCity()) {
-                    setBytesCity(other.getBytesCity());
-                }
-                if (other.hasUint32Cityid()) {
-                    setUint32Cityid(other.getUint32Cityid());
-                }
-                this.mergeUnknownFields(other.unknownFields);
-                onChanged();
-                return this;
-            }
-
-            public final boolean isInitialized() {
-                return true;
-            }
-
-            public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-                return com.ceeker.app.study.proto.IliveLbsSvr.internal_static_com_ceeker_app_study_proto_GetLocationByIpRsp_descriptor;
-            }
-
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
+      public Builder clone() {
+        return (Builder) super.clone();
       }
 
-      public Builder clearField(
-              com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-
-      public Builder clearOneof(
-              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-          return (Builder) super.clearOneof(oneof);
-      }
-
-      public Builder setRepeatedField(
-              com.google.protobuf.Descriptors.FieldDescriptor field,
-              int index, java.lang.Object value) {
-          return (Builder) super.setRepeatedField(field, index, value);
-      }
-
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-
-            public Builder mergeFrom(com.google.protobuf.Message other) {
-                if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp) {
-          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp) other);
-                } else {
-                    super.mergeFrom(other);
-                    return this;
-                }
-            }
-
-            public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-            if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
+          public Builder clearField(
+                  com.google.protobuf.Descriptors.FieldDescriptor field) {
+              return (Builder) super.clearField(field);
           }
-        }
-        return this;
-      }
 
+          public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
       /**
        * <pre>
        *uin最后一次上报的国家名称
@@ -8434,7 +8352,6 @@ public final class IliveLbsSvr {
       public boolean hasBytesCountry() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-
       /**
        * <pre>
        *uin最后一次上报的国家名称
@@ -8443,51 +8360,56 @@ public final class IliveLbsSvr {
        * <code>optional bytes bytes_country = 1;</code>
        */
       public com.google.protobuf.ByteString getBytesCountry() {
-        return bytesCountry_;
+          return bytesCountry_;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_country = 1;</code>
-       */
-      public Builder setBytesCountry(com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000001;
-        bytesCountry_ = value;
-        onChanged();
-        return this;
-      }
+          /**
+           * <pre>
+           * uin最后一次上报的国家名称
+           * </pre>
+           * <p>
+           * <code>optional bytes bytes_country = 1;</code>
+           */
+          public Builder setBytesCountry(com.google.protobuf.ByteString value) {
+              if (value == null) {
+                  throw new NullPointerException();
+              }
+              bitField0_ |= 0x00000001;
+              bytesCountry_ = value;
+              onChanged();
+              return this;
+          }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_country = 1;</code>
-       */
-      public Builder clearBytesCountry() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        bytesCountry_ = getDefaultInstance().getBytesCountry();
-        onChanged();
-        return this;
-      }
+          /**
+           * <pre>
+           * uin最后一次上报的国家名称
+           * </pre>
+           * <p>
+           * <code>optional bytes bytes_country = 1;</code>
+           */
+          public Builder clearBytesCountry() {
+              bitField0_ = (bitField0_ & ~0x00000001);
+              bytesCountry_ = getDefaultInstance().getBytesCountry();
+              onChanged();
+              return this;
+          }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家id
-       * </pre>
-       *
-       * <code>optional uint32 uint32_countryid = 2;</code>
-       */
-      public boolean hasUint32Countryid() {
+          public Builder setRepeatedField(
+                  com.google.protobuf.Descriptors.FieldDescriptor field,
+                  int index, java.lang.Object value) {
+              return (Builder) super.setRepeatedField(field, index, value);
+          }
+
+          /**
+           * <pre>
+           *uin最后一次上报的国家id
+           * </pre>
+           *
+           * <code>optional uint32 uint32_countryid = 2;</code>
+           */
+          public boolean hasUint32Countryid() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-
       /**
        * <pre>
        *uin最后一次上报的国家id
@@ -8499,48 +8421,58 @@ public final class IliveLbsSvr {
         return uint32Countryid_;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家id
-       * </pre>
-       *
-       * <code>optional uint32 uint32_countryid = 2;</code>
-       */
-      public Builder setUint32Countryid(int value) {
-          bitField0_ |= 0x00000002;
-        uint32Countryid_ = value;
-        onChanged();
-        return this;
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp) {
+          return mergeFrom((com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的国家id
-       * </pre>
-       *
-       * <code>optional uint32 uint32_countryid = 2;</code>
-       */
-      public Builder clearUint32Countryid() {
-          bitField0_ = (bitField0_ & ~0x00000002);
-        uint32Countryid_ = 0;
-        onChanged();
-        return this;
+      public Builder mergeFrom(com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp other) {
+        if (other == com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp.getDefaultInstance()) return this;
+        if (other.hasBytesCountry()) {
+          setBytesCountry(other.getBytesCountry());
+        }
+        if (other.hasUint32Countryid()) {
+          setUint32Countryid(other.getUint32Countryid());
+        }
+        if (other.hasBytesProv()) {
+          setBytesProv(other.getBytesProv());
+        }
+          if (other.hasUint32Provid()) {
+              setUint32Provid(other.getUint32Provid());
+          }
+          if (other.hasBytesCity()) {
+              setBytesCity(other.getBytesCity());
+          }
+          if (other.hasUint32Cityid()) {
+              setUint32Cityid(other.getUint32Cityid());
+          }
+          this.mergeUnknownFields(other.unknownFields);
+          onChanged();
+          return this;
       }
 
-      /**
-       * <pre>
-       *uin最后一次上报的省份名称
-       * </pre>
-       *
-       * <code>optional bytes bytes_prov = 3;</code>
-       */
-      public boolean hasBytesProv() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
+          public final boolean isInitialized() {
+              return true;
+          }
 
-      /**
-       * <pre>
-       *uin最后一次上报的省份名称
+          /**
+           * <pre>
+           * uin最后一次上报的省份名称
+           * </pre>
+           * <p>
+           * <code>optional bytes bytes_prov = 3;</code>
+           */
+          public boolean hasBytesProv() {
+              return ((bitField0_ & 0x00000004) == 0x00000004);
+          }
+
+          /**
+           * <pre>
+           *uin最后一次上报的省份名称
        * </pre>
        *
        * <code>optional bytes bytes_prov = 3;</code>
@@ -8548,7 +8480,6 @@ public final class IliveLbsSvr {
       public com.google.protobuf.ByteString getBytesProv() {
         return bytesProv_;
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份名称
@@ -8565,7 +8496,6 @@ public final class IliveLbsSvr {
         onChanged();
         return this;
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份名称
@@ -8574,12 +8504,29 @@ public final class IliveLbsSvr {
        * <code>optional bytes bytes_prov = 3;</code>
        */
       public Builder clearBytesProv() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        bytesProv_ = getDefaultInstance().getBytesProv();
-        onChanged();
-        return this;
+          bitField0_ = (bitField0_ & ~0x00000004);
+          bytesProv_ = getDefaultInstance().getBytesProv();
+          onChanged();
+          return this;
       }
 
+          public Builder mergeFrom(
+                  com.google.protobuf.CodedInputStream input,
+                  com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                  throws java.io.IOException {
+              com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp parsedMessage = null;
+              try {
+                  parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+              } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                  parsedMessage = (com.ceeker.app.study.proto.IliveLbsSvr.GetLocationByIpRsp) e.getUnfinishedMessage();
+                  throw e.unwrapIOException();
+              } finally {
+                  if (parsedMessage != null) {
+                      mergeFrom(parsedMessage);
+                  }
+              }
+              return this;
+          }
       /**
        * <pre>
        *uin最后一次上报的省份id
@@ -8590,7 +8537,6 @@ public final class IliveLbsSvr {
       public boolean hasUint32Provid() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份id
@@ -8601,7 +8547,6 @@ public final class IliveLbsSvr {
       public int getUint32Provid() {
         return uint32Provid_;
       }
-
       /**
        * <pre>
        *uin最后一次上报的省份id
@@ -8618,18 +8563,31 @@ public final class IliveLbsSvr {
 
       /**
        * <pre>
-       *uin最后一次上报的省份id
+       *uin最后一次上报的国家id
        * </pre>
        *
-       * <code>optional uint32 uint32_provid = 4;</code>
+       * <code>optional uint32 uint32_countryid = 2;</code>
        */
-      public Builder clearUint32Provid() {
-          bitField0_ = (bitField0_ & ~0x00000008);
-        uint32Provid_ = 0;
-        onChanged();
-        return this;
+      public Builder setUint32Countryid(int value) {
+          bitField0_ |= 0x00000002;
+          uint32Countryid_ = value;
+          onChanged();
+          return this;
       }
 
+          /**
+           * <pre>
+           *uin最后一次上报的国家id
+           * </pre>
+           *
+           * <code>optional uint32 uint32_countryid = 2;</code>
+           */
+          public Builder clearUint32Countryid() {
+              bitField0_ = (bitField0_ & ~0x00000002);
+              uint32Countryid_ = 0;
+              onChanged();
+              return this;
+          }
       /**
        * <pre>
        *uin最后一次上报的城市名称
@@ -8640,7 +8598,6 @@ public final class IliveLbsSvr {
       public boolean hasBytesCity() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
-
       /**
        * <pre>
        *uin最后一次上报的城市名称
@@ -8651,7 +8608,6 @@ public final class IliveLbsSvr {
       public com.google.protobuf.ByteString getBytesCity() {
         return bytesCity_;
       }
-
       /**
        * <pre>
        *uin最后一次上报的城市名称
@@ -8662,13 +8618,12 @@ public final class IliveLbsSvr {
       public Builder setBytesCity(com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000010;
-        bytesCity_ = value;
-        onChanged();
+        }
+          bitField0_ |= 0x00000010;
+          bytesCity_ = value;
+          onChanged();
         return this;
       }
-
       /**
        * <pre>
        *uin最后一次上报的城市名称
@@ -8677,12 +8632,25 @@ public final class IliveLbsSvr {
        * <code>optional bytes bytes_city = 5;</code>
        */
       public Builder clearBytesCity() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        bytesCity_ = getDefaultInstance().getBytesCity();
-        onChanged();
-        return this;
+          bitField0_ = (bitField0_ & ~0x00000010);
+          bytesCity_ = getDefaultInstance().getBytesCity();
+          onChanged();
+          return this;
       }
 
+          /**
+           * <pre>
+           *uin最后一次上报的省份id
+           * </pre>
+           *
+           * <code>optional uint32 uint32_provid = 4;</code>
+           */
+          public Builder clearUint32Provid() {
+              bitField0_ = (bitField0_ & ~0x00000008);
+              uint32Provid_ = 0;
+              onChanged();
+              return this;
+          }
       /**
        * <pre>
        *uin最后一次上报的城市id
@@ -8714,24 +8682,25 @@ public final class IliveLbsSvr {
         bitField0_ |= 0x00000020;
         uint32Cityid_ = value;
         onChanged();
-        return this;
+          return this;
       }
-      /**
-       * <pre>
-       *uin最后一次上报的城市id
+
+          /**
+           * <pre>
+           *uin最后一次上报的城市id
        * </pre>
        *
        * <code>optional uint32 uint32_cityid = 6;</code>
        */
       public Builder clearUint32Cityid() {
-          bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000020);
           uint32Cityid_ = 0;
-        onChanged();
+          onChanged();
         return this;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
+        return super.setUnknownFields(unknownFields);
       }
 
       public final Builder mergeUnknownFields(

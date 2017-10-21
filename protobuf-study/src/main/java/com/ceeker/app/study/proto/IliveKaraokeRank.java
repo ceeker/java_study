@@ -843,9 +843,9 @@ public final class IliveKaraokeRank {
         public static com.ceeker.app.study.proto.IliveKaraokeRank.GetKaraokeRankReq parseFrom(
                 java.io.InputStream input,
                 com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input, extensionRegistry);
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input, extensionRegistry);
         }
 
         public static com.ceeker.app.study.proto.IliveKaraokeRank.GetKaraokeRankReq parseDelimitedFrom(java.io.InputStream input)
@@ -1783,7 +1783,7 @@ public final class IliveKaraokeRank {
 
         public static com.ceeker.app.study.proto.IliveKaraokeRank.GetKaraokeRankRsp parseFrom(byte[] data)
                 throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
+      return PARSER.parseFrom(data);
         }
 
         public static com.ceeker.app.study.proto.IliveKaraokeRank.GetKaraokeRankRsp parseFrom(
@@ -2868,9 +2868,9 @@ public final class IliveKaraokeRank {
                         }
                         case 34: {
                             com.google.protobuf.ByteString bs = input.readBytes();
-                            bitField0_ |= 0x00000008;
-                            avatar_ = bs;
-                            break;
+              bitField0_ |= 0x00000008;
+              avatar_ = bs;
+              break;
                         }
                         case 40: {
                             bitField0_ |= 0x00000010;
@@ -3715,9 +3715,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 用户uid
+             *用户uid
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 uid = 1;</code>
              */
             public boolean hasUid() {
@@ -3726,9 +3726,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 用户uid
+             *用户uid
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 uid = 1;</code>
              */
             public long getUid() {
@@ -3737,9 +3737,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 用户uid
+             *用户uid
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 uid = 1;</code>
              */
             public Builder setUid(long value) {
@@ -3751,9 +3751,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 用户uid
+             *用户uid
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 uid = 1;</code>
              */
             public Builder clearUid() {
@@ -3765,9 +3765,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 昵称
+             *昵称
              * </pre>
-             * <p>
+             *
              * <code>optional string nick = 2;</code>
              */
             public boolean hasNick() {
@@ -3776,9 +3776,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 昵称
+             *昵称
              * </pre>
-             * <p>
+             *
              * <code>optional string nick = 2;</code>
              */
             public java.lang.String getNick() {
@@ -3798,9 +3798,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 昵称
+             *昵称
              * </pre>
-             * <p>
+             *
              * <code>optional string nick = 2;</code>
              */
             public Builder setNick(
@@ -3816,9 +3816,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 昵称
+             *昵称
              * </pre>
-             * <p>
+             *
              * <code>optional string nick = 2;</code>
              */
             public com.google.protobuf.ByteString
@@ -3837,9 +3837,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 昵称
+             *昵称
              * </pre>
-             * <p>
+             *
              * <code>optional string nick = 2;</code>
              */
             public Builder setNickBytes(
@@ -3855,9 +3855,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 昵称
+             *昵称
              * </pre>
-             * <p>
+             *
              * <code>optional string nick = 2;</code>
              */
             public Builder clearNick() {
@@ -3869,9 +3869,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 性别
+             *性别
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 gender = 3;</code>
              */
             public boolean hasGender() {
@@ -3880,9 +3880,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 性别
+             *性别
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 gender = 3;</code>
              */
             public int getGender() {
@@ -3891,9 +3891,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 性别
+             *性别
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 gender = 3;</code>
              */
             public Builder setGender(int value) {
@@ -3905,9 +3905,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 性别
+             *性别
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 gender = 3;</code>
              */
             public Builder clearGender() {
@@ -3919,9 +3919,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 头像
+             *头像
              * </pre>
-             * <p>
+             *
              * <code>optional string avatar = 4;</code>
              */
             public boolean hasAvatar() {
@@ -3930,9 +3930,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 头像
+             *头像
              * </pre>
-             * <p>
+             *
              * <code>optional string avatar = 4;</code>
              */
             public java.lang.String getAvatar() {
@@ -3952,9 +3952,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 头像
+             *头像
              * </pre>
-             * <p>
+             *
              * <code>optional string avatar = 4;</code>
              */
             public Builder setAvatar(
@@ -3970,9 +3970,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 头像
+             *头像
              * </pre>
-             * <p>
+             *
              * <code>optional string avatar = 4;</code>
              */
             public com.google.protobuf.ByteString
@@ -3991,9 +3991,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 头像
+             *头像
              * </pre>
-             * <p>
+             *
              * <code>optional string avatar = 4;</code>
              */
             public Builder setAvatarBytes(
@@ -4009,9 +4009,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 头像
+             *头像
              * </pre>
-             * <p>
+             *
              * <code>optional string avatar = 4;</code>
              */
             public Builder clearAvatar() {
@@ -4023,9 +4023,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 金币数
+             *金币数
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 coin = 5;</code>
              */
             public boolean hasCoin() {
@@ -4034,9 +4034,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 金币数
+             *金币数
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 coin = 5;</code>
              */
             public long getCoin() {
@@ -4045,9 +4045,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 金币数
+             *金币数
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 coin = 5;</code>
              */
             public Builder setCoin(long value) {
@@ -4059,9 +4059,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 金币数
+             *金币数
              * </pre>
-             * <p>
+             *
              * <code>optional uint64 coin = 5;</code>
              */
             public Builder clearCoin() {
@@ -4073,9 +4073,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 排名
+             *排名
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 rank = 6;</code>
              */
             public boolean hasRank() {
@@ -4084,9 +4084,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 排名
+             *排名
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 rank = 6;</code>
              */
             public int getRank() {
@@ -4095,9 +4095,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 排名
+             *排名
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 rank = 6;</code>
              */
             public Builder setRank(int value) {
@@ -4109,9 +4109,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 排名
+             *排名
              * </pre>
-             * <p>
+             *
              * <code>optional uint32 rank = 6;</code>
              */
             public Builder clearRank() {
@@ -4130,9 +4130,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public java.util.List<com.ceeker.app.study.proto.IliveKaraokeRank.Medal> getMedalsList() {
@@ -4145,9 +4145,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public int getMedalsCount() {
@@ -4160,9 +4160,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public com.ceeker.app.study.proto.IliveKaraokeRank.Medal getMedals(int index) {
@@ -4175,9 +4175,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder setMedals(
@@ -4197,9 +4197,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder setMedals(
@@ -4216,9 +4216,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder addMedals(com.ceeker.app.study.proto.IliveKaraokeRank.Medal value) {
@@ -4237,9 +4237,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder addMedals(
@@ -4259,9 +4259,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder addMedals(
@@ -4278,9 +4278,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder addMedals(
@@ -4297,9 +4297,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder addAllMedals(
@@ -4317,9 +4317,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder clearMedals() {
@@ -4335,9 +4335,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public Builder removeMedals(int index) {
@@ -4353,9 +4353,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public com.ceeker.app.study.proto.IliveKaraokeRank.Medal.Builder getMedalsBuilder(
@@ -4365,9 +4365,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public com.ceeker.app.study.proto.IliveKaraokeRank.MedalOrBuilder getMedalsOrBuilder(
@@ -4381,9 +4381,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public java.util.List<? extends com.ceeker.app.study.proto.IliveKaraokeRank.MedalOrBuilder>
@@ -4397,9 +4397,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public com.ceeker.app.study.proto.IliveKaraokeRank.Medal.Builder addMedalsBuilder() {
@@ -4409,9 +4409,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public com.ceeker.app.study.proto.IliveKaraokeRank.Medal.Builder addMedalsBuilder(
@@ -4422,9 +4422,9 @@ public final class IliveKaraokeRank {
 
             /**
              * <pre>
-             * 贵族勋章和粉丝勋章
+             *贵族勋章和粉丝勋章
              * </pre>
-             * <p>
+             *
              * <code>repeated .com.ceeker.app.study.proto.Medal medals = 7;</code>
              */
             public java.util.List<com.ceeker.app.study.proto.IliveKaraokeRank.Medal.Builder>
@@ -4449,7 +4449,7 @@ public final class IliveKaraokeRank {
 
             public final Builder setUnknownFields(
                     final com.google.protobuf.UnknownFieldSet unknownFields) {
-                return super.setUnknownFields(unknownFields);
+        return super.setUnknownFields(unknownFields);
             }
 
             public final Builder mergeUnknownFields(
@@ -4520,7 +4520,7 @@ public final class IliveKaraokeRank {
                     switch (tag) {
                         case 0:
                             done = true;
-              break;
+                            break;
                         default: {
                             if (!parseUnknownField(
                                     input, unknownFields, extensionRegistry, tag)) {
@@ -4610,7 +4610,7 @@ public final class IliveKaraokeRank {
         }
 
         public static com.ceeker.app.study.proto.IliveKaraokeRank.Medal parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
+        throws java.io.IOException {
             return com.google.protobuf.GeneratedMessageV3
                     .parseDelimitedWithIOException(PARSER, input);
         }
@@ -4857,38 +4857,37 @@ public final class IliveKaraokeRank {
                 com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
                 // @@protoc_insertion_point(builder_implements:com.ceeker.app.study.proto.Medal)
                 com.ceeker.app.study.proto.IliveKaraokeRank.MedalOrBuilder {
-            private int bitField0_;
-            private int medalId_;
-            private java.lang.Object medalIcon_ = "";
+      private int bitField0_;
+      private int medalId_ ;
+      private java.lang.Object medalIcon_ = "";
 
-            // Construct using com.ceeker.app.study.proto.IliveKaraokeRank.Medal.newBuilder()
-            private Builder() {
-                maybeForceBuilderInitialization();
-            }
+      // Construct using com.ceeker.app.study.proto.IliveKaraokeRank.Medal.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
 
-            private Builder(
-                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-                super(parent);
-                maybeForceBuilderInitialization();
-            }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.ceeker.app.study.proto.IliveKaraokeRank.internal_static_com_ceeker_app_study_proto_Medal_descriptor;
+      }
 
-            public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-                return com.ceeker.app.study.proto.IliveKaraokeRank.internal_static_com_ceeker_app_study_proto_Medal_descriptor;
-            }
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.ceeker.app.study.proto.IliveKaraokeRank.internal_static_com_ceeker_app_study_proto_Medal_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.ceeker.app.study.proto.IliveKaraokeRank.Medal.class, com.ceeker.app.study.proto.IliveKaraokeRank.Medal.Builder.class);
+      }
 
-            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-                return com.ceeker.app.study.proto.IliveKaraokeRank.internal_static_com_ceeker_app_study_proto_Medal_fieldAccessorTable
-                        .ensureFieldAccessorsInitialized(
-                                com.ceeker.app.study.proto.IliveKaraokeRank.Medal.class, com.ceeker.app.study.proto.IliveKaraokeRank.Medal.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
-                if (com.google.protobuf.GeneratedMessageV3
-                        .alwaysUseFieldBuilders) {
-                }
-            }
+      private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessageV3
+                  .alwaysUseFieldBuilders) {
+          }
+      }
 
             public Builder clear() {
                 super.clear();
@@ -4902,76 +4901,55 @@ public final class IliveKaraokeRank {
             public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
                 return com.ceeker.app.study.proto.IliveKaraokeRank.internal_static_com_ceeker_app_study_proto_Medal_descriptor;
-            }
+      }
 
-            public com.ceeker.app.study.proto.IliveKaraokeRank.Medal getDefaultInstanceForType() {
-                return com.ceeker.app.study.proto.IliveKaraokeRank.Medal.getDefaultInstance();
-            }
+      public com.ceeker.app.study.proto.IliveKaraokeRank.Medal getDefaultInstanceForType() {
+        return com.ceeker.app.study.proto.IliveKaraokeRank.Medal.getDefaultInstance();
+      }
 
-            public com.ceeker.app.study.proto.IliveKaraokeRank.Medal build() {
-                com.ceeker.app.study.proto.IliveKaraokeRank.Medal result = buildPartial();
-                if (!result.isInitialized()) {
-                    throw newUninitializedMessageException(result);
-                }
-                return result;
-            }
+      public com.ceeker.app.study.proto.IliveKaraokeRank.Medal build() {
+        com.ceeker.app.study.proto.IliveKaraokeRank.Medal result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
 
-            public com.ceeker.app.study.proto.IliveKaraokeRank.Medal buildPartial() {
-                com.ceeker.app.study.proto.IliveKaraokeRank.Medal result = new com.ceeker.app.study.proto.IliveKaraokeRank.Medal(this);
-                int from_bitField0_ = bitField0_;
-                int to_bitField0_ = 0;
-                if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-                    to_bitField0_ |= 0x00000001;
-                }
-                result.medalId_ = medalId_;
-                if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-                    to_bitField0_ |= 0x00000002;
-                }
-                result.medalIcon_ = medalIcon_;
-                result.bitField0_ = to_bitField0_;
-                onBuilt();
-                return result;
-            }
+      public com.ceeker.app.study.proto.IliveKaraokeRank.Medal buildPartial() {
+        com.ceeker.app.study.proto.IliveKaraokeRank.Medal result = new com.ceeker.app.study.proto.IliveKaraokeRank.Medal(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+          result.medalId_ = medalId_;
+          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+              to_bitField0_ |= 0x00000002;
+          }
+          result.medalIcon_ = medalIcon_;
+          result.bitField0_ = to_bitField0_;
+          onBuilt();
+          return result;
+      }
 
             public Builder clone() {
                 return (Builder) super.clone();
-            }
+      }
 
-            public Builder setField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field,
-                    java.lang.Object value) {
-                return (Builder) super.setField(field, value);
-            }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
 
-            public Builder clearField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field) {
-                return (Builder) super.clearField(field);
-            }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
 
-            public Builder clearOneof(
-                    com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-                return (Builder) super.clearOneof(oneof);
-            }
-
-            public Builder setRepeatedField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field,
-                    int index, java.lang.Object value) {
-                return (Builder) super.setRepeatedField(field, index, value);
-            }
-
-            public Builder addRepeatedField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field,
-                    java.lang.Object value) {
-                return (Builder) super.addRepeatedField(field, value);
-            }
-
-            public Builder mergeFrom(com.google.protobuf.Message other) {
-                if (other instanceof com.ceeker.app.study.proto.IliveKaraokeRank.Medal) {
-                    return mergeFrom((com.ceeker.app.study.proto.IliveKaraokeRank.Medal) other);
-                } else {
-                    super.mergeFrom(other);
-          return this;
-        }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
       }
 
       public Builder mergeFrom(com.ceeker.app.study.proto.IliveKaraokeRank.Medal other) {
@@ -5011,17 +4989,28 @@ public final class IliveKaraokeRank {
         return this;
       }
 
-      /**
-       * <pre>
-       *勋章id
-       * </pre>
-       *
-       * <code>optional uint32 medal_id = 1;</code>
-       */
-      public boolean hasMedalId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
       }
 
+            public Builder addRepeatedField(
+                    com.google.protobuf.Descriptors.FieldDescriptor field,
+                    java.lang.Object value) {
+                return (Builder) super.addRepeatedField(field, value);
+            }
+
+            /**
+             * <pre>
+             * 勋章id
+             * </pre>
+             * <p>
+             * <code>optional uint32 medal_id = 1;</code>
+             */
+            public boolean hasMedalId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
       /**
        * <pre>
        *勋章id
@@ -5032,7 +5021,6 @@ public final class IliveKaraokeRank {
       public int getMedalId() {
         return medalId_;
       }
-
       /**
        * <pre>
        *勋章id
@@ -5046,7 +5034,6 @@ public final class IliveKaraokeRank {
         onChanged();
         return this;
       }
-
       /**
        * <pre>
        *勋章id
@@ -5061,6 +5048,14 @@ public final class IliveKaraokeRank {
         return this;
       }
 
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.ceeker.app.study.proto.IliveKaraokeRank.Medal) {
+          return mergeFrom((com.ceeker.app.study.proto.IliveKaraokeRank.Medal)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
       /**
        * <pre>
        *勋章图标
@@ -5091,24 +5086,6 @@ public final class IliveKaraokeRank {
         } else {
           return (java.lang.String) ref;
         }
-      }
-
-      /**
-       * <pre>
-       *勋章图标
-       * </pre>
-       *
-       * <code>optional string medal_icon = 2;</code>
-       */
-      public Builder setMedalIcon(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        medalIcon_ = value;
-        onChanged();
-        return this;
       }
 
       /**
@@ -5149,7 +5126,6 @@ public final class IliveKaraokeRank {
         onChanged();
         return this;
       }
-
       /**
        * <pre>
        *勋章图标
@@ -5164,6 +5140,23 @@ public final class IliveKaraokeRank {
         return this;
       }
 
+      /**
+       * <pre>
+       *勋章图标
+       * </pre>
+       *
+       * <code>optional string medal_icon = 2;</code>
+       */
+      public Builder setMedalIcon(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        medalIcon_ = value;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
