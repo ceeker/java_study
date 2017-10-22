@@ -1,14 +1,15 @@
 package com.ceeker.app.study.io;
 
-import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import org.apache.commons.io.FileSystemUtils;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.LineIterator;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
 
@@ -24,19 +25,23 @@ public class FileCreate {
 
     public static final int gb = 1024 * 1024;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         String src = "test.txt";
         String dis = "C:\\test";
         long start = System.currentTimeMillis();
-        FileUtils.copyFileToDirectory(FileUtils.getFile(src), FileUtils.getFile(dis));
+        createFileFromUrl("c:\\qq.html", "http://www.qq.com/");
         long end = System.currentTimeMillis();
         System.out.println("cost=" + (end - start) / 1000);
+        String string = IOUtils.toString(new URL("http://now.qq.com/cgi-bin/now/web/nearby/get_nearby_video"));
+        System.out.println(string);
+
     }
 
     private static List<String> getLines(int count) {
         List<String> list = Lists.newArrayListWithCapacity(count);
         for (int i = 0; i < count; i++) {
-            list.add(RandomStringUtils.randomNumeric(6, 12));
+            String string = new StringBuffer(RandomStringUtils.randomNumeric(6, 12)).append("\t").append(i).toString();
+            list.add(string);
         }
         return list;
     }
@@ -62,12 +67,12 @@ public class FileCreate {
         System.out.println("cost=" + (end - start) / 1000);
     }
 
-    private void test() throws IOException {
+    private static void createFile(String fileName) throws IOException {
         long freeSpace = FileSystemUtils.freeSpaceKb("D:\\");
         int i = 0;
-        File file = FileUtils.getFile("test.txt");
+        File file = FileUtils.getFile(fileName);
         while (i < max && freeSpace > gb) {
-            FileUtils.writeLines(file, getLines(10000), true);
+            FileUtils.writeLines(file, getLines(1000), true);
             i++;
             if (i % 10 == 0) {
                 freeSpace = FileSystemUtils.freeSpaceKb("D:\\");
@@ -76,9 +81,9 @@ public class FileCreate {
         }
     }
 
-    public void createFile(String name, String path) throws IOException {
-        FileUtils.writeStringToFile(FileUtils.getFile("123.txt"), "123");
-        long freeSpaceKb = FileSystemUtils.freeSpaceKb("D:\\");
-        FileUtils.lineIterator(FileUtils.getFile("123.txt"), Charsets.UTF_8.toString());
+    private static void createFileFromUrl(String filePath, String url) throws Exception {
+        FileUtils.copyURLToFile(new URL(url), FileUtils.getFile(filePath));
     }
+
+
 }
