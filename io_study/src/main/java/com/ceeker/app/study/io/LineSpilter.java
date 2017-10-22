@@ -18,6 +18,10 @@ public class LineSpilter {
     public static void main(String[] args) throws IOException {
         String filePath = "C:\\info.log";
         LineIterator iterator = getLineIterator(filePath);
+        splite(iterator);
+    }
+
+    public static void splite(LineIterator iterator) {
         Splitter splitter = Splitter.on("\t").omitEmptyStrings().trimResults();
         while (iterator.hasNext()) {
             String line = iterator.nextLine();
